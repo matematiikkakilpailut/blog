@@ -5,3 +5,4 @@ url: "https://blog.matematiikkakilpailut.fi"
 baseurl: "/"
 github:
   is_project_page: false
+lang: fi
