@@ -10,7 +10,7 @@ layout: default
   </section>
   <footer class="post-meta">
     <p><time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%d.%m.%Y" }}<time>
-      {% if page.author %} • <address>{{ page.author }}</address>{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}
+      {% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}
     </p>
   </footer>
 </article>
