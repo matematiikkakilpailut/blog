@@ -1,1 +1,5 @@
-theme: jekyll-theme-minimal
+theme: jekyll-theme-cayman
+title: Matematiikkakilpailijat
+description: Matematiikan olympiavalmennuksen osallistujien kokemuksia
+url: "https://blog.matematiikkakilpailut.fi"
+baseurl: "/"
