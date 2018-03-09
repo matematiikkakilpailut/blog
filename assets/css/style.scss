@@ -9,3 +9,23 @@
   border-top: 2px solid #777;
   font-size: 80%;
 }
+
+.pagination {
+  text-align: center;
+  width: 100%;
+  font-size: 90%;
+}
+
+.invisible {
+  color: transparent;
+  user-select: none;
+}
+
+.share-buttons {
+  padding: 0;
+  float: right;
+}
+
+.share-buttons svg {
+  height: 22px;
+}

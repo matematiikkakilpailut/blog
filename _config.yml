@@ -6,3 +6,5 @@ baseurl: "/"
 github:
   is_project_page: false
 lang: fi
+paginate: 3
+paginate_path: "/posts/:num/"
