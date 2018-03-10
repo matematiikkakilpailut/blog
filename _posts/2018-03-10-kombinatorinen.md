@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Toinen kirjoitus"
+title: "Kombinatorinen tehtävä"
 author: "Jouni Seppänen"
 math: true
 ---

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Muka eilinen kirjoitus"
+title: "Ilman kaavoja"
 author: "Jouni Seppänen"
 ---
 

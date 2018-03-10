@@ -15,3 +15,36 @@ layout: default
     </p>
   </footer>
 </article>
+
+<section class="comments">
+  <div class="hidden notice" id="message-submitted">
+    Kommenttisi on lähetetty. Kommentti menee moderointijonoon, josta se
+    päätyy aikanaan sivulle jos se todetaan asialliseksi.
+  </div>
+
+  <form id="comment-form" class="comment-form" method="post" action="https://api.staticman.net/v2/entry/{{ site.github.repository_nwo }}/{{ site.staticman.branch }}/comments">
+    <fieldset>
+      <legend>Kommentoi</legend>
+      <label for="comment-message">✱
+	Kommentti (syntaksi: <a href="http://commonmark.org/help/" target="_blank" lang="en" hreflang="en"
+			     >Markdown</a>{% if page.math %} ja
+	<a href="https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference"
+	   lang="en" hreflang="en" target="_blank">Mathjax</a>{% endif %})</label>
+      <textarea type="text" rows="5" id="comment-message" name="fields[message]" tabindex="1" required></textarea>
+      <label for="comment-name">✱ Nimi</label>
+      <input type="text" id="comment-name" autocomplete="name" placeholder="Maija Meikäläinen" name="fields[name]" tabindex="2" required>
+      <label for="comment-email">✱ Sähköpostiosoite (ei julkaista)</label>
+      <input type="email" id="comment-email" autocomplete="email" placeholder="maija.meikalainen@example.com" name="fields[email]" tabindex="3" required>
+      <label for="comment-url">Kotisivu</label>
+      <input type="url" id="comment-url" autocomplete="url" placeholder="https://www.example.com" name="fields[url]" tabindex="4">
+      <label class="hidden" for="comment-telephone">Älä kirjoita tähän mitään</label>
+      <input class="hidden" type="tel" id="comment-telephone" name="fields[telephone]" autocomplete="off" placeholder="202-555-0148">
+      <button type="submit" class="btn">Lähetä</button>
+    </fieldset>
+    <fieldset class="hidden">
+      <input type="hidden" id="comment-parent" name="fields[reply-to]" value="">
+      <input type="hidden" name="options[slug]" value="{{ page.id }}">
+      <input type="hidden" name="options[redirect]" value="{{ page.url | absolute_url}}?submitted=1">
+    </fieldset>
+  </form>
+</section>

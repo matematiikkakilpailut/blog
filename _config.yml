@@ -8,3 +8,10 @@ github:
 lang: fi
 paginate: 3
 paginate_path: "/posts/:num/"
+plugins:
+- jekyll-feed
+- jekyll-seo-tag
+- jekyll-sitemap
+- jemoji
+staticman:
+  branch: master

@@ -6,7 +6,7 @@
 .post-footer {
   padding-top: 1ex;
   margin-top: 36px;
-  border-top: 2px solid #777;
+  border-top: 2px solid $border-color;
   font-size: 80%;
 }
 
@@ -21,6 +21,10 @@
   user-select: none;
 }
 
+.hidden {
+  display: none;
+}
+
 .share-buttons {
   padding: 0;
   float: right;
@@ -31,7 +35,24 @@
   fill: #777;
 }
 
-.svg-defs {
-  height: 0;
-  width: 0;
+.post-title > a {
+  color: $section-headings-color;
+}
+
+textarea, input {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+::placeholder {
+  color: #aaa;
+}
+
+.notice {
+  border: 2px solid $border-color;
+  padding: 8px;
+  color: $header-heading-color;
+  background-color: $header-bg-color;
+  background-image:
+    linear-gradient(120deg, darken($header-bg-color-secondary, 15%), darken($header-bg-color, 15%));
 }
