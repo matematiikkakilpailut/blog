@@ -43,7 +43,7 @@ layout: default
     </fieldset>
     <fieldset class="hidden">
       <input type="hidden" id="comment-parent" name="fields[reply-to]" value="">
-      <input type="hidden" name="options[slug]" value="{{ page.id }}">
+      <input type="hidden" name="options[slug]" value="{{ page.id | remove_first: "/" }}">
       <input type="hidden" name="options[redirect]" value="{{ page.url | absolute_url}}?submitted=1">
     </fieldset>
   </form>
