@@ -9,9 +9,9 @@ layout: default
     {{ content }}
   </section>
   <footer class="post-footer">
-    <p><time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%-d.%-m.%Y" }}<time>
+    <p><time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%-d.%-m.%Y" }}</time>
       {% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}
-      {% include shares %}
+      {% include shares url=page.url title=page.title %}
     </p>
   </footer>
 </article>
