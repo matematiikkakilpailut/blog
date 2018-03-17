@@ -1,0 +1,18 @@
+comments:
+  allowedFields: ['name', 'email', 'url', 'message', 'reply_to']
+  requiredFields: ['name', 'email', 'message']
+  name: "blog.matematiikkakilpailut.fi"
+  branch: master
+  commitMessage: "Uusi kommentti"
+  path: "_data/comments/{options.slug}"
+  filename: "comment-{@timestamp}"
+  format: yaml
+  moderation: true
+  transforms:
+    email: md5
+  generatedFields:
+    date:
+      type: date
+      options:
+        format: iso8601
+  

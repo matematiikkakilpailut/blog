@@ -1,0 +1,18 @@
+theme: jekyll-theme-cayman
+title: Matematiikkakilpailijat
+description: Matematiikan olympiavalmennuksen osallistujien kokemuksia
+url: "https://blog.matematiikkakilpailut.fi"
+baseurl: "/"
+github:
+  is_project_page: false
+lang: fi
+paginate: 3
+paginate_path: "/posts/:num/"
+plugins:
+- jekyll-feed
+- jekyll-seo-tag
+- jekyll-sitemap
+- jemoji
+staticman:
+  branch: master
+google_analytics: UA-115938166-1

@@ -1,0 +1,84 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+::selection {
+  color: #000;
+  background: #ffe010;
+}
+
+.site-footer {
+  text-align: center;
+  width: 100%;
+  font-size: 90%;
+  padding-top: 0;
+}
+
+.post-footer {
+  padding-top: 1ex;
+  margin-top: 36px;
+  border-top: 2px solid $border-color;
+  font-size: 80%;
+}
+
+.pagination {
+  text-align: center;
+  width: 100%;
+  font-size: 90%;
+}
+
+.invisible {
+  color: transparent;
+  user-select: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.share-buttons {
+  padding: 0;
+  float: right;
+}
+
+.share-buttons svg {
+  height: 22px;
+  fill: #777;
+}
+
+.post-title > a {
+  color: $section-headings-color;
+}
+
+textarea, input {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+::placeholder {
+  color: #aaa;
+}
+
+.notice {
+  border: 2px solid $border-color;
+  padding: 8px;
+  color: $header-heading-color;
+  background-color: $header-bg-color;
+  background-image:
+    linear-gradient(120deg, darken($header-bg-color-secondary, 15%), darken($header-bg-color, 15%));
+}

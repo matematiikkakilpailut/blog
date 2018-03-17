@@ -1,0 +1,49 @@
+---
+layout: default
+math: true
+---
+
+{% for post in paginator.posts %}
+<article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h1>
+  </header>
+  <section class="post-content">
+    {{ post.content }}
+  </section>
+  <footer class="post-footer">
+    <p><time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%-d.%-m.%Y" }}<time>
+      {% if post.author %} • {{ post.author }}{% endif %}{% if post.meta %} • {{ post.meta }}{% endif %}
+      {% include shares url=post.url title=post.title %}
+    </p>
+  </footer>
+</article>
+{% endfor %}
+
+{% if paginator.total_pages > 1 %}
+<div class="pagination">
+  {% if paginator.previous_page %}
+  <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"
+  >Uudempia <span class="pointer">☜</span></a>
+  {% else %}
+  <span class="invisible">Uudempia <span class="pointer">☜</span></span>
+  {% endif %}
+
+  {% for page in (1..paginator.total_pages) %}
+  {% if page == paginator.page %}
+  <em>{{ page }}</em>
+  {% elsif page == 1 %}
+  <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+  {% else %}
+  <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+  {% endif %}
+  {% endfor %}
+
+  {% if paginator.next_page %}
+  <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}"
+  ><span class="pointer">☞</span> Vanhempia</a>
+  {% else %}
+  <span class="invisible"><span class="pointer">☞</span> Vanhempia</span>
+  {% endif %}
+</div>
+{% endif %}
