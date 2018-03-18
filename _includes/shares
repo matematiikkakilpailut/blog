@@ -1,20 +1,20 @@
 <span class="share-buttons">
   <a href="https://www.facebook.com/sharer/sharer.php?u={{ include.url | absolute_url | cgi_escape }}&quote={{ include.title | cgi_escape }}"
-     title="Jaa Facebookissa" target="_blank">
-    <svg role="img" viewBox="0 0 24 24"><use xlink:href="{{ '/assets/images/icons.svg' | relative_url }}#facebook"/></svg></a>
+     title="Jaa Facebookissa" target="_blank" rel="noopener noreferrer nofollow">
+    <svg aria-label="Jaa Facebookissa" role="img" viewBox="0 0 24 24"><title lang="en">Facebook</title><use xlink:href="{{ '/assets/images/icons.svg' | relative_url }}#facebook"/></svg></a>
   <a href="https://twitter.com/intent/tweet?source={{ include.url | absolute_url | cgi_escape }}&text=:%20{{ include.title | cgi_escape }}"
-     target="_blank" title="Jaa Twitterissä">
-    <svg role="img" viewBox="0 0 24 24"><use xlink:href="{{ '/assets/images/icons.svg' | relative_url }}#twitter"/></svg></a>
+     target="_blank" rel="noopener noreferrer nofollow" title="Jaa Twitterissä">
+    <svg aria-label="Jaa Twitterissä" role="img" viewBox="0 0 24 24"><title lang="en">Twitter</title><use xlink:href="{{ '/assets/images/icons.svg' | relative_url }}#twitter"/></svg></a>
   <a href="https://pinterest.com/pin/create/button/?url={{ include.url | absolute_url | cgi_escape }}&description={{ include.title | cgi_escape }}"
-     target="_blank" title="Jaa Pinterestissä">
-    <svg role="img" viewBox="0 0 24 24"><use xlink:href="{{ '/assets/images/icons.svg' | relative_url }}#pinterest"/></svg></a>
+     target="_blank" rel="noopener noreferrer nofollow" title="Jaa Pinterestissä">
+    <svg aria-label="Jaa Pinterestissä" role="img" viewBox="0 0 24 24"><title lang="en">Pinterest</title><use xlink:href="{{ '/assets/images/icons.svg' | relative_url }}#pinterest"/></svg></a>
   <a href="https://www.reddit.com/submit?url={{ include.url | absolute_url | cgi_escape }}&title={{ include.title | cgi_escape }}"
-     target="_blank" title="Jaa Redditissä">
-    <svg role="img" viewBox="0 0 24 24"><use xlink:href="{{ '/assets/images/icons.svg' | relative_url }}#reddit"/></svg></a>
+     target="_blank" rel="noopener noreferrer nofollow" title="Jaa Redditissä">
+    <svg aria-label="Jaa Redditissä" role="img" viewBox="0 0 24 24"><title lang="en">Reddit</title><use xlink:href="{{ '/assets/images/icons.svg' | relative_url }}#reddit"/></svg></a>
   <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ include.url | absolute_url | cgi_escape }}&title={{ include.title | cgi_escape }}&source={{ site.url | cgi_escape }}"
-     target="_blank" title="Jaa LinkedInissä">
-    <svg role="img" viewBox="0 0 24 24"><use xlink:href="{{ '/assets/images/icons.svg' | relative_url }}#linkedin"/></svg></a>
+     target="_blank" rel="noopener noreferrer nofollow" title="Jaa LinkedInissä">
+    <svg aria-label="Jaa Linkedinissä" role="img" viewBox="0 0 24 24"><title lang="en">LinkedIn</title><use xlink:href="{{ '/assets/images/icons.svg' | relative_url }}#linkedin"/></svg></a>
   <a href="https://pinboard.in/add?url={{ include.url | absolute_url | cgi_escape }}&title={{ include.title | cgi_escape }}"
-     target="_blank" title="Talleta Pinboardiin">
-    <svg role="img" viewBox="0 0 24 24"><use xlink:href="{{ '/assets/images/icons.svg' | relative_url }}#pinboard"/></svg></a>
+     target="_blank" rel="noopener noreferrer nofollow" title="Talleta Pinboardiin">
+    <svg aria-label="Talleta Pinboardiin" role="img" viewBox="0 0 24 24"><title lang="en">Pinboard</title><use xlink:href="{{ '/assets/images/icons.svg' | relative_url }}#pinboard"/></svg></a>
 </span>
