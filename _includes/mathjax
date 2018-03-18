@@ -1,14 +1,23 @@
 <script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-    tex2jax: {
-      inlineMath: [['$', '$'], ['\\(', '\\)']],
-      displayMath: [['$$', '$$']],
-      processEscapes: true
-    }
-});
+ MathJax.Hub.Config({
+   tex2jax: {
+     inlineMath: [['$', '$'], ['\\(', '\\)']],
+     displayMath: [['$$', '$$']],
+     processEscapes: true
+   }
+ });
 </script>
-<script type="text/javascript" async
+<script
+  type="text/javascript" async
   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/MathJax.js?config=TeX-AMS_CHTML" 
   integrity="sha256-87vxs0LpMXPfEXOU/tm5FK/BUG7ubAS5LttSjQmJMEg="
-  crossorigin="anonymous"></script>
+  crossorigin="anonymous">
 </script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/fonts/HTML-CSS/TeX/woff/MathJax_Main-Regular.woff"
+      rel="preload" as="font" type="font/woff" crossorigin="anonymous">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/fonts/HTML-CSS/TeX/woff/MathJax_Size1-Regular.woff"
+      rel="preload" as="font" type="font/woff" crossorigin="anonymous">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/fonts/HTML-CSS/TeX/woff/MathJax_Math-Italic.woff"
+      rel="preload" as="font" type="font/woff" crossorigin="anonymous">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/fonts/HTML-CSS/TeX/woff/MathJax_Size2-Regular.woff"
+      rel="preload" as="font" type="font/woff" crossorigin="anonymous">
