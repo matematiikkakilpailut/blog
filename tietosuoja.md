@@ -59,8 +59,7 @@ esim. keskustelupalstalle kirjautumalla.
 Seuraavaa tietoa kerätään (mutta ei yhdistetä yksittäiseen henkilöön):
 
 * Päätelaitteen [IP-osoite][5], josta nähdään sijainti noin kaupungin
-  tarkkuudella; osoitteen viimeinen oktetti peitetään, jotta osoitteen
-  yhdistäminen henkilöön estyisi
+  tarkkuudella; [osoitteesta peitetään osa][6], jotta sen yhdistäminen henkilöön estyisi
 * Selailun ajankohta
 * Oletko käynyt sivuilla aiemmin
 * Selainversio
@@ -89,6 +88,7 @@ olevansa ihminen eikä automaatti.
 [3]: https://tools.google.com/dlpage/gaoptout
 [4]: https://support.cloudflare.com/hc/en-us/articles/200170156-What-does-the-CloudFlare-cfduid-cookie-do-
 [5]: https://fi.wikipedia.org/wiki/IP-osoite
+[6]: https://support.google.com/analytics/answer/2763052?hl=fi&ref_topic=2919631
 
 ## Kommentit
 
