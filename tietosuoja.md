@@ -15,7 +15,18 @@ Github-nimisen yrityksen palvelimille, jotka sijaitsevat tietääksemme
 Yhdysvalloissa. Yhteyksien suojaamiseen ja nopeuttamiseen käytetään
 Cloudflare-nimisen yrityksen palvelimia, joita on ympäri maailmaa. Kun
 luet sivuja, Github ja Cloudflare saavat välttämättä tiedon
-IP-osoitteestasi ja päätelaitteesi ominaisuuksista.
+IP-osoitteestasi ja päätelaitteesi ominaisuuksista. Nämä tiedot eivät
+välity meille muuten kuin tilastollisina koosteina, mutta Github ja
+Cloudflare pystyvät niitä käsittelemään.
+
+Githubilla on englanninkielinen [tietosuojalauseke][github].
+Cloudflarella on englanninkielinen [tietosuojalauseke][cf] ja EU:n ja
+Yhdysvaltain väliseen Privacy Shield -sopimukseen
+liittyvä [lauseke][cfps].
+
+[github]: https://help.github.com/articles/github-privacy-statement/
+[cf]: https://www.cloudflare.com/security-policy/
+[cfps]: https://www.cloudflare.com/privacyshield/
 
 ## Evästeet: analytiikka ja asiallisten käyttäjien tunnistus
 
