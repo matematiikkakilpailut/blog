@@ -15,5 +15,5 @@ $\lambda (n)$ on pienin kokonaisluku, jolla pätee ehto $a^\lambda(n) \equiv 1 \
 **Tehtävä**
 Osoita, että seuraavat ehdot ovat ekvivalentit.
 1. $ x^6 \equiv 1 \ (mod \ n) $ kaikilla $syt(x, n) = 1$
-2. $n | 504$
+2. $n$ jakaa luvun $504$
 
