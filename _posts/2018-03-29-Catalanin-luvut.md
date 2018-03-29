@@ -28,6 +28,7 @@ $$
 \frac{(2n)!}{n!n!} - \frac{(2n)!}{(n-1)!(n+1)!}
 = {2n  \choose n} - {2n \choose n+1}
 $$
+
 Ensimmäiset Catalanin luvut ovat (alkaen nollasta) $1, 1, 2, 5, 14, 42$. Catalanin luvut antavat vastauksia monenlaisiin kombinatorisiin ongelmiin. Perehdymme näistä vain yhteen, mikä on tärkein esimerkkitehtävän kannalta. Netistä löytyy paljon lisäinformaatiota ihan vain haulla "Catalan's numbers".
 
 **Kombinatorinen merkitys**
