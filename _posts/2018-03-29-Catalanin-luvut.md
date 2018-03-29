@@ -15,12 +15,13 @@ Taululle on kirjoitettu luku 1. Sen jälkeen taululle kirjoitetaan vaiheittain l
 
 $n$:nnes Catalanin luku määritellään kaavalla
 
-$$ C_n = \frac{{2n \choose n}}{n+1}, n = 0, 1, 2, \ldots $$
+$$
+C_n = {2n \choose n} \frac{1}{n+1} , n = 0, 1, 2, \ldots $$
 
 Tämä on aina positiivinen kokonaisluku, sillä
 
 
-$$ C_n = \frac{{2n \choose n}}{n+1} = \frac{(2n)!}{n!(n+1)!} = \frac{(2n)!}{n!n!} \Big( 1 - \frac{n}{n+1}    \Big ) =
+$$ C_n = {2n \choose n}\frac{1}{n+1} = \frac{(2n)!}{n!(n+1)!} = \frac{(2n)!}{n!n!} \Big( 1 - \frac{n}{n+1}    \Big ) =
 $$
 
 $$
@@ -110,10 +111,13 @@ Verrataan tätä ongelmaan $1$. Tutkitaan, miten vaiheen $2k$ ykköset syntyvät
 
 
 
-Sillä $C_k = \frac{{2k \choose k}}{k+1}$, voimme muodostaa rekursioyhtälöt $P$:lle
+Sillä
+$C_k = {2k \choose k}\frac{1}{k+1}$
+
+voimme muodostaa rekursioyhtälöt $P$:lle
 
 $$P(2k) = 2P(2k - 1)$$ ja
-$$P(2k + 1) = 2P(2k) - \frac{{2k \choose k}}{k+1}$$
+$$P(2k + 1) = 2P(2k) - {2k \choose k}\frac{1}{k+1}$$
 
 Nämä rekursioyhtälöt eivät kuitenkaan ole vastaus tehtävään. Vastaus tehtävään on kuitenkin helppo selvittää niiden avulla: voimme listata muutaman ensimmäisen luvun paperille ja arvata vastauksen. Lukujono näyttää tältä: $1, 1, 2, 3, 6, 10, 20, 35, 60$. Jos lukujonosta ottaa vain joka toisen luvun, se muuttuu muotoon $1, 2, 6, 20, 70$. Nämä ovat luvut ${2n \choose n}$, missä $n = 0, 1, \ldots $. Tämän avulla saamme viimeisteltyä tehtävän: ilmoitetaan vastaus ja todistetaan se induktiolla.
 
