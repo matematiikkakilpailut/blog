@@ -115,7 +115,7 @@ Verrataan tätä ongelmaan $1$. Tutkitaan, miten vaiheen $2k$ ykköset syntyvät
 Sillä
 $C_k = {2k \choose k}\frac{1}{k+1}$
 
-voimme muodostaa rekursioyhtälöt $P$:lle
+voimme muodostaa rekursioyhtälöt $P$:lle:
 
 $$P(2k) = 2P(2k - 1)$$
 
@@ -123,10 +123,9 @@ ja
 
 $$P(2k + 1) = 2P(2k) - {2k \choose k}\frac{1}{k+1}$$
 
-Nämä rekursioyhtälöt eivät kuitenkaan ole vastaus tehtävään. Vastaus tehtävään on kuitenkin helppo selvittää niiden avulla: voimme listata muutaman ensimmäisen luvun paperille ja arvata vastauksen. Lukujono näyttää tältä: $1, 1, 2, 3, 6, 10, 20, 35, 60$. Jos lukujonosta ottaa vain joka toisen luvun, se muuttuu muotoon $1, 2, 6, 20, 70$. Nämä ovat luvut ${2n \choose n}$, missä $n = 0, 1, \ldots $. Tämän avulla saamme viimeisteltyä tehtävän: ilmoitetaan vastaus ja todistetaan se induktiolla.
+Nämä rekursioyhtälöt eivät vielä ole vastaus tehtävään. Vastaus tehtävään on kuitenkin helppo selvittää niiden avulla: voimme listata muutaman ensimmäisen luvun paperille ja arvata vastauksen. Lukujono näyttää tältä: $1, 1, 2, 3, 6, 10, 20, 35, 60$. Jos lukujonosta ottaa vain joka toisen luvun, se muuttuu muotoon $1, 2, 6, 20, 70$. Nämä ovat luvut ${2n \choose n}$, missä $n = 0, 1, \ldots $. Tämän avulla saamme viimeisteltyä tehtävän: ilmoitetaan vastaus ja todistetaan se induktiolla. Ei ole vaikeaa veikata, että vastaus on:
 
 $$P(2k) = {2k \choose k}$$ ja $$P(2k + 1) = {2k + 1 \choose k}$$.
-
 
 
 Tämän todistaminen jätetään lukijalle. Todistus on helppoa algebrallista manipulaatiota ja rekursioyhtälöiden soveltamista.
