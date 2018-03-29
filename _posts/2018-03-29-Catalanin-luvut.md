@@ -8,9 +8,11 @@ math: true
 Tämän postauksen tavoite on selittää alkeet Catalanin luvuista. Seuraavan kilpailutehtävän (yksi) ratkaisu perustuu Catalanin lukujen ominaisuuksiin. Ratkaisu on esitetty lopussa.
 
 **Tehtävä (pohjoismainen, 2012, tehtävä 4)**
+
 Taululle on kirjoitettu luku 1. Sen jälkeen taululle kirjoitetaan vaiheittain lisää lukuja seuraavasti: kussakin vaiheessa jokainen taululla oleva luku $a$ korvataan luvuilla $a-1$ ja $a+1$; jos taululle ilmestyy luku 0, se pyyhitään pois. Jos jokin luku ilmestyy taululle useammin kuin kerran, kaikki esiintymät jätetään taululle. Siten vaiheessa 0 taululla on luku 1, vaiheessa 1 luku 2, vaiheessa 2 luvut 1 ja 3, vaiheessa 3 luvut 2, 2, ja 4 jne. Montako lukua taululla on vaiheessa n?
 
 **Catalanin lukujen määritelmä**
+
 $n$:nnes Catalanin luku määritellään kaavalla
 
 $$ C_n = \frac{{2n \choose n}}{n+1}, n = 0, 1, 2, \ldots $$
@@ -28,6 +30,7 @@ $$
 Ensimmäiset Catalanin luvut ovat (alkaen nollasta) $1, 1, 2, 5, 14, 42$. Catalanin luvut antavat vastauksia monenlaisiin kombinatorisiin ongelmiin. Perehdymme näistä vain yhteen, mikä on tärkein esimerkkitehtävän kannalta. Netistä löytyy paljon lisäinformaatiota ihan vain haulla "Catalan's numbers".
 
 **Kombinatorinen merkitys**
+
 Käsitellään seuraavanlaista ongelmaa:
 
 *Ongelma 1.*
@@ -61,16 +64,18 @@ Tiedämme siis, että $b_1 + b_2 + \ldots + b_{2n} = (b_1 + \ldots + b_{m-1}) + 
 Lukujono $b_1, b_2, \ldots b_{2n}$ kuvaakin siis operaation, jolla päästään aloitusluvusta $0$ lukuun $2$. Osoitetaan, että *jokaista* operaatiosarjaa, jolla päästään luvusta $0$ lukuun $2$ vastaa lukujono $b_i$, joka on saatu edellä kuvatulla tavalla jostain lukujonosta $a_i$.
 
 **Lemma**
+
 Olkoon $O$ niiden operaatiosarjojen joukko, joilla pääsemme luvusta $0$ lukuun $2$ lisäämällä aina lukuumme joko $1$ tai $-1$, yhteensä $2n$ kertaa. Olkoon $B$ edellä kuvatulla tavalla muodostettujen jonojen $b_i$ joukko. Joukot $O$ ja $B$ ovat samat.
 
 **Lemman todistus**
+
 On selvää, että jokainen $B$:n jono sisältyy joukkoon $O$. Todistetaan vielä, että jokainen joukon $O$ jono kuuluu joukkoon $B$.
 
-Valitaan jokin jono joukosta $O$, olkoon se $o_1, o_2, \ldots o_{2n}$. Pätee $o_1 + o_2 + \ldots + o_{2n} = 2$. Valitaan pienin $k$, jolla $o_1 + o_2 + \ldots + o_k > 0$. Vaihtamalla ensimmäiset $k$ termiä lukujonosta vastaluvukseen saamme lukujonon $o'_1, o'_2, \ldots o'_{2n}$. Tämän lukujonon termien summa on täten $0$, ja pätee
-$o'_1 + o'_2 + \ldots + o'_k = -1$
+Valitaan jokin jono joukosta $O$, olkoon se $o_1, o_2, \ldots o_{2n}$. Pätee $o_1 + o_2 + \ldots + o_{2n} = 2$. Valitaan pienin $k$, jolla $o_1 + o_2 + \ldots + o_k > 0$. Vaihtamalla ensimmäiset $k$ termiä lukujonosta vastaluvukseen saamme lukujonon $p_1, p_2, \ldots p_{2n}$. Tämän lukujonon termien summa on täten $0$, ja pätee
+$p_1 + p_2 + \ldots + p_k = -1$
 
-Lukujono $o'_1, o'_2, \ldots o'_{2n}$ kuvaa siis kelvottoman tavan päästä luvusta $0$ lukuun $0$ yhteensä $2n$ operaatiolla. Voimme täten valita pienimmän indeksin $i$, jolla pätee
-$o'_1 + o'_2 + \ldots o'_i < 0$, vaihtaa ensimmäisen $i$ termiä vastaluvukseen, ja näin saada lukujonon, joka kuuluu joukkoon $B$. Selvästi pätee $i = k$ (miksi?), eli tämä lukujono on sama kuin alkuperäinen lukujono $o_1, o_2, \ldots o_{2n}$. Siis alkuperäinen mielivaltainen joukon $O$ jono kuuluu joukkoon $B$. Tästä seuraa $O = B$.
+Lukujono $p_1, p_2, \ldots p_{2n}$ kuvaa siis kelvottoman tavan päästä luvusta $0$ lukuun $0$ yhteensä $2n$ operaatiolla. Voimme täten valita pienimmän indeksin $i$, jolla pätee
+$p_1 + p_2 + \ldots p_i < 0$, vaihtaa ensimmäisen $i$ termiä vastaluvukseen, ja näin saada lukujonon, joka kuuluu joukkoon $B$. Selvästi pätee $i = k$ (miksi?), eli tämä lukujono on sama kuin alkuperäinen lukujono $o_1, o_2, \ldots o_{2n}$. Siis alkuperäinen mielivaltainen joukon $O$ jono kuuluu joukkoon $B$. Tästä seuraa $O = B$.
 
 
 Mitä hyödymme tuloksesta? Tapojen määrä päästä luvusta $0$ lukuun $2$ on tietysti ${2n \choose n+1}$. Siispä kelpaavien tapojen määrä päästä luvusta $0$ lukuun $0$ on
@@ -78,6 +83,7 @@ Mitä hyödymme tuloksesta? Tapojen määrä päästä luvusta $0$ lukuun $2$ on
 $${2n \choose n} - {2n \choose n+1} = C_n$$
 
 **Ratkaisu esimerkkitehtävään**
+
 Esitetään nyt ratkaisu postauksen alussa esitettyyn tehtävään.
 
 Merkitään luvulla $P(n)$ lukujen määrää vaiheessa $n$, jolloin $P(0) = 1$, $P(1) = 1$, $P(2) = 2$, $P(3) = 3$, $P(4) = 6$, jne. Taululla olevat luvut ovat aina samaa parillisuutta, eli aluksi on vain parittomia, sitten parillisia, sitten parittomia, ja näin edespäin.
@@ -95,9 +101,11 @@ Määritetään $C(2k)$, kun $k = 0, 1, \ldots$ Listaamalla saadaan tulokset $1,
 
 
 **Lemma**
+
 $C(2k) = C_k$, missä $C_k$ on $k$:nnes Catalanin luku.
 
 **Todistus**
+
 Verrataan tätä ongelmaan $1$. Tutkitaan, miten vaiheen $2k$ ykköset syntyvät. Aloitamme luvusta $1$, ja voimme aina kasvattaa tai vähentää lukuamme yhdellä ($y$-akseli). Emme kuitenkaan saa mennä nollaan, sillä muuten luku pyyhitään pois. Jokaisella operaatiolla me myös menemme yhden operaation eteenpäin ($x$-akseli). Tämä on siis aivan vastaava tilanne kuin ongelmassa $1$. Täten $C(2k) = C_k$.
 
 
