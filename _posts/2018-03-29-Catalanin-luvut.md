@@ -36,7 +36,7 @@ Ensimmäiset Catalanin luvut ovat (alkaen nollasta) $1, 1, 2, 5, 14, 42$. Catala
 Käsitellään seuraavanlaista ongelmaa:
 
 *Ongelma 1.*
-Tutkitaan erilaisia tapoja päästä $xy$-tason pisteestä $(0, 0)$ pisteeseen $(2n, 0)$ seuraavin ehdoin:
+Tutkitaan erilaisia tapoja päästä $xy$-koordinaatiston pisteestä $(0, 0)$ pisteeseen $(2n, 0)$ seuraavin ehdoin:
   1. Jokaisella askeleella $x$-koordinaatti kasvaa yhdellä, ja $y$-koordinaatti joko kasvaa tai pienenee yhdellä
   2. $y$-koordinaatti ei koskaan ole negatiivinen
 
@@ -117,7 +117,10 @@ $C_k = {2k \choose k}\frac{1}{k+1}$
 
 voimme muodostaa rekursioyhtälöt $P$:lle
 
-$$P(2k) = 2P(2k - 1)$$ ja
+$$P(2k) = 2P(2k - 1)$$
+
+ja
+
 $$P(2k + 1) = 2P(2k) - {2k \choose k}\frac{1}{k+1}$$
 
 Nämä rekursioyhtälöt eivät kuitenkaan ole vastaus tehtävään. Vastaus tehtävään on kuitenkin helppo selvittää niiden avulla: voimme listata muutaman ensimmäisen luvun paperille ja arvata vastauksen. Lukujono näyttää tältä: $1, 1, 2, 3, 6, 10, 20, 35, 60$. Jos lukujonosta ottaa vain joka toisen luvun, se muuttuu muotoon $1, 2, 6, 20, 70$. Nämä ovat luvut ${2n \choose n}$, missä $n = 0, 1, \ldots $. Tämän avulla saamme viimeisteltyä tehtävän: ilmoitetaan vastaus ja todistetaan se induktiolla.
