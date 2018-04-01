@@ -3,6 +3,9 @@ layout: post
 title: "Carmichaelin funktio"
 author: "Olli Järviniemi"
 math: true
+excerpt: >
+  Carmichaelin funktio $\lambda$ määritellään niin, että $\lambda (p^k) = \phi(p^k)$ kaikilla parittomilla alkuluvuilla $p$ ja $k \ge 0$,
+  $\lambda (2^k) = 2^{k-2}$ kaikilla $k > 2$.
 ---
 
 <div class="hidden">

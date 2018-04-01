@@ -8,13 +8,12 @@ math: true
   <header class="post-header">
     <h1 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h1>
   </header>
-  <section class="post-content">
-    {{ post.content }}
+  <section class="post-excerpt">
+    {{ post.excerpt }}<div class="excerpt-continues"><a href="{{ post.url }}">Jatkuu…</a></div>
   </section>
   <footer class="post-footer">
     <p><time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%-d.%-m.%Y" }}<time>
       {% if post.author %} • {{ post.author }}{% endif %}{% if post.meta %} • {{ post.meta }}{% endif %}
-      {% include shares url=post.url title=post.title %}
     </p>
   </footer>
 </article>

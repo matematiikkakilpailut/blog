@@ -3,9 +3,10 @@ layout: post
 author: "Olli Järviniemi"
 title: "Catalan"
 math: true
+excerpt_separator: "<!--jatkuu-->"
 ---
 
-Tämän postauksen tavoite on selittää alkeet Catalanin luvuista. Seuraavan kilpailutehtävän (yksi) ratkaisu perustuu Catalanin lukujen ominaisuuksiin. Ratkaisu on esitetty lopussa.
+Tämän postauksen tavoite on selittää alkeet Catalanin luvuista. <!--jatkuu-->Seuraavan kilpailutehtävän (yksi) ratkaisu perustuu Catalanin lukujen ominaisuuksiin. Ratkaisu on esitetty lopussa.
 
 **Tehtävä (pohjoismainen, 2012, tehtävä 4)**
 

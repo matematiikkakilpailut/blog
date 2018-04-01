@@ -6,7 +6,7 @@ baseurl: "/"
 github:
   is_project_page: false
 lang: fi
-paginate: 3
+paginate: 20
 paginate_path: "/posts/:num/"
 plugins:
 - jekyll-feed
