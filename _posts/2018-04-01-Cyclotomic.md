@@ -12,9 +12,9 @@ Olkoon $n$ positiivinen kokonaisluku ja $\sigma(n)$ luvun $n$ tekijöiden summa
 
 1. Cyclotomic polynomials
     * tarvittavat tiedot löytyvät pdf:stä
-    http://web.evanchen.cc/handouts/ORPR/ORPR.pdf
+    [Cyclotomic polynomials](http://web.evanchen.cc/handouts/ORPR/ORPR.pdf)
 2. perustietämys lukuteoriasta
-    * tarvittavat tiedot löytyvät esimerkiksi pdf:stä https://matematiikkakilpailut.fi/kirjallisuus/tormayskurssi.pdf
+    * tarvittavat tiedot löytyvät esimerkiksi pdf:stä [Lukuteoria](https://matematiikkakilpailut.fi/kirjallisuus/tormayskurssi.pdf)
 
 **Tarkennusta cyclotomisista polynomeista**
 Tämä Evan Chenin moniste on aika haastava, mutta suosittelen vahvasti lukemista. Kerron kuitenkin nyt tässä ilman todistusta tässä ratkaisussa tarvittavat asiat.
