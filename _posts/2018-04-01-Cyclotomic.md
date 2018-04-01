@@ -4,10 +4,6 @@ author: "Valtteri Aurela"
 title: "Cyclotomisten polynomien soveltaminen valmennustehtävään"
 math: true
 ---
-<div class="hidden">
-$\newcommand{\gcd}{\mathop{\rm gcd}}$
-</div>
-
 **Tehtävä** _tammikuun valmennustehtävät, tehtävä 14_
 
 Olkoon $n$ positiivinen kokonaisluku ja $\sigma(n)$ luvun $n$ tekijöiden summa. Osoita, että on olemassa ääretön määrä positiivisia kokonaislukuja $n$, joille $n$ jakaa luvun $2^{\sigma(n)}-1$
