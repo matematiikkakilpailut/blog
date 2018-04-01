@@ -31,7 +31,7 @@ Kaikilla $n$ pätee  $\Phi_{2^n}(x)=x^{2^{n-1}}+1$
 
 Muunnetaan tehtävänannon $2^{\sigma(n)}-1$ muotoon. $\prod_{d|\sigma(n)}\Phi_d(2)$</br>
 Tekijöiden summan voi laskea  kaavalla
-$$\sigma(n) =\frac{{p_1}^{a_1+1}-1}{p_1-1} \frac{{p_2}^{a_2+1}-1}{p_2-1}\cdots \frac{{p_k}^{a_k+1}-1}{p_k-1}$$
+$$\sigma(n) =\frac{ {p_1}^{a_1+1}-1 }{p_1-1} \frac{ {p_2}^{a_2+1}-1 }{ p_2-1 }\cdots \frac{ {p_k}^{a_k+1}-1 }{ p_k-1 }$$
 </br>
 missä $p_i$ on $n$:n alkutekijä ja  $a_i$ on $p_i$:n exponentti saadaan
 Nyt katsotaan, mitä tapatuu kun syötämme tehtävään $n=3$
