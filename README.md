@@ -53,3 +53,56 @@ bundle exec jekyll serve
 [md]: https://commonmark.org/help/
 [math]: https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference
 [prose]: https://prose.io
+
+## Detaljeja
+
+### Tiivistelmät
+
+Kirjoitusten luetteloon tulee kirjoituksesta ote ensimmäiseen tyhjään
+riviin asti. Jos tämä ei edusta kirjoitusta sopivasti, on pari vaihtoehtoa:
+
+- lisää alkurivien joukkoon `excerpt_separator: "<!--jatkuu-->"` ja sijoita
+  sopivaan kohtaan kirjoitustasi merkkijono `<!--jatkuu-->`
+- lisää alkurivien joukkoon
+
+```
+excerpt: >
+  Tähän voit kirjoittaa sopivasti muotoillun tiivistelmän,
+  vaikka usealle riville jaettuna kunhan kaikkia rivejä on
+  sisennetty saman verran.
+```
+
+### Omat matemaattiset operaattorit
+
+Kaavoissa on tapana käyttää muuttujille kursiivia ja operaattoreille
+”tavallisia” kirjasimia. TeXissä ja MathJaxissa tavalliset peräkkäin
+kirjoitetut kirjaimet kuten ”pyj” tuottavat huonosti välistettyä
+kursiivitekstiä, jonka merkitys olisi että muuttujat <i>p</i>, <i>y</i> ja <i>j</i>
+kerrotaan keskenään. Parempia tapoja kirjoittaa ”pyj” on erilaisia,
+mutta kaikkein näppärin on ehkä määritellä omat `\pyj`- ja `\syt`-operaattorit:
+
+```
+<div class="hidden">
+$\newcommand{\pyj}{\mathop{\rm pyj}}\newcommand{\syt}{\mathop{\rm syt}}$
+</div>
+```
+
+Useille tavallisille funktioille määritelmät on tehty valmiiksi:
+`\sin`, `\cos`, `\tan`, `\log` jne.
+Kongruenssin modulin voi kirjoittaa näin: `$a^{\lambda(n)} \equiv 1 \pmod{n}$`.
+
+### Jakorelaatio
+
+Väittämä ”<i>a</i> jakaa <i>b</i>:n” lienee kätevintä kirjoittaa `$a \mid b$`.
+Tämän negaatio taas on `$a \nmid b$`.
+
+### Binomikertoimet ja jakoviivat
+
+TeXin syntaksi `{a \choose b}`, `{a \over b}` tuottaa vaikeuksia.
+Kirjoita mieluummin `\binom{a}{b}`, `\frac{a}{b}`.
+
+### Pienempi kuin
+
+Pienempi kuin -merkillä on erityismerkitys HTML:ssä ja siten Markdownissa.
+Sitä voi silti usein käyttää kaavoissa, mutta jos tulee ongelmia, kirjoita
+sen sijasta `\lt`.
