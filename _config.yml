@@ -16,3 +16,4 @@ plugins:
 staticman:
   branch: master
 google_analytics: UA-115938166-1
+exclude: [vendor]
