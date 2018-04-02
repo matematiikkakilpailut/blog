@@ -1,15 +1,25 @@
 language: ruby
 rvm: 2.5
 cache: bundler
-addons:
-  apt:
-    packages:
-    - libcurl4-openssl-dev
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
 install:
 - bundle install
 script:
-- bundle exec jekyll build --drafts
+- bundle exec jekyll build --config _config.yml,_config_travis.yml
 - bundle exec htmlproofer ./_site --disable-external --check-html --check-img-http --check-opengraph
+before_deploy:
+- (echo 'User-agent: *'; echo 'Disallow: /') > _site/robots.txt
+- echo blog-drafts.matematiikkakilpailut.fi > _site/CNAME
+deploy:
+  skip_cleanup: true
+  provider: pages
+  github-token: $GITHUB_TOKEN
+  keep-history: false
+  local-dir: _site
+  repo: blog-drafts
+  target-branch: gh-pages
+  fqdn: blog-drafts.matematiikkakilpailut.fi
+  on:
+    branch: master

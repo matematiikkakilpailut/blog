@@ -1,0 +1,3 @@
+url: "https://blog-drafts.matematiikkakilpailut.fi"
+show_drafts: true
+exclude: [vendor]
