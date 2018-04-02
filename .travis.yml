@@ -13,12 +13,13 @@ before_deploy:
 - "(echo 'User-agent: *'; echo 'Disallow: /') > _site/robots.txt"
 - echo blog-drafts.matematiikkakilpailut.fi > _site/CNAME
 deploy:
+  verbose: true
   skip_cleanup: true
   provider: pages
   github-token: $GITHUB_TOKEN
   keep-history: false
   local-dir: _site
-  repo: blog-drafts
+  repo: matematiikkakilpailut/blog-drafts
   target-branch: gh-pages
   fqdn: blog-drafts.matematiikkakilpailut.fi
   on:
