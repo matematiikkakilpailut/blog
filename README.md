@@ -40,7 +40,7 @@ Viimeisen rivin voit jättää pois, jos et käytä kaavoja.  Tämän
 alukkeen perään kirjoita artikkelisi Markdownilla.  Lähetä tiedosto
 Githubiin, odota muutama minuutti (seuraa tilannetta [Travisista][travis])
 ja kun uusin build on vihreänä, luonnoksen pitäisi löytyä valmiiden postausten
-yläpuolelta osoitteesta https://blog-drafts.matematiikkakilpailu.fi/posts/.
+yläpuolelta osoitteesta https://blog-drafts.matematiikkakilpailut.fi/posts/.
 Jos build on punaisena, sen lokitiedostoista saattaa löytyä virheilmoitus,
 joka kertoo mikä meni pieleen. Tätä iteroimalla voit korjata rauhassa
 mahdolliset muotoiluvirheet ennen julkaisua.
