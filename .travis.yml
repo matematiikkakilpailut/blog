@@ -10,7 +10,7 @@ script:
 - bundle exec jekyll build --config _config.yml,_config_travis.yml
 - bundle exec htmlproofer ./_site --disable-external --check-html --check-img-http --check-opengraph
 before_deploy:
-- (echo 'User-agent: *'; echo 'Disallow: /') > _site/robots.txt
+- "(echo 'User-agent: *'; echo 'Disallow: /') > _site/robots.txt"
 - echo blog-drafts.matematiikkakilpailut.fi > _site/CNAME
 deploy:
   skip_cleanup: true
