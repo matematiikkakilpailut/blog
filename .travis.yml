@@ -12,4 +12,4 @@ install:
 - bundle install
 script:
 - bundle exec jekyll build --drafts
-- bundle exec htmlproofer ./_site
+- bundle exec htmlproofer ./_site --disable-external --check-html --check-img-http --check-opengraph
