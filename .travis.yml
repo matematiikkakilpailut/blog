@@ -22,5 +22,7 @@ deploy:
   repo: matematiikkakilpailut/blog-drafts
   target-branch: gh-pages
   fqdn: blog-drafts.matematiikkakilpailut.fi
+  email: blogibotti@jouniseppanen.fi
+  name: Blogibotti
   on:
     branch: master
