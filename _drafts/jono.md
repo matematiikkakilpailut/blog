@@ -5,6 +5,7 @@ author: "Jouni Seppänen"
 math: true
 ---
 
+
 **Tehtävä:** On annettuna kuuden positiivisen kokonaisluvun
 aidosti kasvava jono, jossa jokainen luku toisesta alkaen on edellisen
 luvun monikerta ja jonka kaikkien lukujen summa on&nbsp;79. Mikä on jonon
