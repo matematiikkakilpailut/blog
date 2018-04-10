@@ -2,7 +2,7 @@
   <a href="https://www.facebook.com/sharer/sharer.php?u={{ include.url | absolute_url | cgi_escape }}&quote={{ include.title | cgi_escape }}"
      title="Jaa Facebookissa" target="_blank" rel="noopener noreferrer nofollow">
     <svg aria-label="Jaa Facebookissa" role="img" viewBox="0 0 24 24"><title lang="en">Facebook</title><use xlink:href="{{ '/assets/images/icons.svg' | relative_url }}#facebook"/></svg></a>
-  <a href="https://twitter.com/intent/tweet?source={{ include.url | absolute_url | cgi_escape }}&text=:%20{{ include.title | cgi_escape }}"
+  <a href="https://twitter.com/intent/tweet?url={{ include.url | absolute_url | cgi_escape }}&text={{ include.title | cgi_escape }}"
      target="_blank" rel="noopener noreferrer nofollow" title="Jaa Twitterissä">
     <svg aria-label="Jaa Twitterissä" role="img" viewBox="0 0 24 24"><title lang="en">Twitter</title><use xlink:href="{{ '/assets/images/icons.svg' | relative_url }}#twitter"/></svg></a>
   <a href="https://pinterest.com/pin/create/button/?url={{ include.url | absolute_url | cgi_escape }}&description={{ include.title | cgi_escape }}"
