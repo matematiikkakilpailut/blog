@@ -7,7 +7,7 @@ env:
 install:
 - bundle install
 script:
-- mkdir -p _site/posts && mv index.html _site/posts/
+- mkdir -p posts && mv index.html posts/
 - bundle exec jekyll build --config _config.yml,_config_travis.yml
 - bundle exec htmlproofer ./_site --disable-external --check-html --check-img-http --check-opengraph
 before_deploy:
