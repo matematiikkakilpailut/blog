@@ -3,6 +3,7 @@ layout: post
 author: "Olli Järviniemi"
 title: "Kiinatehtävä, osa 2"
 math: true
+excerpt_separator: "<!--jatkuu-->"
 ---
 
 Tässä postauksessa käsitellään seuraavan tehtävän ratkaisu:
@@ -11,6 +12,7 @@ Tässä postauksessa käsitellään seuraavan tehtävän ratkaisu:
 
 Olkoon $k$ positiivinen kokonaisluku. Osoita, että on olemassa sellainen positiivinen kokonaisluku $N$, niin että kaikilla $n \ge N$ luvulla ${n \choose k}$ on vähintään $k$ erisuurta alkutekijää.
 
+<!--jatkuu-->
 
 **Ratkaisu**
 Ohessa ratkaisu, joka on lähes suoraan ajatuskulkuni tehtävää ratkoessani. Tästä syystä ratkaisu sisältää joitakin "turhia" osioita. Ratkaisussa käytetään varsin yleistä ja hyödyllistä notaatiota: $v_p(n)$ on suurin $p$:n potenssi, joka jakaa luvun $n$. Toisin sanoen, $p^{v_p(n)} \mid n$, mutta $p^{v_p(n) + 1} \nmid n$.
