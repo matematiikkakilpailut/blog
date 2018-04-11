@@ -16,3 +16,5 @@ plugins:
 staticman:
   branch: master
 google_analytics: UA-115938166-1
+facebook:
+ app_id: 964806940344711
