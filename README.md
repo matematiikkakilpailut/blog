@@ -128,3 +128,8 @@ Kirjoita mieluummin `\binom{a}{b}`, `\frac{a}{b}`.
 Pienempi kuin -merkillä on erityismerkitys HTML:ssä ja siten Markdownissa.
 Sitä voi silti usein käyttää kaavoissa, mutta jos tulee ongelmia, kirjoita
 sen sijasta `\lt`.
+
+### Aaltosulkeet
+
+Jos joukon merkitseminen LaTeX-tyyliin `\{ ... \}` ei toimi, ratkaisu on
+`\lbrace ... \rbrace`.
