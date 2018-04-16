@@ -162,7 +162,7 @@ $$101, 10101, 1010101, \ldots $$
 
 Etsi kaikki kokonaislukukolmikot $(x, y, z)$, joille
 
-$$x^3 + y^3 + z^3 = 2003$$
+$$x^3 + y^3 + z^3 - 3xyz = 2003$$
 
 **Baltian tie -valintakoe 2017, tehtävä 4**
 
