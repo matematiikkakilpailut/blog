@@ -154,10 +154,12 @@ Siis ainoat ratkaisut alkuperäiseen tehtävään ovat $m = 0, 1, 2$.
 Tässä on pari tehtävää, joiden (yksi) ratkaisu perustuu paljolti tekijöihinjakoon (aika spoilaus).
 
 **Lukion matematiikkakilpailun loppukilpailu, 1999, tehtävä 3**
+
 Selvitä, montako alkulukua on jonossa
 $$101, 10101, 1010101, \ldots $$
 
 **Pohjoismainen 2003, tehtävä 2**
+
 Etsi kaikki kokonaislukukolmikot $(x, y, z)$, joille
 
 $$x^3 + y^3 + z^3 = 2003$$
