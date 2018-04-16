@@ -164,7 +164,7 @@ Etsi kaikki kokonaislukukolmikot $(x, y, z)$, joille
 
 $$x^3 + y^3 + z^3 - 3xyz = 2003$$
 
-**Baltian tie -valintakoe 2017, tehtävä 4**
+**Baltian tie -valintakoe 2016, tehtävä 4**
 
 Reaaliluvuille $a$, $b$, $c$ on voimassa
 
