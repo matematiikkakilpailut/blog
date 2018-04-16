@@ -5,7 +5,6 @@ title: "Tekijöihinjakoa"
 math: true
 ---
 
-$\newcommand{\syt}{\mathop{\rm syt}}$
 
 Tässä postauksessa tutustutaan erilaisten lausekkeiden jakamista tekijöihin.
 
@@ -96,7 +95,7 @@ Merkitään $x = 2^{2m + 1} - 2^{m+1} + 1$ ja $y = 2^{2m + 1} + 2^{m+1} + 1$.
 
 Ensinnäkin, $x, y > 1$ kaikilla $m > 0$. $m = 0$ on ratkaisu tehtävään. Sivutetaan se loppuratkaisun ajaksi.
 
- Huomataan, että $\syt(x, y) \mid y - x = 2^{2m+2}$. Mutta $x$ ja $y$ ovat parittomia, joten $\syt(x, y) = 1$. Siispä jos $a_m$ on jaollinen enintään kahdella erisuurella alkuluvulla, tulee sekä luvun $x$ että luvun $y$ olla alkuluvun potenssi.
+ Huomataan, että $\gcd(x, y) \mid y - x = 2^{2m+2}$. Mutta $x$ ja $y$ ovat parittomia, joten $\gcd(x, y) = 1$. Siispä jos $a_m$ on jaollinen enintään kahdella erisuurella alkuluvulla, tulee sekä luvun $x$ että luvun $y$ olla alkuluvun potenssi.
 
 Tutkimalla modulo $5$ saamme, että $a_m$ on aina jaollinen viidellä. Täten joko $x$ tai $y$ on jaollinen viidellä. Jaetaan ratkaisu kahteen osaan.
 
@@ -109,6 +108,7 @@ Tässä kohtaa ratkaisua käännytään ns. Lifting the Exponent Lemman (LTE) pu
 
  [Lifting The Exponent Lemma]( http://s3.amazonaws.com/aops-cdn.artofproblemsolving.com/resources/articles/lifting-the-exponent.pdf
    )
+   
 Osoite sisältää lauseen, todistuksen ja runsaasti harjoitustehtäviä. Sillä LTE on hyvin tärkeä, kirjoitan lauseen vielä tähän:
 
 **LTE**
