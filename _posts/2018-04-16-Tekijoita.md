@@ -174,6 +174,6 @@ Osoita, että $a$, $b$ ja $c$ ovat jonkin aritmeettisen jonon kolme peräkkäi
 
 **Valmennustehtävät 2017, huhti-toukokuu, tehtävä 14**
 
-Olkoot $a$, $b$ ja $c$ sellaisia reaalilukuja, ettei niistä minkään kahden summa ole nolla. Osoita, esitettyä
+Olkoot $a$, $b$ ja $c$ sellaisia reaalilukuja, ettei niistä minkään kahden summa ole nolla. Osoita, että
 
 $$\frac{a^5 + b^5 + c^5 - (a+b+c)^5}{a^3 + b^3 + c^3 - (a+b+c)^3} \ge \frac{10}{9}(a+b+c)^2$$
