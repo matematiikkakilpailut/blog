@@ -5,6 +5,8 @@ title: "Tekijöihinjakoa"
 math: true
 ---
 
+$\newcommand{\syt}{\mathop{\rm syt}}$
+
 Tässä postauksessa tutustutaan varsin pinnallisesti erilaisten lausekkeiden jakamista tekijöihin.
 
 Tekijöihin jakaminen on tärkeä taito kilpailumatematiikassa niin algebrallisten kuin lukuteoreettistenkin tehtävien parissa. Polynomien oletetaan olevan ennestään jo hieman tuttuja, ja kompleksilukujen perusominaisuudetkaan eivät ole pahitteeksi.
@@ -51,8 +53,7 @@ Merkitään $P(x, y, z) = $$5(x^3 + y^3 + z^3) + 12xyz - 3(x^2 + y^2 + z^2)(x+y+
 
 $$P(x, y, z) = (x + y - 2z)(x - 2y + z)(2x - y - z)Q(x, y, z)$$
 
-jollain polynomilla $Q$. Sillä $P$:n aste on $3$, ja yhtälön oikean puolen aste on $\deg(Q) + 3$, on $Q$ vakiopolynomi. On helppoa saada kokeilemalla, että $Q = 1$. Tehtävän viimeisteleminen ei liity enää käsiteltävään aiheeseen, ja jätetään lukijalle.
-
+jollain polynomilla $Q$. Sillä $P$:n aste on $3$, ja yhtälön oikean puolen aste on $\deg(Q) + 3$, on $Q$ vakiopolynomi. On helppoa saada kokeilemalla, että $Q = 1$. Tehtävän viimeisteleminen on helppoa, ja jätetään lukijalle.
 
 **Identiteetit**
 
@@ -64,7 +65,7 @@ $x^4 + y^4 = (x^2 + y^2)^2 - (\sqrt{2}xy)^2$
 
 Tämä on kahden neliön erotus, ja voidaan jakaa tekijöihin. Huomaa, että tekijöissä tulee olemaan $\sqrt{2}$ kertoimena, joten emme voi suoraan jakaa lauseketta tekijöihin kokonaisluvuissa.
 
-Toteamme siis, että $x^n \pm y^n$ **jakautuu aina tekijöihin, paitsi tapauksessa $x^2 + y^2$**. Nimittäin, jos luvulla $n$ on pariton alkutekijä, voimme ottaa tulontekijäksi $x+y$, ja jos $n$ on jaollinen neljällä, voimme käyttää tulohajotelmaa lausekkeelle $x^4 + y^4$. (Huomaa siis, että voimme kirjoittaa esimerkiksi $x^8 + y^8 = (x^2)^4 + (y^2)^4$, ja hoittaa tämän tekijlihin).
+Toteamme siis, että $x^n \pm y^n$ **jakautuu aina tekijöihin, paitsi tapauksessa $x^2 + y^2$**. Nimittäin, jos luvulla $n$ on pariton alkutekijä, voimme ottaa tulontekijäksi $x+y$, ja jos $n$ on jaollinen neljällä, voimme käyttää tulohajotelmaa lausekkeelle $x^4 + y^4$. (Huomaa siis, että voimme kirjoittaa esimerkiksi $x^8 + y^8 = (x^2)^4 + (y^2)^4$, ja jakaa tämän tekijöihin).
 
 
 Henkilökohtaisesti pidän seuraavista tekijöihinjaoista:
@@ -79,7 +80,7 @@ $$a^4 + 4b^4 = (a^2 + 2b^2)^2 - (2ab)^2 = (a^2 - 2ab + 2b^2)(a^2 + 2ab + 2b^2)$$
 
 **Esimerkki** (Valmennusviikonloppu 2017, helmikuu, Otte Heinävaaran lukuteoriamoniste, tehtävä 7)
 
-Etsi kaikki epänegatiiviset kokonaisluvut $m$, jolla
+Etsi kaikki epänegatiiviset kokonaisluvut $m$, joilla
 
 $$a_m = (2^{2m+1})^2 + 1$$
 
@@ -95,7 +96,7 @@ Merkitään $x = 2^{2m + 1} - 2^{m+1} + 1$ ja $y = 2^{2m + 1} + 2^{m+1} + 1$.
 
 Ensinnäkin, $x, y > 1$ kaikilla $m > 0$. $m = 0$ on ratkaisu tehtävään. Sivutetaan se loppuratkaisun ajaksi.
 
- Huomataan, että $syt(x, y) \mid y - x = 2^{2m+2}$. Mutta $x$ ja $y$ ovat parittomia, joten $syt(x, y) = 1$. Siispä jos $a_m$ on jaollinen enintään kahdella erisuurella alkuluvulla, tulee sekä luvun $x$ että luvun $y$ olla alkuluvun potenssi.
+ Huomataan, että $\syt(x, y) \mid y - x = 2^{2m+2}$. Mutta $x$ ja $y$ ovat parittomia, joten $\syt(x, y) = 1$. Siispä jos $a_m$ on jaollinen enintään kahdella erisuurella alkuluvulla, tulee sekä luvun $x$ että luvun $y$ olla alkuluvun potenssi.
 
 Tutkimalla modulo $5$ saamme, että $a_m$ on aina jaollinen viidellä. Täten joko $x$ tai $y$ on jaollinen viidellä. Jaetaan ratkaisu kahteen osaan.
 
@@ -104,7 +105,10 @@ Tutkimalla modulo $5$ saamme, että $a_m$ on aina jaollinen viidellä. Täten 
 Tulee olla $2^{2m + 1} - 2^{m+1} + 1 = 5^k$, eli
 $2^{m+1} (2^m - 1) = 5^k - 1$
 
-Tässä kohtaa ratkaisua käännytään ns. Lifting the Exponent Lemman (LTE) puoleen. Hyvä materiaali aiheesta löytyy osoitteesta http://s3.amazonaws.com/aops-cdn.artofproblemsolving.com/resources/articles/lifting-the-exponent.pdf
+Tässä kohtaa ratkaisua käännytään ns. Lifting the Exponent Lemman (LTE) puoleen. Hyvä materiaali aiheesta löytyy osoitteesta
+
+ [Lifting The Exponent Lemma]( http://s3.amazonaws.com/aops-cdn.artofproblemsolving.com/resources/articles/lifting-the-exponent.pdf
+   )
 Osoite sisältää lauseen, todistuksen ja runsaasti harjoitustehtäviä. Sillä LTE on hyvin tärkeä, kirjoitan lauseen vielä tähän:
 
 **LTE**
@@ -126,7 +130,8 @@ $v_2(5^k - 1) =  v_2(k) + 2 = m+1$. Täten, $k \ge 2^{m-1}$.
 Luvun $k$ tulee olla hyvin suuri, joten yhtälöllä ei ole kovin montaa ratkaisua. Tarkemmin,
 
 $5^k - 1 \ge 5^{2^{m-1}} - 1 \ge 5^{m+1} - 1 > 4^{m+1} - 1 > 2^{2m+1} - 1 > 2^{m+1}(2^m - 1)$
-kaikilla $m \ge 3$. Siis yhtälöllä voi olla ratkaisuja vain jos $m = 1$ tai $m = 2$. Sillä $m \equiv 0, 1 \pmod{4}$, tulee olla $m = 1$. Tämä tosiaan tarjoaa tehtävään ratkaisun, $a_1 = 65 = 5 \cdot 13$.
+kaikilla $m \ge 3$. Siis yhtälöllä voi olla ratkaisuja vain jos $m = 1$ tai $m = 2$.
+$m = 1$ on ratkaisu, ja niin myös $m = 2$, sillä $a_2 = 1025 = 5^2 \cdot 41$.
 
 **Tapaus 2. $y$ on viiden potenssi**
 Jos taas $y$ on luvun $5$ potenssi, on
@@ -135,7 +140,7 @@ $2^{2m+1} + 2^{m+1} + 1 = 5^k  $
 
 Voimme edetä tässä samalla tavalla kuin aiemmassakin tapauksessa. Emme saa täältä uusia ratkaisuja.
 
-Siis ainoat ratkaisut alkuperäiseen tehtävään ovat $m = 0, 1$.
+Siis ainoat ratkaisut alkuperäiseen tehtävään ovat $m = 0, 1, 2$.
 
 
 **Harjoitustehtäviä**
