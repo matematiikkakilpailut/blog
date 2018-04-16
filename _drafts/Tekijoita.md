@@ -7,7 +7,7 @@ math: true
 
 $\newcommand{\syt}{\mathop{\rm syt}}$
 
-Tässä postauksessa tutustutaan varsin pinnallisesti erilaisten lausekkeiden jakamista tekijöihin.
+Tässä postauksessa tutustutaan erilaisten lausekkeiden jakamista tekijöihin.
 
 Tekijöihin jakaminen on tärkeä taito kilpailumatematiikassa niin algebrallisten kuin lukuteoreettistenkin tehtävien parissa. Polynomien oletetaan olevan ennestään jo hieman tuttuja, ja kompleksilukujen perusominaisuudetkaan eivät ole pahitteeksi.
 
