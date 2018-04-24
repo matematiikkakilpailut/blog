@@ -1,76 +1,96 @@
 ---
 layout: post
 author: "Olli Järviniemi"
-title: "Kiinatehtävä, osa 2"
+title: "Kiinatehtävä, osa 3"
 math: true
 excerpt_separator: "<!--jatkuu-->"
 ---
 
+
 Tässä postauksessa käsitellään seuraavan tehtävän ratkaisu:
 
-**Kiinan IMO-joukkueen valintakoe 5, 2010, tehtävä 3**
+**Kiinan IMO-joukkueen valintakoe 2, 2015, tehtävä 6**
 
-Olkoon $k$ positiivinen kokonaisluku. Osoita, että on olemassa sellainen positiivinen kokonaisluku $N$, niin että kaikilla $n \ge N$ luvulla ${n \choose k}$ on vähintään $k$ erisuurta alkutekijää.
+Osoita, että on olemassa äärettömän monta $n \in \mathbb{Z_+}$ joilla $n^2 + 1$ ei ole jaollinen millään alkuluvun neliöllä (engl. squarefree)
 
 <!--jatkuu-->
 
 **Ratkaisu**
-Ohessa ratkaisu, joka on lähes suoraan ajatuskulkuni tehtävää ratkoessani. Tästä syystä ratkaisu sisältää joitakin "turhia" osioita. Ratkaisussa käytetään varsin yleistä ja hyödyllistä notaatiota: $v_p(n)$ on suurin $p$:n potenssi, joka jakaa luvun $n$. Toisin sanoen, $p^{v_p(n)} \mid n$, mutta $p^{v_p(n) + 1} \nmid n$.
 
-
-Tehdään yksinkertaisuuden vuoksi sijoitus $n = m + k$. Nyt, tutkittavana on luku
-
-$$\frac{(m+k)(m+k-1)\ldots (m+1)}{k!} $$
-
-Jos tällä luvulla on alle $k$ erisuurta alkutekijää, tulee yhtälön
-
-$$(m+k)(m+k-1)\ldots (m+1) = k! p_1^{a_1}p_2^{a_2} \ldots p_{k-1}^{a_{k-1}}  \ (1) $$
-
-päteä jollain alkuluvuilla $p_i$ ja epänegatiivisilla kokonaisluvuilla $a_i$. Alkuperäinen tehtävänanto on ekvivalentti seuraavan väitteen kanssa:
-
-Yhtälöllä $(1)$ on ratkaisu vain äärellisen monella $m$.
-
-On suhteellisen helppoa huomata, että yhtälöllä ei ole kovin montaa ratkaisua, jos $p_i > k$ kaikilla $i$. Tämä johtuu seuraavasta havainnosta:
-
-Jos $p_i \mid m + a$ ja $p_i \mid m + b$, niin $p_i \mid a - b$.
-
-Siis jos kaikki $p_i$:t olisivat suuria, tulisi olla olemassa jokin $a$, jolla $p_i \nmid m + a$ kaikilla $i$. Tämän seurauksena luvulla $m + a$ ei tule olla mitään lukua $k$ suurempia alkutekijöitä, sillä muuten jokin alkuluku $p > k$, $p \neq p_i$ jakaisi yhtälön $(1)$ vasemman puolen, muttei oikeaa. Samoin nähdään myös, että jos $p \mid m + a$, niin $p$:n eksponentin tulee olla enintään $v_p(k!)$. Täten tulee olla $m + a \le k!$, eli $m \le k!$.
-
-Mutta entä sitten, jos $p_i \le k$ jollain $i$? Voisimme silti yrittää soveltaa aiemmin esitettyä ideaa: osoitimme aiemmin, että on olemassa jokin $a$, jolla $p_i \nmid m + a$ kaikilla $i$. Nyt emme pysty aivan samaan, mutta huomaamme kuitenkin, että kovin suuri $p_i$:n potenssi ei voi jakaa lukua $m + a$, kaikilla $a$, jollain $i$. Paremmin muotoiltuna:
+On luonnollista tutkia, milloin väite ei päde, eli milloin pätee
+$n^2 + 1 \equiv 0 \pmod{p^2}$ jollain alkuluvulla $p$. Tämä tietysti vaatii, että $n^2 + 1 \equiv 0 \pmod{p}$, eli $p \equiv 1 \pmod{4}$. Tämä ei kuitenkaan vielä anna riittävästi tietoa: ensinnäkin, onko jokaisella $p \equiv 1 \pmod{4}$ olemassa ratkaisu kongruenssiyhtälölle $x^2 + 1 \equiv 0 \pmod{p^2}$, ja toisekseen, kuinka monta (keskenään epäkongruenttia) ratkaisua yhtälöllä on? Nämä kysymykset ovat helppoja vastata:
 
 **Lemma 1**
-
-On olemassa jokin $a$ jolla pätee seuraava väite: $p_i^c \nmid m + a$ kaikilla $i$, jollain luvusta $k$ riippuvalla vakiolla $c$.
-
-Tämän väitteen todistus on suhteellisen intuitiivinen.
+Kongruenssiyhtälöllä $x^2 + 1 \equiv 0 \pmod{p^2}$ on täsmälleen kaksi keskenään epäkongruenttia ratkaisua kaikilla alkuluvuilla $p \equiv 1 \pmod{4}$
 
 **Todistus**
-Olkoon $p \in \lbrace p_1, p_2, \ldots , p_{k-1} \rbrace $. Olkoon $m + b$ se luku joukosta $\lbrace m+1, m+2, \ldots , m+k \rbrace $ jolla $v_p(m + b)$ on maksimaalinen (jos vaihtoehtoja on monta, valitaan mikä vain). Tällaisia $b$ on yhteensä enintään $k-1$, kun $p$ käy läpi kaikki joukon $\lbrace p_1, \ldots , p_{k-1} \rbrace $ alkuluvut. Täten on olemassa jokin luku $a$, jolla $m + a$ ei ole millään $p \in \lbrace p_1, p_2 \ldots , p_{k-1} \rbrace $ tällainen maksimaalinen luku.
+Kirjoitetaan $x = pk + y$, missä $0 \le k < p$ ja $0 \le y < p$ ovat muuttujia. Yhtälö muuttuu muotoon
+
+$2pk + y^2 + 1 \equiv 0 \pmod{p^2}$
+
+Saamme luotua kaksi ratkaisua: valitaan $y$ niin, että $y^2 \equiv -1 \pmod{p}$ (tämä on mahdollista). Kirjoitetaan $pt = y^2 + 1$ Nyt tulee enää valita $k$ niin, että $2pk + pt \equiv 0 \pmod{p^2}$, eli $k \equiv \frac{-t}{2} \pmod{p}$. Sillä $y$:lle on kaksi eri vaihtoehtoa, myös $x$:lle on kaksi eri vaihtoehtoa.
+
+Todistetaan sitten, että useampaa ratkaisua ei ole. Olkoon $f(x) = x^2$. Oletetaan, että $f(a) \equiv f(b) \equiv -1 \pmod{p^2}$. Pyritään todistamaan, että $a \equiv \pm b \pmod{p^2}$. Lemman tulos seuraa tästä.
+
+Pätee $0 \equiv f(a) - f(b) \equiv a^2 - b^2 \equiv (a-b)(a+b) \pmod{p^2}$
+
+Jos $p^2 \mid a - b$, väite pätee, samoin jos $p^2 \mid a + b$. Voiko päteä $p \mid a - b$ ja $p \mid a + b$? Ei, sillä tästä seuraisi $p \mid 2a$, eli $p \mid a$. Mutta oletimme $f(a) \equiv -1 \pmod{p^2}$, joten tämä on ristiriita.
+
+**Huomautus**
+Tarvitsemme lemmasta vain osuutta "enintään kaksi ratkaisua".
 
 
-Pidetään $p$ vakiona. Merkitään $v_p(m + b) = t$. Pyritään nyt saamaan jokin yläraja luvulle $v_p(m + a)$, $a \neq b$.
+Tehtävänannon väite seuraa nyt helpolla todennäköisyysargumentilla: jos valitsemme satunnaisen positiivisen kokonaisluvun $n$ (jotta tämä olisi formaalia, tulisi $n$ valita väliltä $[1, N]$, missä $N$ on suuri. Yksityiskohtainen tarkastelu sivuutetaan tässä), kuinka suurella todennäköisyydellä $n$ on jaollinen jollain alkuluvun neliöllä? Todennäköisyys on enintään
+$\frac{2}{5^2} + \frac{2}{13^2} + \frac{2}{17^2} + \cdots$
+missä summa käy läpi kaikki alkuluvut $p \equiv 1 \pmod {4}$. Kuinka suuri tämä summa oikein on? Summaa voi approksimoida käyttäen tunnettua yhtälöä
 
-Mikä on niiden lukujen määrä välillä $[m+1, m+k]$ joiden tekijänä on luku $p^u$, missä $u \le t$ on vakio? Tämä määrä on tietysti enintään $\lceil \frac{k}{p^u} \rceil$. Jos jätämme huomiotta luvun $n + b$, on näiden lukujen määrä enintään $\lfloor \frac{k}{p^u} \rfloor \le \frac{k}{p^u}$. Siispä, pätee
+$$\frac{1}{1^2} + \frac{1}{2^2} + \frac{1}{3^2} + \cdots = \frac{\pi ^2}{6}$$
 
-$$v_p((m+1)(m+2) \ldots (m+b-1)(m+b+1)\ldots (m+k)) \le  $$
+(Toisaalta, myös lukioanalyysin keinoin saa tehtävään tarpeeksi hyviä rajoja)
+Täten, todennäköisyys sille, että satunnaisesti valittu $n$ ei toteuta tehtävänannon ehtoa on $S = \frac{2}{5^2} + \frac{2}{13^2} + \cdots < 2(\frac{\pi ^2}{6} - 1 - \frac{1}{2^2} - \frac{1}{3^2}) < 2(\frac{10}{6} - 1 - \frac{1}{4} - \frac{1}{9}) = 2(\frac{7}{12} - \frac{1}{9}) < 1$
 
-$$\frac{k}{p} + \frac{k}{p^2} + \ldots + \frac{k}{p^u} \le \frac{k}{p-1}$$
+Siis on olemassa äärettömän monta halutunlaista lukua $n$.
 
-Tässä ensimmäinen epäyhtälö seurasi aiemmasta päättelystä luvun $p$ potenssien esiintymisestä välin $[m+1, m+k]$ lukujen tekijöinä, ja jälkimmäinen epäyhtälö seurasi geometrisen summan kaavasta.
+**Yleistys**
+Tutkitaan nyt, miten seuraavan väite voidaan todistaa:
 
-Tästä seuraa, että lemman halutuksi vakioksi $c$ kelpaa $k+1$, sillä $p \ge 2$ kaikilla alkuluvuilla $p$.
+Olkoon annettu $k \in \mathbb{Z_+}$ ja $t \in \mathbb{Z}$, $t \neq 0$. On olemassa äärettömän monta positiivista kokonaislukua $n$, jolla $n^k + t$ ei ole jaollinen millään alkuluvun neliöllä.
 
-**Ratkaisun viimeistely**
-Tutkitaan nyt lukua $m + a$. Se ei voi olla enää kovin suuri: se ei ole jaollinen millään alkuluvulla, joka olisi suurempaa kuin $k$. Lemman nojalla se ei myöskään ole jaollinen kovin suurilla alkuluvun potensseilla. Tarkemmin:
+**Ratkaisu**
+Yleistys ratkeaa samankaltaisella idealla kuin alkuperäinen tehtävä. Muodostetaan ensin lemmaa 1 vastaava tulos.
 
- Olkoon $p$ jokin alkuluku väliltä $[1, k]$. Mikä on sen suurin mahdollinen potenssi $p^u$ joka jakaa luvun $m + a$?
-Tutkitaan erikseen kahta tapausta
+**Lemma 2**
+Yhtälöllä $x^k \equiv -t \pmod{p^2}$ on enintään $k$ ratkaisua, olettaen että $p \nmid k$ ja $p \nmid t$.
 
-1. $p \in \lbrace p_1, p_2, \ldots p_{k-1} \rbrace $.
-Lemman nojalla pätee $u \le k$.
+**Todistus**
+Kirjoitetaan $x = py + z$. Binomilauseen nojalla pätee
 
-2. $p$ ei kuulu joukkoon $\lbrace p_1, p_2, \ldots p_{k-1} \rbrace$ Tällöin suurin $p$:n potenssi, joka jakaa yhtälön $(1)$ vasemman puolen on sama kuin suurin potenssi, joka jakaa yhtälön oikean puolen. Tämä on $v_p(k!) \le k$.
+$kpyz^{k-1} + z^k \equiv -t \pmod{p^2}$.
 
-Siis $v_p(m+a) \le k$ kaikilla $p \in [1, k]$.
+Tästä seuraa, että $z^k \equiv -t \pmod{p}$. Kirjoitetaan $z^k + t = pm$. Nyt,
 
-Täten, $m + a \le 1^k \cdot 2^k \cdot 3^k \cdot \ldots \cdot k^k = k!^k$. Tämä pätee kaikilla ratkaisuilla $m$. Olemme näin ollen saaneet ylärajan luvulle $m$, jos haluamme, että luvulla ${m + k \choose k}$ on alle $k$ alkutekijää. Tämä todistaa väitteen.
+$kpyz^{k-1} + z^k + t \equiv p(kyz^{k-1} + m) \equiv 0 \pmod{p^2}$, eli $kyz^{k-1} + m \equiv 0 \pmod{p}$. Voimme ratkaista tästä $y$:n, eli $y$:lle on täsmälleen yksi mahdollinen arvo. Tämä onnistuu niin, että vähennetään $m$ toiselle puolelle, ja jaetaan yhtälö puolittain luvulla $p$ jaottomalla luvulla $kz^{k-1}$.
+
+Siis jokainen $z$ antaa yhden ratkaisun. Lagrangen lauseen nojalla yhtälöllä $z^k \equiv -t \pmod{p}$ on vain $k$ erisuurta ratkaisua.
+
+
+Lemmasta 2 seuraa, että jos $p > k, t$, niin yhtälöllä $x^k \equiv -t \pmod{p^2}$ on enintään $k$ ratkaisua. Muutoin yhtälöllä on enintään $p^2$ ratkaisua.
+
+Valitaan satunnaisesti positiivinen kokonaisluku $n$ (jälleen kerran pitäisi valita joltain mielivaltaisen suurelta väliltä $[1, N]$, mutta ei juututa tähän). Todennäköisyys sille, että $n^k + t$ on jaollinen jonkin alkuluvun neliöllä on enintään
+
+$\sum\limits_{p=1}^{\max(k, t)} \frac{p^2}{p^2} + \sum\limits_{\max(k, t) + 1}^{\infty} \frac{k}{p^2}$
+
+Oleellista tästä on havaita, että summa suppenee: summan ensimmäisessä osassa on vain äärellisen monta termiä, ja jälkimmäinen osa on varmasti alle $\frac{k \pi^2}{6}$. Summa voi kuitenkin olla suurempaa kuin $1$, joten emme ole vielä valmiit.
+
+Voimme pienetää epävalidin $n$:n valitsemisen todennäköisyyttä kiinalaisella jäännöslauseella. Teemme seuraavasti:
+
+Kaikille "pienille" $p$ valitsemme $n \equiv a \pmod{p^2}$, missä $a$ on sellainen, että $a^k + t$ ei ole jaollinen luvulla $p^2$. Tällainen $a$ on olemassa, miksi? Oletetaan, että tällaista $a$:ta ei olisi, tai siis, $n^k + t \equiv 0 \pmod{p^2}$ kaikilla $n$. Täten, valitsemalla $n \equiv 0 \pmod{p^2}$ saamme $t \equiv 0 \pmod{p^2}$. Mutta tällöin $1^k + t \equiv 1 \pmod{p^2}$ ei ole jaollinen luvulla $p^2$.
+
+
+Olemme nyt valinneet $n \equiv A \pmod{B}$ jollain $A$ ja $B$. Valitaan $n$ satunnaisesti niin, että se toteuttaa tämän ehdon. Millä todennäköisyydellä $n$ ei toteuta tehtävänannon ehtoa? Valitsemalla $n$:n niin, että $p^2$ ei jaa lukua $n^k + t$ millään $p \le max(k, t)$ saamme epäonnistumiselle maksimitodennäköisyyden
+
+$\sum\limits_{p=\max(k, t) + 1}^{\infty} \frac{k}{p^2}$
+
+Voimme edelleen pienentää epäonnistumisen todennäköisyyttä: valitaan $n$ sopivasti modulo $p^2$, missä $p > \max(k, t)$. Näin voimme pienentää epäonnistumisen todennäköisyyden mielivaltaisen pieneksi (tämä on intuitiivista. Jos ei usko, voi integroida funktiota $f(x) = \frac{k}{x^2}$ väliltä $[N, \infty[$ ja huomata, että vastaus on alle $1$ kaikilla tarpeeksi suurilla $N$. Tämä todistaa väitteen).
+
+Voimme siis valita äärettömän monta positiivista kokonaislukua $n$, jolla $n^k + t$ on neliövapaa.
