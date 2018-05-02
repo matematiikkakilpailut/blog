@@ -42,7 +42,7 @@ Olkoon $M$ ei-rajoitettu joukko kokonaislukuja, jolla on $P$-ominaisuus. Olkoon 
 
 Huomaa, että lukujonolla $b_t$ ei tarvitse olla $P$-ominaisuutta.
 
-Asettamalla $M = \{a_1, a_2, a_3, \ldots \}$ ja $b_t = 1$ kaikilla $t \in M$ saamme aiemmin esitetyn heikomman version lauseesta.
+Asettamalla $M = \lbrace a_1, a_2, a_3, \ldots \rbrace$ ja $b_t = 1$ kaikilla $t \in M$ saamme aiemmin esitetyn heikomman version lauseesta.
 
 
 
