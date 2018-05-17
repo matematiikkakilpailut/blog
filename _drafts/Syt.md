@@ -3,6 +3,7 @@ layout: post
 author: Olli Järviniemi
 title: "Syt-kikka"
 math: true
+
 ---
 
 Tässä postauksessa käsitellään ns. syt-kikka, eli miten muotoa $a^n \equiv b^n \pmod{m}$ olevasta yhtälöstä voi ottaa juuren tietyin ehdoin.
