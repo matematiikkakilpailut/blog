@@ -1,0 +1,105 @@
+----
+layout: post
+author: Olli Järviniemi
+title: "Syt-kikka"
+math: true
+---
+
+Tässä postauksessa käsitellään ns. syt-kikka, eli miten muotoa $a^n \equiv b^n \pmod{m}$ olevasta yhtälöstä voi ottaa juuren tietyin ehdoin.
+
+
+**Lemma (syt-kikka)**
+
+Olkoon $a^n \equiv b^n \pmod{m}$ sekä $a^k \equiv b^k \pmod{m}$, missä $a, b, k, n \in \mathbb{Z}$, ja $syt(a, m) = syt(b, m) = 1$. Nyt pätee
+
+$$a^{syt(n, k)} \equiv b^{syt(n. k)} \pmod{p}$$
+
+**Todistus**
+
+Olkoon $d = syt(n, k)$. Bezout'n lemman nojalla $d$ voidaan kirjoittaa muodossa $xn + yk$, missä $x, y \in \mathbb{Z}$. Korottamalla yhtälön $a^n \equiv b^n \pmod{m}$ potenssiin $x$, yhtälön $a^k \equiv b^k \pmod{m}$ potenssiin $y$, ja kertomalla yhtälöt keskenään saamme halutun väitteen.
+
+**Huomautus**
+
+Jotta negatiiviset eksponentit ovat määritelty, tulee ehdon $syt(a, m) = syt(b, m) = 1$ päteä.
+
+**Korollaari**
+
+Olkoon $a^n \equiv b^n \pmod{m}$, missä $syt(a, m) = syt(b, m) = 1$. Pätee
+
+$$a^{syt(n, \phi(m))} \equiv b^{syt(n, \phi(m))} \pmod{m}$$
+
+Erityisesti, jos $syt(n, \phi(m)) = 1$, pätee $a \equiv b \pmod{m}$.
+
+Korollaari mahdollistaa juuren ottamisen tietyin ehdoin. Lemma ja korollaari voivat olla hyödyllisiä myös siinä tapauksessa kun $b = 1$, eli tutkimme yhtälöä $a^n \equiv 1 \pmod{m}$
+
+**Esimerkkitehtävä (IMO, 1999, T4)**
+Määritä kaikki positiivisten kokonaislukujen parit $(p, n)$, joilla pätee ehdot
+
+$p$ on alkuluku
+
+$n \le 2p$
+
+$n^{p-1} \mid (p-1)^n + 1$
+
+**Ratkaisu**
+
+$n = 1$ on ratkaisu kaikille $p$. Oletetaan $n > 1$.
+
+Jos $p = 2$, niin $n = 1$ tai $n = 2$. Oletetaan $p > 2$.
+
+Selvästi $n$ on pariton, ja $syt(p-1, n) = 1$. Olkoon $q$ luvun $n$ pienin alkutekijä.  Pätee
+$(p-1)^n \equiv -1 \pmod{q}$, joten
+
+$$(p-1)^{2n} \equiv 1 \pmod{q}$$
+
+Fermat'n pienen lauseen nojalla pätee (ottaen huomioon $syt(p-1, q) = 1$)
+
+$$(p-1)^{q-1} \equiv 1 \pmod{q}$$
+
+Sillä $q$ on luvun $n$ pienin alkutekijä, on $syt(q-1, n) = 1$, joten $syt(q-1, 2n) = 2$. Syt-kikan nojalla pätee
+
+$$(p-1)^2 \equiv 1 \pmod{q}$.
+
+Tämä tarkoittaa, että $q \mid p(p-2)$.
+
+Jos $q \mid p-2$, saamme aikaan ristiriidan: aiemmin totesimme $(p-1)^n \equiv -1 \pmod{q}$. Tällöin olisi $1 \equiv -1 \pmod{q}$, mikä on mahdotonta luvun $n$ ollessa pariton.
+
+Täten $q \mid p$. Siispä $q = p$, ja $q \mid n, joten $n = p$ tai $n = 2p$. Sillä $n$ on pariton, on $n = p$.
+
+Enää tulee siis ratkaista, milloin $p^{p-1} \mid (p-1)^p + 1$. Tämä onnistuu helposti $LTE$:n avulla:
+
+$v_p((p-1)^p + 1) = v_p((p-1)^p - (-1)^p) = v_p(p-1 - (-1))  + v_p(p) = 2$. Siis tulee olla $p - 1 \le 2$, joten $p \le 3$. Tästä saamme ratkaisun: $p = n = 3$.
+
+**Huomautus** Idea siitä, että tutkitaan jonkin luvun pienintä alkutekijää ei ole äärimmäisen harvinainen.
+
+
+**Esimerkkitehtävä (Anne-Maria Ernvall-Hytösen lukuteoriamoniste, IMO-valintaleiri, 2018)**
+
+Osoita, että yhtälöllä
+
+$\lbrace x^3 \rbrace + \lbrace y^3 \rbrace = \lbrace z^3 \rbrace $
+
+on äärettömän monta ratkaisua $(x, y, z)$, missä $x, y, z$ ovat rationaalisia mutteivat kokonaislukuja.
+
+**Ratkaisu**
+
+Valitaan $x = \frac{a}{5}$, $y = \frac{b}{5}$, $z = \frac{c}{5}$. Tehtävä palautuu siihen, että haluamme löytää kokonaisluvut $a, b, c$, joilla
+
+$$a^3 + b^3 \equiv c^3 \pmod{5^3}$$
+
+ja $5 \nmid abc$, ja lukujen $a^3$, $b^3$ jakojäännösten summa jaettaessa luvulla $5^3$ on pienempi kuin luvun $c^3$ jakojäännös.
+
+Sillä $syt(3, \phi(5^3)) = syt(3, 100) = 1$, on funktio $f(x) = (x^3 \pmod{5^3})$, $f : A \to A$ injektiivinen, missä $A$ on kaikkien lukujen $a$ joukko, joilla $5 \nmid a$, $0 \le a < 5^3$. Funktio äärelliseltä joukolta itselleen on selvästi injektiivinen joss se on surjektio (miksi?).
+
+Täten on olemassa jotkin $a, b, c$, joilla $a^3 \equiv 1 \pmod{5^3}$, $b^3 \equiv 2 \pmod{5^3}$ ja $c^3 \equiv 3 \pmod{5^3}$. Lisäksi nämä ehdot toteuttavia lukuja on äärettömän monta. Olemme näin ollen todistaneet, että tehtävänannon yhtälöllä on äärettömän monta ratkaisua.
+
+
+**Harjoitustehtäviä**
+
+Määritä kaikki $n \in N$ joilla $n \mid 2^n - 1$
+
+**(Kiina 1999, kansallisen kilpailun finaali, tehtävä 4)**
+
+Olkoon $m$ positiivinen kokonaisluku. Osoita, että on olemassa kokonaisluvut $a, b, k$ niin, että $a$ ja $b$ ovat parittomia, $k \ge 0$, ja
+
+$$2m = a^{19} + b^{99} + k \cdot 2^{1999}$$
