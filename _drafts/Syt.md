@@ -69,7 +69,7 @@ Tämä tarkoittaa, että $q \mid p(p-2)$.
 
 Jos $q \mid p-2$, saamme aikaan ristiriidan: aiemmin totesimme $(p-1)^n \equiv -1 \pmod{q}$. Tällöin olisi $1 \equiv -1 \pmod{q}$, mikä on mahdotonta luvun $n$ ollessa pariton.
 
-Täten $q \mid p$. Siispä $q = p$, ja $q \mid n, joten $n = p$ tai $n = 2p$. Sillä $n$ on pariton, on $n = p$.
+Täten $q \mid p$. Siispä $q = p$, ja $q \mid n$, joten $n = p$ tai $n = 2p$. Sillä $n$ on pariton, on $n = p$.
 
 Enää tulee siis ratkaista, milloin $p^{p-1} \mid (p-1)^p + 1$. Tämä onnistuu helposti $LTE$:n avulla:
 
