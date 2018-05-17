@@ -71,7 +71,7 @@ Jos $q \mid p-2$, saamme aikaan ristiriidan: aiemmin totesimme $(p-1)^n \equiv -
 
 Täten $q \mid p$. Siispä $q = p$, ja $q \mid n$, joten $n = p$ tai $n = 2p$. Sillä $n$ on pariton, on $n = p$.
 
-Enää tulee siis ratkaista, milloin $p^{p-1} \mid (p-1)^p + 1$. Tämä onnistuu helposti $LTE$:n avulla:
+Enää tulee siis ratkaista, milloin $p^{p-1} \mid (p-1)^p + 1$. Tämä onnistuu helposti [LTE](http://s3.amazonaws.com/aops-cdn.artofproblemsolving.com/resources/articles/lifting-the-exponent.pdf):n avulla:
 
 $v_p((p-1)^p + 1) = v_p((p-1)^p - (-1)^p) = v_p(p-1 - (-1))  + v_p(p) = 2$. Siis tulee olla $p - 1 \le 2$, joten $p \le 3$. Tästä saamme ratkaisun: $p = n = 3$.
 
