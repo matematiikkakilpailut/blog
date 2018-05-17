@@ -1,8 +1,9 @@
-----
+---
 layout: post
 author: "Olli Järviniemi"
 title: "Juuren ottaminen moduloissa"
 math: true
+
 ---
 
 <div class="hidden">
