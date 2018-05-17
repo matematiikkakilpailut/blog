@@ -1,4 +1,4 @@
-----
+---
 layout: post
 author: Olli Järviniemi
 title: "Syt-kikka"
