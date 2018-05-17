@@ -35,7 +35,7 @@ $$a^{syt(n, \phi(m))} \equiv b^{syt(n, \phi(m))} \pmod{m}$$
 
 Erityisesti, jos $syt(n, \phi(m)) = 1$, pätee $a \equiv b \pmod{m}$.
 
-Korollaari mahdollistaa juuren ottamisen tietyin ehdoin. Lemma ja korollaari voivat olla hyödyllisiä myös siinä tapauksessa kun $b = 1$, eli tutkimme yhtälöä $a^n \equiv 1 \pmod{m}$
+Lemma ja korollaari voivat usein olla hyödyllisiä myös iinä tapauksessa kun $b = 1$, eli tutkittaessa yhtälöä $a^n \equiv 1 \pmod{m}$
 
 **Esimerkkitehtävä (IMO, 1999, T4)**
 Määritä kaikki positiivisten kokonaislukujen parit $(p, n)$, joilla pätee ehdot
