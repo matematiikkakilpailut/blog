@@ -1,15 +1,18 @@
----
+----
 layout: post
-author:  "Olli Järviniemi"
-title: "Syt-kikka"
+author: "Olli Järviniemi"
+title: "Juuren ottaminen moduloissa"
 math: true
-
 ---
 
-Tässä postauksessa käsitellään ns. syt-kikka, eli miten muotoa $a^n \equiv b^n \pmod{m}$ olevasta yhtälöstä voi ottaa juuren tietyin ehdoin.
+<div class="hidden">
+$\newcommand{\syt}{\mathop{\rm syt}}$
+</div>
+
+Tässä postauksessa käsitellään miten muotoa $a^n \equiv b^n \pmod{m}$ olevasta yhtälöstä voi ottaa juuren tietyin ehdoin.
 
 
-**Lemma (syt-kikka)**
+**Lemma (juuren ottaminen)**
 
 Olkoon $a^n \equiv b^n \pmod{m}$ sekä $a^k \equiv b^k \pmod{m}$, missä $a, b, k, n \in \mathbb{Z}$, ja $syt(a, m) = syt(b, m) = 1$. Nyt pätee
 
@@ -57,7 +60,7 @@ Fermat'n pienen lauseen nojalla pätee (ottaen huomioon $syt(p-1, q) = 1$)
 
 $$(p-1)^{q-1} \equiv 1 \pmod{q}$$
 
-Sillä $q$ on luvun $n$ pienin alkutekijä, on $syt(q-1, n) = 1$, joten $syt(q-1, 2n) = 2$. Syt-kikan nojalla pätee
+Sillä $q$ on luvun $n$ pienin alkutekijä, on $syt(q-1, n) = 1$, joten $syt(q-1, 2n) = 2$. Lemman nojalla pätee
 
 $$(p-1)^2 \equiv 1 \pmod{q}$.
 
@@ -90,7 +93,7 @@ $$a^3 + b^3 \equiv c^3 \pmod{5^3}$$
 
 ja $5 \nmid abc$, ja lukujen $a^3$, $b^3$ jakojäännösten summa jaettaessa luvulla $5^3$ on pienempi kuin luvun $c^3$ jakojäännös.
 
-Sillä $syt(3, \phi(5^3)) = syt(3, 100) = 1$, on funktio $f(x) = (x^3 \pmod{5^3})$, $f : A -> A$ injektiivinen, missä $A$ on kaikkien lukujen $a$ joukko, joilla $5 \nmid a$, $0 \le a < 5^3$. Funktio äärelliseltä joukolta itselleen on selvästi injektiivinen joss se on surjektio (miksi?).
+Sillä $syt(3, \phi(5^3)) = syt(3, 100) = 1$, on funktio $f(x) = (x^3 \pmod{5^3})$, $f : A \to A$ injektiivinen, missä $A$ on kaikkien lukujen $a$ joukko, joilla $5 \nmid a$, $0 \le a < 5^3$. Funktio äärelliseltä joukolta itselleen on selvästi injektiivinen joss se on surjektio (miksi?).
 
 Täten on olemassa jotkin $a, b, c$, joilla $a^3 \equiv 1 \pmod{5^3}$, $b^3 \equiv 2 \pmod{5^3}$ ja $c^3 \equiv 3 \pmod{5^3}$. Lisäksi nämä ehdot toteuttavia lukuja on äärettömän monta. Olemme näin ollen todistaneet, että tehtävänannon yhtälöllä on äärettömän monta ratkaisua.
 
