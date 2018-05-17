@@ -1,6 +1,6 @@
 ---
 layout: post
-author: "Olli Järviniemi"
+author:  "Olli Järviniemi"
 title: "Syt-kikka"
 math: true
 
