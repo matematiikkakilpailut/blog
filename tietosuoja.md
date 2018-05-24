@@ -43,43 +43,7 @@ tunnistetaan asialliset käyttäjät. Tämän evästeen puuttuminen on
 Cloudflarelle merkkinä siitä, että käyttäjä saattaakin olla
 tietokoneohjelma, jollaista saatetaan käyttää
 ns. palvelunestohyökkäyksissä.
-
-Evästeiden avulla Google yhdistää tietoja selailusta ja
-internet-hauista, ja käytämme näitä tietoja sivuston käytön seurantaan
-ja parantamiseen. Esimerkiksi saatamme tällä tavalla havaita, millä
-hakusanoilla käyttäjät tulevat sivuille ja miten pitkään he lukevat
-löytynyttä kirjoitusta. Tästä saatamme saada ideoita kirjoitusten
-parantamiseksi tai uusiksi aiheiksi. Keräämällä tietoja
-selainversioista voimme kartoittaa, kuinka paljon lukijoiden joukossa
-on sellaisia, joilla sivuston nyt tai tulevaisuudessa käyttämät
-teknologiat eivät toimi. Emme kerää tietoa yksittäisistä henkilöistä,
-paitsi jos henkilö nimenomaan ilmoittaa nimensä
-esim. keskustelupalstalle kirjautumalla.
-
-Seuraavaa tietoa kerätään (mutta ei yhdistetä yksittäiseen henkilöön):
-
-* Päätelaitteen [IP-osoite][5], josta nähdään sijainti noin kaupungin
-  tarkkuudella; [osoitteesta peitetään osa][6], jotta sen yhdistäminen henkilöön estyisi
-* Selailun ajankohta
-* Oletko käynyt sivuilla aiemmin
-* Selainversio
-* Käyttöjärjestelmä
-* Sivu, jolta saavuit blogiin
-* Hakulauseke, jolla löysit blogin
-
-Googlen analytiikalla pystyy myös seuraamaan saman käyttäjän toimintaa
-eri laitteilla, käyttäjien ikää, sukupuolta ja kiinnostuksen kohteita.
-Emme käytä näitä ominaisuuksia.
-
-Lisätietoa evästeistä yleisesti saat [Viestintävirastolta][1] ja
-erityisesti Googlen asettamista evästeistä [Googlelta][2].
-
-Jos et pidä evästeistä, voit estää niiden
-asettamisen [selaimen asetuksista][3], mutta tämä haittaa nykyaikana
-selailua aika paljon. Jos haluat välttää nimenomaan Googlen evästeitä,
-voit asentaa [selainlaajennuksen][3], joka estää juuri näiden
-tallentumisen kaikilla sivuilla mutta ei haittaa sivujen normaalia
-käyttöä. Cloudflaren evästeen nimi on [__cfduid][4], ja sen estäminen
+Evästeen tunniste on [__cfduid][4], ja sen estäminen
 voi aiheuttaa sen, että sivuja selatessa joutuu välillä vahvistamaan
 olevansa ihminen eikä automaatti.
 
