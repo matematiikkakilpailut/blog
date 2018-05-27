@@ -1,11 +1,15 @@
 ---
 layout: post
 author: "Olli Järviniemi"
-title: "Kobayashin lause"
+title: "Schurin lause"
 math: true
 excerpt_separator: "<!--jatkuu-->"
 
 ---
+<div class="hidden">
+$\newcommand{\syt}{\mathop{\rm syt}}$
+</div>
+
 
 Tässä postauksessa käsitellään Schurin lausetta.
 
@@ -51,7 +55,7 @@ Määritä kaikki ne polynomit $P$, joilla pätee seuraava väite: on olemassa �
 
 Olkoon $P$ polynomi, joka ei ole nollapolynomi. Osoita, että on olemassa $k \in \mathbb{N}$ sekä ääretön aidosti kasvava lukujono positiivisia kokonaislukuja $a_1, a_2, \ldots $, joilla pätee
 
-$$syt(P(a_i), P(a_j)) \le k \ \forall i \neq j \in \mathbb{N}$$
+$$\syt(P(a_i), P(a_j)) \le k \ \forall i \neq j \in \mathbb{N}$$
 
 Huomaa, että tämä todistaa Schurin lauseen (miksi? Tämä jätetään harjoitustehtäväksi).
 
