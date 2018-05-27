@@ -4,6 +4,7 @@ author: "Olli Järviniemi"
 title: "Kobayashin lause"
 math: true
 excerpt_separator: "<!--jatkuu-->"
+
 ---
 
 Tässä postauksessa käsitellään Schurin lausetta.
