@@ -188,7 +188,7 @@ Huomattakoon vielä, että sinilauseella ei aina tarvitse hyökätä koko tehtä
 
 Tässä on vain pari tehtävää sinilausebashin harjoittelemiseksi, mutta harjoittelua varten sopii hyvinkin suuri osa kilpailuissa esiintyvistä geometrian tehtävistä.
 
-**MAOLin loppukilpailu 2018, T3. Ns. perhoslause**
+**MAOLin loppukilpailu 2018, T3. (Perhoslause)**
 
 Olkoon ympyrällä $\omega$ jänteet $AB$ ja $CD$, jotka leikkaavat pisteessä $M$. Olkoon $PQ$ se jänne, jonka keskipiste on $M$. Janat $AC$ ja $PQ$ leikkaavat pisteessä $X$, ja janat $BD$ ja $PQ$ leikkaavat pisteessä $Y$. Osoita, että $MX = MY$.
 
