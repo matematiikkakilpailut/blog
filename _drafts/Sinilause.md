@@ -25,7 +25,7 @@ arvo ei riipu pisteen $B$ valinnasta, kun $P$ pidetään paikallaan.
 
 **Ratkaisu**
 
-![MAOL 2012](/assets/images/Sinilause1 "MAOL 2012")
+![MAOL 2012](/assets/images/Sinilause1.png "MAOL 2012")
 
 Suunnitelma on ilmoittaa suure $\frac{1}{AB} + \frac{1}{AC}$ joidenkin asioiden avulla, jotka ovat vakioita. Konfiguraatiossa vakioita ovat täsmälleen $\angle BAP, \angle PAC$ ja $AP$. Pyritään päätymään niihin.
 
@@ -68,7 +68,7 @@ Suora $l$ sivuaa ympyrää $S_1$ pisteessä $X$ ja ympyrää $S_2$ pisteessä $Y
 **Ratkaisu**
 
 
-![Baltian tie 2017](/assets/images/Sinilause1 "Baltian tie 2017")
+![Baltian tie 2017](/assets/images/Sinilause2.png "Baltian tie 2017")
 
 Kuvassa on ratkaisua varten muutama ylimääräinen piste. Tämä tehtävä on hyvä sinilauseen soveltamiselle monestakin syystä. Ensimmäinen syy on hyvän tuntomerkin löytyminen, tulee osoittaa, jonkin lausekkeen ($\frac{XP}{YQ}$) olevan vakio. Toinen hyvä piirre on kuvion yksinkertaisuus, tehtävässä ei esiinny toistakymmentä vaikeasti lähestyttävää pistettä. Näistä syistä sinilause on hyvinkin varteenotettava vaihtoehto.
 
