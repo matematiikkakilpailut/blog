@@ -17,6 +17,11 @@ Esitietoina oletetaan, että lukija tuntee tavallisimmat lukiossa esiintyvät tr
 
 **MAOL, alkukilpailu, avoin sarja, 2012**
 
+
+![MAOL 2012](/assets/images/Sinilause1.png "MAOL 2012")
+
+
+
 Terävän kulman $\angle A$ puolittajalta valitaan piste $P$ ja toiselta kyljeltä piste $B$. $BP$:n jatke leikkaa toisen kyljen pisteessä $C$. Osoita, että lausekkeen
 
 $$\frac{1}{AB} + \frac{1}{AC}$$
@@ -64,6 +69,8 @@ Käytämme tähän sinin summakaavoja, ja huomaamme lopputuloksen riippuvan aino
 Suora $l$ sivuaa ympyrää $S_1$ pisteessä $X$ ja ympyrää $S_2$ pisteessä $Y$. Piirretään suora $m$, joka on yhdensuuntainen suoran $l$ kanssa ja leikkaa ympyrän $S_1$ pisteessä $P$ ja ympyrän $S_2$ pisteessä $Q$. Osoita, että osamäärä $$\frac{XP}{YQ}$$ ei riipu suoran $m$ valinnasta.
 
 **Ratkaisu**
+
+![Baltian tie 2017](/assets/images/Sinilause2.png "Baltian tie 2017")
 
 
 Kuvassa on ratkaisua varten muutama ylimääräinen piste. Tämä tehtävä on hyvä sinilauseen soveltamiselle monestakin syystä. Ensimmäinen syy on hyvän tuntomerkin löytyminen, tulee osoittaa, jonkin lausekkeen ($\frac{XP}{YQ}$) olevan vakio. Toinen hyvä piirre on kuvion yksinkertaisuus, tehtävässä ei esiinny toistakymmentä vaikeasti lähestyttävää pistettä. Näistä syistä sinilause on hyvinkin varteenotettava vaihtoehto.
@@ -187,4 +194,4 @@ Olkoon ympyrällä $\omega$ jänteet $AB$ ja $CD$, jotka leikkaavat pisteessä $
 
 **IMO 2016 T1**
 
-Kolmiolla $BCF$ on suora kulma kärjessä $B$. Olkoon $A$ piste suoralla $CF$ siten, että $FA = FB$ ja piste $F$ sijaitsee pisteiden $A$ ja $C$ välissä. Valitaan piste $D$ siten, että $DA = DC$ ja $AC$ puolittaa kulman $\angle DAB$. Valitaan piste $E$ siten, että $EA = ED$ ja $AD$ puolittaa kulman $\angle EAC$. Olkoon $M$ janan $CF$ keskipiste. Olkoon $X$ se piste, jolla $AMXE$ on suunnikas (missä $AM || EX$ ja $AE || MX$). Osoita, että suorat $BD$, $FX$ ja $ME$ kulkevat saman pisteen kautta.
+Kolmiolla $BCF$ on suora kulma kärjessä $B$. Olkoon $A$ piste suoralla $CF$ siten, että $FA = FB$ ja piste $F$ sijaitsee pisteiden $A$ ja $C$ välissä. Valitaan piste $D$ siten, että $DA = DC$ ja $AC$ puolittaa kulman $\angle DAB$. Valitaan piste $E$ siten, että $EA = ED$ ja $AD$ puolittaa kulman $\angle EAC$. Olkoon $M$ janan $CF$ keskipiste. Olkoon $X$ se piste, jolla $AMXE$ on suunnikas (missä $AM \parallel EX$ ja $AE \parallel MX$). Osoita, että suorat $BD$, $FX$ ja $ME$ kulkevat saman pisteen kautta.
