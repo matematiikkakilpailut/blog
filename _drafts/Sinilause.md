@@ -132,6 +132,7 @@ $$\cos(\frac{x}{2}) = \sqrt{\frac{\cos(x) + 1}{2}}$$
 Huomaa, että yleisessä tapauksessa tulisi plus-miinus-merkkejä, mutta meidän tilanteessamme nämä eivät ole tärkeitä.
 
 **Lemman todistus**
+
 Sijoitetaan todistettaviin lausekkeisiin yksinkertaisuuden vuoksi $y = \frac{x}{2}$. Sinin tapauksessa tulee osoittaa, että $\sin(y)^2 = \frac{1 - \cos(2y)}{2}$. Tämän osoittaminen todeksi on suoraviivaista: kaksinkertaisen kosinin kaavalla ja identiteetillä $\cos^2(y) = 1 - \sin^2(y)$ saadaan $\cos(2y) = \cos^2(y) - \sin^2(y) = 1 - 2\sin^2(y)$. Sijoittamalla tämän todistettavaan yhtälöön saamme $0 = 0$. Vastaavasti osoitetaan puolikkaan kulman kosinin kaava.
 
 **Ratkaisun viimeistely**
