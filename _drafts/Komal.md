@@ -54,11 +54,11 @@ pätee kaikilla $n > 1$, jostain $n$:stä riippumattomalla vakiolla $C$. $C$ vo
 
 **Todistus**
 
-Todistus on analoginen Schurin lauseen todistuksessa käytetyn lemman todistuksen kanssa. Lemma sanoo, että niitä lukuja, jotka ovat jaollisia vain joukon $S$ alkuluvuilla ja ovat enintään $N$, on enintään
+Schurin lauseen yhdessä todistuksessa käytetty [lemma](https://blog.matematiikkakilpailut.fi/2018/05/27/Schur.html) sanoo, että niitä lukuja, jotka ovat jaollisia vain joukon $S$ alkuluvuilla ja ovat enintään $N$, on enintään
 
 $C_1 \log_2(N)^{\mid S \mid}$
 
-Tämän nojalla niitä $B$:n alkioita, jotka ovat jaollisia vain lukua $\frac{n}{p}$ pienemmillä alkuluvuilla on enintään $C_2 \log_2(N)^{| K |}$. Tämä kasvaa hitaammin kuin $\frac{n}{\log_2(n)}$, joten arvio on tältä osin kunnossa. Enää tulee huolehtia siitä, ettei $B$:ssä voi olla liian montaa lukua, jotka ovat jaollisia lukua $\frac{n}{p}$ suuremmalla alkuluvulla.
+Tämän nojalla niitä $B$:n alkioita, jotka ovat jaollisia vain lukua $\frac{n}{p}$ pienemmillä alkuluvuilla on enintään $C_2 \log_2(N)^{ \mid  K  \mid }$. Tämä kasvaa hitaammin kuin $\frac{n}{\log_2(n)}$, joten arvio on tältä osin kunnossa. Enää tulee huolehtia siitä, ettei $B$:ssä voi olla liian montaa lukua, jotka ovat jaollisia lukua $\frac{n}{p}$ suuremmalla alkuluvulla.
 
 Valitaan jokin lukua $\frac{n}{p}$ suurempi alkuluku $q$. Luvun $q$ monikertoja on $B$:ssä enintään $pq$. $p$ on vakio, joka riippuu vain $k$:sta. Nyt otetaan avuksi järeämpää kalustoa, jolla saamme tarpeeksi hyvän rajan lukujen $q$ määrälle:
 
@@ -92,3 +92,20 @@ $$n^{ \mid B \mid } \le n^{ C \frac{n}{\log_2(n)} }$$
 
 Koska $$ \mid A \mid  = n -  \mid B \mid  \ge n - C \frac{n}{\log_2(n)}$$
 
+saamme lemman 1 avulla arvion myös $A$:n alkioiden tulolle. $A$:n alkioiden tulo on pienimmillään, kun se sisältää luvut $1, 2, \ldots,  \mid A \mid $. Tulee siis enää osoittaa, että
+
+$$ \mid A \mid ! > k + n^{ \mid B \mid }$$
+
+Joukossa $A$ on vähintään
+
+$$n - C\frac{n}{\log_2(n)} - \sqrt{n} = t$$
+
+alkiota, jotka ovat vähintään $\sqrt{n}$. Tästä seuraa, että
+
+$$ \mid A \mid ! \ge \sqrt{n^t} = n^\frac{t}{2}$$
+
+Sillä $t > 2 \mid B \mid + 2$ kaikilla tarpeeksi suurilla $n$ ($t$ on kokoluokkaa $n$, $k$ taas kokoluokkaa $\frac{n}{\log_2(n)}$), pätee kaikilla tarpeeksi suurilla $n$ epäyhtälö
+
+$$n^\frac{t}{2} > n^{ \mid B \mid  + 1} > n^{ \mid B\mid} + k$$
+
+Tästä seuraa, että $A$:n alkioiden tulo on suurempi kuin $B$:n alkioiden tulo $+ k$ kaikilla tarpeeksi suurilla $n$. Väite näin ollen pätee.
