@@ -92,20 +92,3 @@ $$n^{ \mid B \mid } \le n^{ C \frac{n}{\log_2(n)} }$$
 
 Koska $$ \mid A \mid  = n -  \mid B \mid  \ge n - C \frac{n}{\log_2(n)}$$
 
-saamme lemman 1 avulla arvion myös $A$:n alkioiden tulolle. $A$:n alkioiden tulo on pienimmillään, kun se sisältää luvut $1, 2, \ldots,  \mid A \mid $. Tulee siis enää osoittaa, että
-
-$$ \mid A \mid ! > k + n^{ \mid B \mid }$$
-
-Joukossa $A$ on vähintään
-
-$$n - C\frac{n}{\log_2(n)} - \sqrt{n} = t$$
-
-alkiota, jotka ovat vähintään $\sqrt{n}$. Tästä seuraa, että
-
-$$ \mid A \mid ! \ge \sqrt{n^t} = n^\frac{t}{2}$$
-
-Sillä $t > 2 \mid B \mid  + 2$ kaikilla tarpeeksi suurilla $n$ ($t$ on kokoluokkaa $n$, $k$ taas kokoluokkaa $\frac{n}{\log_2(n)}$), pätee kaikilla tarpeeksi suurilla $n$ epäyhtälö
-
-$$n^\frac{t}{2} > n^{ \mid B \mid  + 1} > n^{ \mid B\mid} + k$$
-
-Tästä seuraa, että $A$:n alkioiden tulo on suurempi kuin $B$:n alkioiden tulo $+ k$ kaikilla tarpeeksi suurilla $n$. Väite näin ollen pätee.
