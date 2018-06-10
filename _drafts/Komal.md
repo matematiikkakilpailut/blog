@@ -40,6 +40,26 @@ Tutkitaan sitten tapaus $k > 0$. Olkoon $P$ kaikkien alkulukujen joukko, ja olk
 
 Valitaan $n$ hyvin suureksi, ja osoitetaan, ettei ositus onnistu (tulemme myöhemmin toteamaan, että tietyt osituksen mahdottomaksi todistavat epäyhtälöt pätevät tarpeeksi suurilla $n$). Tehdään vastaoletus: ositus onnistuu, eli on olemassa halutut $A$ ja $B$. Olkoon joukon $P \setminus K$ pienin alkio $p$. Ilman yleisyyden menettämistä voimme olettaa, että $p \in A$. Aiemmin esitetyn huomion nojalla kaikki $p$:n monikerrat, jotka ovat eninitään $n$, kuuluvat myös joukkoon $A$.
 
+Tutkitaan niitä muotoa $pm$ olevia lukuja, jossa $pm \le n$. Luku $m$ käy läpi eri arvoja, jotka ovat jaollisia jollakin joukon $P \setminus K$ luvuilla, kun $n$ on tarpeeksi suuri. Itse asiassa $m$:n käydessä läpi eri arvoja se on jaollinen täsmälleen niillä joukon $P \setminus K$ luvuilla, jotka ovat enintään $\frac{n}{p}$. Siispä joukossa $A$ tulee olla kaikki ne luvut, joilla on tällaisia "pieniä" alkutekijöitä joukosta $P \setminus K$.
+
+Osoitetaan nyt, että tarpeeksi suurilla $n$ joukon $A$ alkioiden tulo on paljon suurempi kuin joukon $B$ alkioiden tulo. Intuitiivisesti tämä pätee, sillä $B$:n alkioiden alkutekijät on rajoitettu joukkoon $K$ tai suuriin lukua $\frac{n}{p}$ isompiin alkulukuihin. Formaali todistus vaatii hieman laskemista, muttei ole sinänsä vaikea.
+
+**Lemma 1**
+
+Epäyhtälö
+
+$$\mid B \mid \le C \frac{n}{\log_2(n)}$$
+
+pätee kaikilla $n > 1$, jostain $n$:stä riippumattomalla vakiolla $C$. $C$ voi riippua $k$:sta.
+
+**Todistus**
+
+Todistus on analoginen Schurin lauseen todistuksessa käytetyn lemman todistuksen kanssa. Lemma sanoo, että niitä lukuja, jotka ovat jaollisia vain joukon $S$ alkuluvuilla ja ovat enintään $N$, on enintään
+
+$C_1 \log_2(N)^{\mid S \mid}$
+
+Tämän nojalla niitä $B$:n alkioita, jotka ovat jaollisia vain lukua $\frac{n}{p}$ pienemmillä alkuluvuilla on enintään $C_2 \log_2(N)^{| K |}$. Tämä kasvaa hitaammin kuin $\frac{n}{\log_2(n)}$, joten arvio on tältä osin kunnossa. Enää tulee huolehtia siitä, ettei $B$:ssä voi olla liian montaa lukua, jotka ovat jaollisia lukua $\frac{n}{p}$ suuremmalla alkuluvulla.
+
 Valitaan jokin lukua $\frac{n}{p}$ suurempi alkuluku $q$. Luvun $q$ monikertoja on $B$:ssä enintään $pq$. $p$ on vakio, joka riippuu vain $k$:sta. Nyt otetaan avuksi järeämpää kalustoa, jolla saamme tarpeeksi hyvän rajan lukujen $q$ määrälle:
 
 **Alkulukulause (Prime number theorem, PNT)**
@@ -60,7 +80,7 @@ Tämän nojalla niitä $B$:n alkioita, jotka ovat jaollisia jollain suurella alk
 
 Tämän nojalla
 
-$$|B| \le C_2 \log_2(N)^{|K|} + C_3 \frac{n}{\log_2(n)} \le C \frac{n}{\log_2(n)}$$
+$$ \mid B \mid  \le C_2 \log_2(N)^{ \mid K \mid } + C_3 \frac{n}{\log_2(n)} \le C \frac{n}{\log_2(n)}$$
 
 jollain $k$:sta, $C_2$:sta ja $C_3$:sta riippuvalla vakiolla $C$, kaikilla tarpeeksi suurilla $n$. Lisäksi kasvattamalla $C$:tä arvion saa pätemään myös pienillä $n$:n arvioilla. Lemman väite siis pätee.
 
@@ -68,13 +88,13 @@ Pidetään loppuratkaisun ajan lemman 1 muuttuja $C$ vakiona.
 
 Lemmasta 1 seuraa, että joukon $B$ alkioiden tulo on enintään
 
-$$n^{|B|} \le n^{ C \frac{n}{\log_2(n)} }$$
+$$n^{ \mid B \mid } \le n^{ C \frac{n}{\log_2(n)} }$$
 
-Koska $$|A| = n - |B| \ge n - C \frac{n}{\log_2(n)}$$
+Koska $$ \mid A \mid  = n -  \mid B \mid  \ge n - C \frac{n}{\log_2(n)}$$
 
-saamme lemman 1 avulla arvion myös $A$:n alkioiden tulolle. $A$:n alkioiden tulo on pienimmillään, kun se sisältää luvut $1, 2, \ldots, |A|$. Tulee siis enää osoittaa, että
+saamme lemman 1 avulla arvion myös $A$:n alkioiden tulolle. $A$:n alkioiden tulo on pienimmillään, kun se sisältää luvut $1, 2, \ldots,  \mid A \mid $. Tulee siis enää osoittaa, että
 
-$$|A|! > k + n^{|B|}$$
+$$ \mid A \mid ! > k + n^{ \mid B \mid }$$
 
 Joukossa $A$ on vähintään
 
@@ -82,11 +102,10 @@ $$n - C\frac{n}{\log_2(n)} - \sqrt{n} = t$$
 
 alkiota, jotka ovat vähintään $\sqrt{n}$. Tästä seuraa, että
 
-$$|A|! \ge \sqrt{n^t} = n^\frac{t}{2}$$
+$$ \mid A \mid ! \ge \sqrt{n^t} = n^\frac{t}{2}$$
 
-Sillä $t > 2|B| + 2$ kaikilla tarpeeksi suurilla $n$ ($t$ on kokoluokkaa $n$, $k$ taas kokoluokkaa $\frac{n}{\log_2(n)}$), pätee kaikilla tarpeeksi suurilla $n$ epäyhtälö
+Sillä $t > 2 \mid B \mid  + 2$ kaikilla tarpeeksi suurilla $n$ ($t$ on kokoluokkaa $n$, $k$ taas kokoluokkaa $\frac{n}{\log_2(n)}$), pätee kaikilla tarpeeksi suurilla $n$ epäyhtälö
 
-$$n^\frac{t}{2} > n^{|B| + 1} > n^{|B|} + k$$
+$$n^\frac{t}{2} > n^{ \mid B \mid  + 1} > n^{ \mid B\mid} + k$$
 
 Tästä seuraa, että $A$:n alkioiden tulo on suurempi kuin $B$:n alkioiden tulo $+ k$ kaikilla tarpeeksi suurilla $n$. Väite näin ollen pätee.
-
