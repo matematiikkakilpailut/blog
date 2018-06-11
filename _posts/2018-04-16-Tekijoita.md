@@ -116,7 +116,7 @@ Tässä kohtaa ratkaisua käännytään ns. Lifting the Exponent Lemman (LTE) pu
  [Lifting The Exponent Lemma]( http://s3.amazonaws.com/aops-cdn.artofproblemsolving.com/resources/articles/lifting-the-exponent.pdf
    )
 
-Osoite sisältää lauseen, todistuksen ja runsaasti harjoitustehtäviä. Sillä LTE on hyvin tärkeä, kirjoitan lauseen vielä tähän:
+Osoite sisältää lauseen, todistuksen ja runsaasti harjoitustehtäviä. Sillä LTE on tärkeä, esitetään lause myös tässä:
 
 **LTE**
 
