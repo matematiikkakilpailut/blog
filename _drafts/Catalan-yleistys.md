@@ -31,9 +31,3 @@ kappaletta.
 
 Asetelmaa tarkastelemalla huomataan, että tämä vastaus on oikea vastaus myös koko tehtävään, jos $c<b$. Oletetaan sitten, että $b \le c$.
 
-![Kuva tilanteesta. Lähde: malliratkaisu](/assets/images/Catalan-yleistys.jpg "Kuva tilanteesta")
-
-
-Tulee vähentää kaikista reiteistä kielletyt reitit. Yritetään laskea niiden määrä. Jokaisella kielletyllä reitillä on vähintään yksi kohta, jossa se leikkaa suoran $x=y$. Tarkastellaan viimeistä tällaista leikkauspistettä, olkoon vaikka $T$. Olkoon pisteen $Q$ peilaus suoran $x=y$ suhteen $Q'$ Selvästi reittejä $T$:stä $Q$:hun on yhtä paljon kuin reittejä $T$:stä $Q'$:uun. Otetaan nyt tarkasteluun kaikki mahdolliset kielletyt reitit $P$:stä $Q$:hun. Peilataan jokaisen reitin pisteen T jälkeinen osuus suoran $x=y$ suhteen, eli muutetaan ylöspäin etenemiset vaakaan etenemisiksi ja päinvastoin. Kiellettyjen reittien määrä ei muutu, mutta nyt jokainen kielletty reitti päätyy pisteen $Q$ sijaan pisteeseen $Q'$. Lisäksi kaikki pisteestä $P$ pisteeseen $Q'$ menevät reitit leikkaavat suoraa $x=y$. Siis kiellettyjen reittien määrä on sama kuin pisteestä $P$ pisteeseen $Q'$ menevien reittien määrä.
-
-Koska $Q'$ on $Q$:n peilaus suoran $x=y$ suhteen, pätee $Q'=(d, c)$. Aiempaa vastaavalla päättelyllä kiellettyjä reittejä eli reittejä $P$:stä $Q'$:uun on yhteensä ${d-a+c-b \choose c-b}$. Tämä tarkoittaa, että sallittuja reittejä on yhteensä $${c-a+d-b \choose d-b} -{d-a+c-b \choose c-b}.$$
