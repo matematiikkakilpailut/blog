@@ -41,7 +41,7 @@ Koska $Q'$ on $Q$:n peilaus suoran $x=y$ suhteen, pätee $Q'=(d, c)$. Aiempaa va
 
 **Catalanin luvut**
 
-Edellä on riittävä ratkaisu kilpailutehtävään, mutta ajatellaanpa seuraavaksi tehtävän erikoistapausta, jossa $b=a+1$ ja $d=c+1$, ja lisäksi vielä $c>a$. Oikea vastaus tähän on siis $$ {2(d-b) \choose d-b}-{2(d-b)\choose d-b-1} .$$ Tällaisessa lähtötilanteessa olemme yhden askeleen suoraa $x=y$ ylempänä, ja jokaisella askeleella voimme päättää, lähdemmekö kauemmas tästä suorasta, vai menemmekö lähemmäs sitä. Lopputilanteessa meidän tulee olla yhden askeleen päässä suorasta, mutta emme saa missään vaiheessa törmätä siihen. Tämä asetelma on täsmälleen sellainen, jossa $n:$s Catalanin luku kertoo, kuinka monta $2n:$ n mittaista sallittua reittiä on. Tässä tapauksessa $2n=(c+d)-(a+b)=2d-2b$, joten $n:$s Catalanin luku on $${2(d-b)\choose d-b}-{2(d-b)\choose d-b+1}={2(d-b)\choose d-b}-{2(d-b)\choose d-b-1}$$ Tässä erikoistapauksessa saamme siis vastauksen myös Catalanin lukujen avulla. Peilausratkaisu antaa kuitenkin vastauksen kaikkiin mahdollisiin tehtävänannon mukaisiin tapauksiin. Tehtävänannon asetelma on siis Catalanin lukujen yleistys.
+Edellä on riittävä ratkaisu kilpailutehtävään, mutta ajatellaanpa seuraavaksi tehtävän erikoistapausta, jossa $b=a+1$ ja $d=c+1$, ja lisäksi vielä $c>a$. Oikea vastaus tähän on siis $$ {2(d-b) \choose d-b}-{2(d-b) \choose d-b-1} .$$ Tällaisessa lähtötilanteessa olemme yhden askeleen suoraa $x=y$ ylempänä, ja jokaisella askeleella voimme päättää, lähdemmekö kauemmas tästä suorasta, vai menemmekö lähemmäs sitä. Lopputilanteessa meidän tulee olla yhden askeleen päässä suorasta, mutta emme saa missään vaiheessa törmätä siihen. Tämä asetelma on täsmälleen sellainen, jossa $n:$s Catalanin luku kertoo, kuinka monta $2n:$ n mittaista sallittua reittiä on. Tässä tapauksessa $2n=(c+d)-(a+b)=2d-2b$, joten $n:$s Catalanin luku on $${2(d-b) \choose d-b}-{2(d-b) \choose d-b+1}={2(d-b) \choose d-b}-{2(d-b) \choose d-b-1}$$ Tässä erikoistapauksessa saamme siis vastauksen myös Catalanin lukujen avulla. Peilausratkaisu antaa kuitenkin vastauksen kaikkiin mahdollisiin tehtävänannon mukaisiin tapauksiin. Tehtävänannon asetelma on siis Catalanin lukujen yleistys.
 
 **Huomatutus**
 
@@ -53,7 +53,7 @@ Ratkaisussa 1 ei ole mitään vikaa, mutta se voi olla vaikea keksiä. Olli Jär
 
 Induktion ideana on käyttää hyväksi sitä faktaa, että ongelman erikoistapaus, missä $d - c = 1$ ja $b - a = 1$ on ratkaistu Catalanin lukujen muodossa. Tätä kautta voimme edetä induktion kautta eteenpäin käyttäen jo ennestään ratkaistuja tapauksia.
 
-Osoitetaan induktiolla muuttujan $d-c$ suhteen, ($a$ ja $b$ voivat olla mielivaltaisia, kunhan ne toteuttavat tehtävänannon ehdot) että sallittujen reittien määrä on $${c-a+d-b\choose d-b} -{d-a+c-b\choose c-b}$$ kun $b\le c$, ja  $${c-a+d-b\choose d-b}$$ kun $c<b$
+Osoitetaan induktiolla muuttujan $d-c$ suhteen, ($a$ ja $b$ voivat olla mielivaltaisia, kunhan ne toteuttavat tehtävänannon ehdot) että sallittujen reittien määrä on $${c-a+d-b \choose d-b} -{d-a+c-b \choose c-b}$$ kun $b\le c$, ja  $${c-a+d-b \choose d-b}$$ kun $c<b$
 
 Osoitetaan ensin pohjatapaus $d-c=1$. Tämä tarkoittaa siis sitä, että jälkimmäinen piste on yhden askeleen päässä suorasta $x=y$.
 
@@ -63,14 +63,14 @@ Osoitetaan tämä induktiolla muuttujan $a$ suhteen siten, että $a$ kulkee arvo
 
 Tiedämme, että reittien määrä pisteestä $(d-k-m-1, d-k)$ pisteeseen $(d-1,d)$ toteuttaa väitteemme. Tämä seuraa induktio-oletuksesta liittyen induktioon muuttujan $d - b$ suhteen. Myös reittien määrä pisteestä $(d-k-m, d-k-1)$ pisteeseen $(d-1, d)$ on kaavan ilmoittama, mikä seuraa induktiosta muuttujan $a$ suhteen.
 
-Nyt reittien määrälle $S$ pisteestä $ (d-k-m-1, d-k-1)  $ pisteeseen $(d-1, d)$ pätee: $$S={2k+m\choose k} -{2k+m\choose k-1}+{2k+m\choose k+1} -{2k+m\choose k}.$$
+Nyt reittien määrälle $S$ pisteestä $ (d-k-m-1, d-k-1)  $ pisteeseen $(d-1, d)$ pätee: $$S={2k+m \choose k} -{2k+m \choose k-1}+{2k+m \choose k+1} -{2k+m \choose k}.$$
 Tämä johtuu siitä, että pisteestä $(d - k - m - 1, d - k - 1)$ reittien määrä pisteeseen $(d - 1)$ menee ensimmäisellä askeleella joko ylös tai oikealle.
 
-Pascalin identiteetin nojalla lauseke on sama kuin $${2k+m+1\choose k+1} -{2k+m+1\choose k}.$$ Tämä todistaakin indukioaskeleen ja siten koko pohjatapauksen $d-c=1$.
+Pascalin identiteetin nojalla lauseke on sama kuin $${2k+m+1 \choose k+1} -{2k+m+1 \choose k}.$$ Tämä todistaakin indukioaskeleen ja siten koko pohjatapauksen $d-c=1$.
 
 
 Oletetaan sitten, että väitteemme pätee, kun $d-c=k$ ja osoitetaan väite, kun $d-c=k+1$. Osoitetaan tämä väite induktiolla muuttujan $c-a$ suhteen. Kun $c-a=0$ (Näinkään ei saisi olla, mutta ei välitetä tästäkään), reittejä on selvästi $1$, kuten väitteemme mukaan pitikin olla. Oletetaan, että väitteemme pätee, kun $c-a=m$, ja osoitetaan se, kun $c-a=m+1$. Saamme induktioaskeleen otettua Pascalin identiteetin nojalla täysin vastaavasti kuin tapauksen $d-c=1$ induktiossa.
 
 Nyt siis olemme osoittaneet, että kaikilla tehtävänannon mukaisilla luvuilla väitteemme, eli vastaus tehtävään, pätee. Olemme siis valmiit. Vastaus tehtävään on
 
-$${c-a+d-b\choose d-b} -{d-a+c-b\choose c-b}$$ kun $b\le c$, ja  $${c-a+d-b\choose d-b}$$ kun $c<b$
+$${c-a+d-b \choose d-b} -{d-a+c-b \choose c-b}$$ kun $b\le c$, ja  $${c-a+d-b \choose d-b}$$ kun $c<b$
