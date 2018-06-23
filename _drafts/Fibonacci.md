@@ -1,5 +1,4 @@
 ---
-
 layout: post
 author: "Valtteri Aurela"
 title: "Fibonaccin luvut ja binomikertoimet"
