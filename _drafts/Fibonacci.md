@@ -1,4 +1,5 @@
 ---
+
 layout: post
 author: "Valtteri Aurela"
 title: "Fibonaccin luvut ja binomikertoimet"
@@ -6,26 +7,26 @@ math: true
 
 ---
 
-**Postauksen tarkoitus**
+**Postauksen tarkoitus**\\
 Tässä postauksessa käsitellään mielenkiintoista yhteyttä Fibonaccin lukujen ja binomikertoimien välillä. Saman tuloksen saamiseen on monta eri keinoa, mutta käymme tässä läpi mukavan kombinatorisen todistuksen ja hieman motiiveja välivaiheiden takana.
 
-**1. Tarvittavat pohjatiedot**
+**1. Tarvittavat pohjatiedot**\\
 Koska todistus on hyvin alkeellinen, ei paljoakaan etukäteistietoja tarvita. Jonkinlainen kästiys binomikertoimien käyttötarkoituksista tarvitaan, sillä ne ovat tärkeä osa todistettavaa väitettä ja ilman niitä viimeinen osa saattaa jäädä hieman epäselväksi.
 
 Jos jokin asia jää mietityttämään, kannattaa käydä välivaihe itse läpi siten, että ymmärtää sen täysin. Tämäntyyppinen miettiminen on hyvin kehittävää.
 
-**2. Todistettava muoto**
+**2. Todistettava muoto**\\
 Kun keksin alunperin tämän todistuksen, en yrittänyt todistaa seuraavaksi esitettävää väitettä. Todistus tapahtui puoliksi vahingossa tutkiessani, mitä tapahtuisi, jos muuttaisin Fibonaccin lukuja kombinatoriseen muotoon. Haluan kuitenkin kertoa ensiksi mihin "tähtäämme", jotta olisi helpompi miettiä kokonaisuudessa, mitä tapahtuu.
 
 Määritellään $F_n$ on $n$:nnes Fibonaccin luku. Nyt pätee, että $$F_n = \sum\limits_{i\leq \frac{n}{2} } {n-i \choose i} $$
 
-**3. Todistus**
+**3. Todistus**\\
 Todistus voi lähteä aluksi hieman erikoisen näköiseen suuntaan, mutta palaa kuitenkin asiaan. Tulokseen kyllä päästään tekstin loppuun mennessä.
 
-**Lemma 1.**
+**Lemma 1.**\\
 $n$:nnes Fibonaccin luku voidaan ajatella tapojen määränä heittää kaksipuolisella nopalla silmälukujen summaksi $n$. Nopan silmäluvut ovat 1 ja 2, ja heittojen määrää ei ole rajoitettu. Eri permutaatiot ovat sallittuja.
 
-**Todistus**
+**Todistus**\\
   Jotta olisi selvää, mitä tässä tapahtuu, käymme läpi esimerkin. Luku 3 voidaan heittää seuraavilla tavoilla
 (1,1,1), (1,2), (2,1)
 
@@ -51,5 +52,5 @@ Ratkaisuja, joissa $x > \frac{n}{2}$ ei ole, sillä $x$ ja $y$ ovat positiivisi
 
 Mutta tämähän on oikea kaava! Olemme siis valmiita.
 
-**4. Motiiveja todistuksen takana**
+**4. Motiiveja todistuksen takana**\\
 Koska alunperin en yrittänyt todistaa juuri tätä kaavaa, saatoin edetä todistuksessa kiinnostavalta näyttävään suuntaan, ilman pakkoa päästä tiettyyn tulokseen. Keksin siis oikeastaan väitteen todistuksen pohjalta. Todistus on loppujen lopuksi hyvin suoraviivainen, kun on löytänyt yhteyden nopan heittojen ja Fibonaccin lukujen välillä. Sen jälkeen tehtävä on vain vähän kombinatoriikkaa ja kaavan muotoilemista, jotta summa saataisiin todistettavan väitteen muotoon.
