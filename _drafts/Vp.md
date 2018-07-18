@@ -4,7 +4,12 @@ author: "Olli Järviniemi"
 title: "P-adic valuation ja Lifting The Exponent lemma"
 math: true
 excerpt_separator: "<!--jatkuu-->"
+
 ---
+
+<div class="hidden">
+$\newcommand{\syt}{\mathop{\rm syt}}$
+</div>
 
 Tässä postauksessa käsitellään $v_p$-notaatiota (tunnetaan englanniksi nimellä $p$-adic valuation) ja sen hyötyjä. Lisäksi esitetään Lifting The Exponent lemma (LTE) sekä sen todistus.
 
