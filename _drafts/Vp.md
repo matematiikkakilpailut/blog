@@ -280,4 +280,4 @@ Sillä $k \ge 2$, $2^{k-1}$ on parillinen. Siis oikeanpuolinen luku on kahden ne
 
 $$= v_2(a-b) + v_2(a+b) + k-2 + 1 = v_2(a-b) + v_2(a+b) + k-1$$
 
-Todistus LTE:lle on siis valmis.
+Todistus LTE:lle on valmis.
