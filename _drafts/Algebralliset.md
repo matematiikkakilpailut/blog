@@ -102,12 +102,12 @@ Kuten edellä, käydään ensin läpi esimerkki vektoriavaruuden kannasta ennen 
 
 Olkoon $V$ joukko, joka sisältää luvut muotoa $a + b\sqrt{2}$, missä $a, b \in \mathbb{Q}$. Määritellään yhteenlasku $V$:n alkioiden välillä samalla tavalla kuin yhteenlasku reaaliluvuille. Tällöin $V$ on $\mathbb{Q}$-vektoriavaruus, kun määrittelemme vektoriavaruuden määritelmässä esiintyvän operaation $\bigodot$ kuten kertolaskun reaaliluvuilla (ei kovin yllättäen).
 
-$\{1, \sqrt{2}\}$ on kanta vektoriavaruudelle $V$, koska jokainen $V$:n alkio voidaan kirjoittaa muodossa $a \cdot 1 + b \cdot \sqrt{2}$, missä $a$ ja $b$ ovat kunnan $\mathbb{Q}$ alkioita. Tämä ei ole ainoa kanta, esimerkiksi $\{3, 1 + 2\sqrt{2} \}$ on myös kanta, koska jokainen $V$:n alkio voidaan kirjoittaa muodossa $a \cdot 3 + b \cdot (1 + 2\sqrt{2})$, missä $a, b \in \mathbb{Q}$. Tämä kanta ei ole
+$\lbrace 1, \sqrt{2} \rbrace $ on kanta vektoriavaruudelle $V$, koska jokainen $V$:n alkio voidaan kirjoittaa muodossa $a \cdot 1 + b \cdot \sqrt{2}$, missä $a$ ja $b$ ovat kunnan $\mathbb{Q}$ alkioita. Tämä ei ole ainoa kanta, esimerkiksi $\lbrace 3, 1 + 2\sqrt{2} \rbrace $ on myös kanta, koska jokainen $V$:n alkio voidaan kirjoittaa muodossa $a \cdot 3 + b \cdot (1 + 2\sqrt{2})$, missä $a, b \in \mathbb{Q}$.
 
 
 **Määritelmä (kanta)**
 
-Olkoon $V$ $K$-vektoriavaruus. Sanotaan, että $V$:n alkiot $\{v_1, v_2, \ldots , v_n \}$ ovat vektoriavaruuden $V$ kanta, jos seuraavat kaksi ehtoa pätevät:
+Olkoon $V$ $K$-vektoriavaruus. Sanotaan, että $V$:n alkiot $\lbrace v_1, v_2, \ldots , v_n \rbrace $ ovat vektoriavaruuden $V$ kanta, jos seuraavat kaksi ehtoa pätevät:
 
 1. Jokainen $w \in V$ voidaan muodossa $a_1v_1 + a_2v_2 + \ldots + a_nv_n$, missä $a_i \in K$, eli siis $w = a_1v_1 + \ldots + a_nv_n$.
 
@@ -124,16 +124,16 @@ Näillekin ehdoille on omat nimensä. Ehtoon 1 viitataan sanomalla, että vektor
 
 **Esimerkki (kanta)**
 
-Olkoon $S$ niiden enintään toisen asteen polynomien joukko (myös vakiopolynomit), joiden kertoimet ovat rationaalilukuja. Tällöin $S$ on $\mathbb{Q}$-vektoriavaruus, ja sillä on kanta $\{1, x, x^2\}$. On helppoa nähdä, että molemmat ehdot toteutuvat. Jälleen, kanta ei ole uniikki, sillä esimerkiksi $\{x^2 - 1, x^2, x\}$ on myös kanta.
+Olkoon $S$ niiden enintään toisen asteen polynomien joukko (mukaanlukien vakiopolynomit), joiden kertoimet ovat rationaalilukuja. Tällöin $S$ on $\mathbb{Q}$-vektoriavaruus, ja sillä on kanta $\lbrace 1, x, x^2 \rbrace$. On helppoa nähdä, että molemmat ehdot toteutuvat. Jälleen, kanta ei ole uniikki, sillä esimerkiksi $\lbrace x^2 - 1, x^2, x \rbrace$ on myös kanta.
 
 
 **Todistus (kahden algebrallisen luvun summa on algebrallinen)**
 
-Olkoot $\alpha$ ja $\beta$ joidenkin kahden polynomin $P, Q$ nollakohtia, missä $P$ ja $Q$ ovat kokonaislukukertoimisia. Olkoon $n = \deg(P)$ ja $m = \deg(Q)$. Olkoon $V$ se \mathbb{Q}-vektoriavaruus, joka sisältää kaikki luvut muotoa $q_0 + q_1\alpha + q_2\alpha^2 + \ldots $, missä $q_i \in \mathbb{Q}$. On selvää, että $\{1, \alpha, \alpha^2, \ldots \}$ virittää $V$:n, mutta tämä ei ole kanta: luku $\alpha^n$ voidaan esittää lukujen $1, \alpha, \ldots , \alpha^{n-1}$ avulla. Vastaavasti millä tahansa $k \ge n$ luku $\alpha^k$ voidaan esittää lukujen $1, \alpha, \ldots , \alpha^{n-1}$ lineaarikombinaationa. Tämän vuoksi $\{1, \alpha, \alpha^2, \ldots \alpha^{n-1}\}$ virittää vektoriavaruuden $V$. Tämäkään ei vielä välttämättä ole kanta, mutta ei välitetä siitä. Määritellään $W$ vastaavasti luvulle $\beta$, jolloin $\{1, \beta, \ldots , \beta^{m-1} \}$ virittää $W$:n.
+Olkoot $\alpha$ ja $\beta$ joidenkin kahden polynomin $P, Q$ nollakohtia, missä $P$ ja $Q$ ovat kokonaislukukertoimisia. Olkoon $n = \deg(P)$ ja $m = \deg(Q)$. Olkoon $V$ se \mathbb{Q}-vektoriavaruus, joka sisältää kaikki luvut muotoa $q_0 + q_1\alpha + q_2\alpha^2 + \ldots $, missä $q_i \in \mathbb{Q}$. On selvää, että $\lbrace 1, \alpha, \alpha^2, \ldots \rbrace $ virittää $V$:n, mutta tämä ei ole kanta: luku $\alpha^n$ voidaan esittää lukujen $1, \alpha, \ldots , \alpha^{n-1}$ avulla. Vastaavasti millä tahansa $k \ge n$ luku $\alpha^k$ voidaan esittää lukujen $1, \alpha, \ldots , \alpha^{n-1}$ lineaarikombinaationa. Tämän vuoksi $\lbrace 1, \alpha, \alpha^2, \ldots \alpha^{n-1}\rbrace $ virittää vektoriavaruuden $V$. Tämäkään ei vielä välttämättä ole kanta, mutta ei välitetä siitä. Määritellään $W$ vastaavasti luvulle $\beta$, jolloin $\lbrace 1, \beta, \ldots , \beta^{m-1} \rbrace $ virittää $W$:n.
 
-Olkoon nyt $U$ niiden lukujen joukko, jotka voidaan esittää termien muotoa $q \alpha^i \beta^j$, missä $q \in \mathbb{Q}$, $i, j \in \mathbb{Z_{\ge 0}}$. Tämä $U$ voidaan virittää lukujoukolla $B$, joka sisältää luvut muotoa $\alpha^i \beta^j$, missä $i < n$ ja $j < m$. Miksi? On selvää, että jos unohdamme ehdon $i < n$, $j < $m, niin väite pätee. Jos $i \ge n$, voidaan luku $\alpha^i\beta^j$ kirjoittaa lukujen $\alpha^k\beta^j$ lineaarikombinaationa, missä $0 \le k < n$. Tämän takia luvut muotoa $\alpha^i\beta^j$, missä $i \ge n$ tai $j \ge m$, ovat "turhia", sillä ne voidaan esittää em. luvuilla.
+Olkoon nyt $U$ niiden lukujen joukko, jotka voidaan esittää muotoa $q \alpha^i \beta^j$, missä $q \in \mathbb{Q}$, $i, j \in \mathbb{Z_{\ge 0}}$ olevien termien summana. Tämä $U$ voidaan virittää lukujoukolla $B$, joka sisältää luvut muotoa $\alpha^i \beta^j$, missä $i < n$ ja $j < m$. Miksi? On selvää, että jos unohdamme ehdon $i < n$, $j < $m, niin väite pätee. Jos $i \ge n$, voidaan luku $\alpha^i\beta^j$ kirjoittaa lukujen $\alpha^k\beta^j$ lineaarikombinaationa, missä $0 \le k < n$. Tämän takia luvut muotoa $\alpha^i\beta^j$, missä $i \ge n$ tai $j \ge m$, ovat "turhia", sillä ne voidaan esittää em. luvuilla.
 
-Osoitetaan nyt, että $\alpha + \beta$ on algebrallinen. Olkoon $T$ se $\mathbb{Q}$-vektoriavaruus, joka sisältää luvut muotoa $(\alpha + \beta)^i$, $i \in \mathbb{Z_{\ge 0}}$. Tämä $T$ on $U$:n osajoukko, joten $T$:n voi virittää äärellisellä määrällä (oikeastaan, $nm$ kappalella) alkioita. Tämä tarkoittaa, että $(\alpha + \beta)^{nm}$, voidaan esittää luvun $\alpha + \beta$ pienempien potenssien lineaarikombinaationa, eli $(\alpha + \beta)^k = q_0 + q_1(\alpha + \beta)^1 + \ldots + q_{nm-1}(\alpha + \beta)^{nm - 1}$ jollain rationaaliluvuilla $q_i$. Tämä antaa suoraan polynomin, jonka nollakohtana on $\alpha + \beta$. Siis $\alpha + \beta$ on algebrallinen.
+Osoitetaan nyt, että $\alpha + \beta$ on algebrallinen. Olkoon $T$ se $\mathbb{Q}$-vektoriavaruus, joka sisältää luvut muotoa $q(\alpha + \beta)^i$, $q \in \mathbb{Q}, i \in \mathbb{Z_{\ge 0}}$, ja tätä muotoa olevien lukujen summat. $T$ on $U$:n osajoukko, joten $T$:n voi virittää äärellisellä määrällä (oikeastaan, $nm$ kappalella) alkioita. Tämä tarkoittaa, että $(\alpha + \beta)^{nm}$, voidaan esittää luvun $\alpha + \beta$ pienempien potenssien lineaarikombinaationa, eli $(\alpha + \beta)^k = q_0 + q_1(\alpha + \beta)^1 + \ldots + q_{nm-1}(\alpha + \beta)^{nm - 1}$ jollain rationaaliluvuilla $q_i$. Tämä antaa suoraan polynomin, jonka nollakohtana on $\alpha + \beta$. Siis $\alpha + \beta$ on algebrallinen.
 
 
 **Huomautus**
