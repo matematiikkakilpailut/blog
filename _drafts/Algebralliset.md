@@ -26,7 +26,7 @@ Todistus perustuu vektoriavaruuksiin ja niiden kantoihin. Tekstin rakenne on seu
 6. Kannan määritelmä
 7. Esimerkki kannasta
 8. Väitteen todistus
-9. Harjoitustehtävä
+9. Harjoitustehtäviä
 
 Ne, jotka tietävät ennestään vektoriavaruuksien ja kantojen perusteet, voivat edetä suoraan väitteen todistukseen. Muussa tapauksessa kannattaa keskittyä koko postaukseen, sillä vektoriavaruudet ja kunnat ovat kohtalaisen yleisiä käsitteitä.
 
@@ -109,9 +109,9 @@ $\lbrace 1, \sqrt{2} \rbrace $ on kanta vektoriavaruudelle $V$, koska jokainen 
 
 Olkoon $V$ $K$-vektoriavaruus. Sanotaan, että $V$:n alkiot $\lbrace v_1, v_2, \ldots , v_n \rbrace $ ovat vektoriavaruuden $V$ kanta, jos seuraavat kaksi ehtoa pätevät:
 
-1. Jokainen $w \in V$ voidaan muodossa $a_1v_1 + a_2v_2 + \ldots + a_nv_n$, missä $a_i \in K$, eli siis $w = a_1v_1 + \ldots + a_nv_n$.
+1. Jokaisella $w \in V$ on olemassa $a_1, a_2 \ldots , a_n \in K$, joilla $w = a_1v_1 + \ldots + a_nv_n$.
 
-2. Jos joukosta $\{v_1, v_2, \ldots , v_n \}$ poistaa minkä tahansa alkion, ei ehto 1 enää päde. Tämä on ekvivalenttia (miksi?) sen kanssa, että jokin $v_i$ voidaan esittää muodossa $a_1v_1 + a_2v_2 + \ldots + a_{i-1}v_{i-1} + a_{i+1}v_{i+1} + \ldots + a_nv_n$, missä $a_i \in K$.
+2. Jos joukosta $\{v_1, v_2, \ldots , v_n \}$ poistaa minkä tahansa alkion, ei ehto 1 enää päde. Tämä on ekvivalenttia (miksi?) sen kanssa, että mitään $v_i$ ei voida esittää muodossa $a_1v_1 + a_2v_2 + \ldots + a_{i-1}v_{i-1} + a_{i+1}v_{i+1} + \ldots + a_nv_n$, missä $a_i \in K$.
 
 **Huomautus**
 
@@ -119,7 +119,7 @@ Ehto 2 käytännössä tarkoittaa sitä, että kanta ei sisällä "turhia" alkio
 
 **Huomautus**
 
-Näillekin ehdoille on omat nimensä. Ehtoon 1 viitataan sanomalla, että vektorit $v_1, \ldots , v_n$ virittävät vektoriavaruuden $V$. Lisäksi sanotaan, että $w$ voidaan esittää vektorien $v_1, \ldots , v_n$ lineaarikombinaationa. Ehtoa 2 nimitetään sanomalla, että vektorit $v_1, v_2, \ldots , v_n$ ovat lineaarisesti riippumattomia.
+Näillekin ehdoille on omat nimensä. Ehtoon 1 viitataan sanomalla, että vektorit $v_1, \ldots , v_n$ virittävät vektoriavaruuden $V$. Lisäksi sanotaan, että $w$ voidaan esittää vektorien $v_1, \ldots , v_n$ lineaarikombinaationa. Ehto 2 esitetään tavallisesti seuraavasti: olkoot $v_1, v_2, \ldots , v_n \in V$. Sanotaan, että ne ovat lineaarisesti riippumattomia (kunnan $K$ yli), jos yhtälö $a_1v_1 + a_2v_2 + \ldots + a_nv_n = 0$ pätee vain jos $a_1 = a_2 = \ldots = a_n = 0$.
 
 
 **Esimerkki (kanta)**
@@ -131,9 +131,9 @@ Olkoon $S$ niiden enintään toisen asteen polynomien joukko (mukaanlukien vakio
 
 Olkoot $\alpha$ ja $\beta$ joidenkin kahden polynomin $P, Q$ nollakohtia, missä $P$ ja $Q$ ovat kokonaislukukertoimisia. Olkoon $n = \deg(P)$ ja $m = \deg(Q)$. Olkoon $V$ se \mathbb{Q}-vektoriavaruus, joka sisältää kaikki luvut muotoa $q_0 + q_1\alpha + q_2\alpha^2 + \ldots $, missä $q_i \in \mathbb{Q}$. On selvää, että $\lbrace 1, \alpha, \alpha^2, \ldots \rbrace $ virittää $V$:n, mutta tämä ei ole kanta: luku $\alpha^n$ voidaan esittää lukujen $1, \alpha, \ldots , \alpha^{n-1}$ avulla. Vastaavasti millä tahansa $k \ge n$ luku $\alpha^k$ voidaan esittää lukujen $1, \alpha, \ldots , \alpha^{n-1}$ lineaarikombinaationa. Tämän vuoksi $\lbrace 1, \alpha, \alpha^2, \ldots \alpha^{n-1}\rbrace $ virittää vektoriavaruuden $V$. Tämäkään ei vielä välttämättä ole kanta, mutta ei välitetä siitä. Määritellään $W$ vastaavasti luvulle $\beta$, jolloin $\lbrace 1, \beta, \ldots , \beta^{m-1} \rbrace $ virittää $W$:n.
 
-Olkoon nyt $U$ niiden lukujen joukko, jotka voidaan esittää muotoa $q \alpha^i \beta^j$, missä $q \in \mathbb{Q}$, $i, j \in \mathbb{Z_{\ge 0}}$ olevien termien summana. Tämä $U$ voidaan virittää lukujoukolla $B$, joka sisältää luvut muotoa $\alpha^i \beta^j$, missä $i < n$ ja $j < m$. Miksi? On selvää, että jos unohdamme ehdon $i < n$, $j < $m, niin väite pätee. Jos $i \ge n$, voidaan luku $\alpha^i\beta^j$ kirjoittaa lukujen $\alpha^k\beta^j$ lineaarikombinaationa, missä $0 \le k < n$. Tämän takia luvut muotoa $\alpha^i\beta^j$, missä $i \ge n$ tai $j \ge m$, ovat "turhia", sillä ne voidaan esittää em. luvuilla.
+Olkoon nyt $U$ niiden lukujen joukko, jotka voidaan esittää muotoa $q \alpha^i \beta^j$, missä $q \in \mathbb{Q}$, $i, j \in \mathbb{Z_{\ge 0}}$, olevien termien summana. Tämä $U$ voidaan virittää lukujoukolla $B$, joka sisältää luvut muotoa $\alpha^i \beta^j$, missä $i < n$ ja $j < m$. Miksi? On selvää, että jos unohdamme ehdon $i < n$, $j < $m, niin väite pätee. Jos $i \ge n$, voidaan luku $\alpha^i\beta^j$ kirjoittaa lukujen $\alpha^k\beta^j$ lineaarikombinaationa, missä $0 \le k < n$. Tämän takia luvut muotoa $\alpha^i\beta^j$, missä $i \ge n$ tai $j \ge m$, ovat "turhia", sillä ne voidaan esittää em. luvuilla.
 
-Osoitetaan nyt, että $\alpha + \beta$ on algebrallinen. Olkoon $T$ se $\mathbb{Q}$-vektoriavaruus, joka sisältää luvut muotoa $q(\alpha + \beta)^i$, $q \in \mathbb{Q}, i \in \mathbb{Z_{\ge 0}}$, ja tätä muotoa olevien lukujen summat. $T$ on $U$:n osajoukko, joten $T$:n voi virittää äärellisellä määrällä (oikeastaan, $nm$ kappalella) alkioita. Tämä tarkoittaa, että $(\alpha + \beta)^{nm}$, voidaan esittää luvun $\alpha + \beta$ pienempien potenssien lineaarikombinaationa, eli $(\alpha + \beta)^k = q_0 + q_1(\alpha + \beta)^1 + \ldots + q_{nm-1}(\alpha + \beta)^{nm - 1}$ jollain rationaaliluvuilla $q_i$. Tämä antaa suoraan polynomin, jonka nollakohtana on $\alpha + \beta$. Siis $\alpha + \beta$ on algebrallinen.
+Osoitetaan nyt, että $\alpha + \beta$ on algebrallinen. Olkoon $T$ se $\mathbb{Q}$-vektoriavaruus, joka sisältää luvut muotoa $q(\alpha + \beta)^i$, $q \in \mathbb{Q}, i \in \mathbb{Z_{\ge 0}}$, ja tätä muotoa olevien lukujen summat. $T$ on $U$:n osajoukko, joten $T$:n voi virittää äärellisellä määrällä (oikeastaan, $nm$ kappalella) alkioita. Tämä tarkoittaa, että $(\alpha + \beta)^{nm}$, voidaan esittää luvun $\alpha + \beta$ pienempien potenssien lineaarikombinaationa, eli $(\alpha + \beta)^{nm} = q_0 + q_1(\alpha + \beta)^1 + \ldots + q_{nm-1}(\alpha + \beta)^{nm - 1}$ jollain rationaaliluvuilla $q_i$. Tämä antaa suoraan polynomin, jonka nollakohtana on $\alpha + \beta$. Siis $\alpha + \beta$ on algebrallinen.
 
 
 **Huomautus**
@@ -142,8 +142,8 @@ Jos todistuksen viimeisen kappaleen termit $\alpha + \beta$ korvaa termeillä $
 
 
 
-**Harjoitustehtävä**
+**Harjoitustehtäviä**
 
-1. Olkoon $\alpha \neq 0$ algebrallinen. Osoita, että $\frac{1}{\alpha}$ on algebrallinen. Tämä todistaa, että algebrallisten lukujen joukko on kunta.
+1. Olkoon $\alpha \neq 0$ algebrallinen. Osoita, että $\frac{1}{\alpha}$ on algebrallinen. Tämä todistaa yhdessä yllä olevien väitteiden kanssa, että algebrallisten lukujen joukko on kunta.
 
 2. Sanotaan, että algebrallinen luku $\alpha$ on algebrallinen kokonaisluku, jos on olemassa sellainen kokonaislukukertoiminen polynomi $P$, jonka nollakohta $\alpha$ on, ja $P$:n korkeimman asteen termin kerroin on 1. Esimerkiksi $\sqrt{2}$ on algebrallinen kokonaisluku, koska se on polynomin $x^2 - 2$ nollakohta, mutta $\frac{\sqrt{2}}{2}$ ei kuitenkaan ole algebrallinen kokonaisluku. Osoita, että kaikilla algebrallisilla luvuilla $\alpha$ on olemassa sellainen $n \in \mathbb{Z_{> 0}}$, jolla $n\alpha$ on algebrallinen kokonaisluku.
