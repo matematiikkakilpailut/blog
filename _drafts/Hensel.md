@@ -68,10 +68,10 @@ Jos $P$ on jakautumaton, väite pätee Schurin lauseen ja sovelluksen 1 nojalla
 
 Olkoot $b$ ja $c$ kokonaislukuja, ja määritellään $f(x) = (x+b)^2 - c$.
 
-i) Jos $p$ on sellainen, jolla $p | c$, mutta $p^2$ ei jaa $c$:tä, osoita, että $f(n)$ ei ole jaollinen luvulla $p^2$ millään kokonaisluvulla $n$.
+i) Jos $p$ on sellainen, jolla $c \equiv 0 \pmod{p}$, mutta $p^2$ ei jaa $c$:tä, osoita, että $f(n)$ ei ole jaollinen luvulla $p^2$ millään kokonaisluvulla $n$.
 
-ii) (Korjattu versio) Olkoon $q \neq 2$ sellainen alkuluku, joka ei jaa $c$:tä. Jos $q$ jakaa luvun $f(n)$ jollain kokonaisluvulla $n$, osoita, että kaikilla positiivisilla kokonaisluvuilla $r$ on olemassa kokonaisluku $n'$, jolla $q^r | f(n')$.
+ii) (Korjattu versio) Olkoon $q \neq 2$ sellainen alkuluku, joka ei jaa $c$:tä. Jos $q$ jakaa luvun $f(n)$ jollain kokonaisluvulla $n$, osoita, että kaikilla positiivisilla kokonaisluvuilla $r$ on olemassa kokonaisluku $n'$, jolla $q^r$ jakaa luvun $f(n')$.
 
 **[Kiinatehtävän yleistys](https://blog.matematiikkakilpailut.fi/2018/04/24/Kiina.html)**
 
-Olkoon $P \in \mathbb{Z}[x]$ toisen asteen polynomi. Olkoon $S$ niiden alkulukujen $p$ joukko, joilla $p^2 | P(n)$ kaikilla $n \in \mathbb{Z}$. Osoita, että on olemassa äärettömän monta $n$, joilla $P(n)$ ei ole jaollinen minkään alkuluvun $p$ neliöllä, missä $p \not\in S$.
+Olkoon $P \in \mathbb{Z}[x]$ toisen asteen polynomi. Olkoon $S$ niiden alkulukujen $p$ joukko, joilla $P(n) \equiv 0 \pmod{p^2}$ kaikilla $n \in \mathbb{Z}$. Osoita, että on olemassa äärettömän monta $n$, joilla $P(n)$ ei ole jaollinen minkään alkuluvun $p$ neliöllä, missä $p \not\in S$.
