@@ -22,29 +22,29 @@ Kaikkien postauksen rationaalilukujen oletetaan olevan supistetussa muodossa.
 
 **Määritelmä 1**
 
-Olkoon $r = \frac{a}{b}$, missä $a, b \in \mathbb{Z}$, ja olkoon $m \in \mathbb{Z_+}$. Sanotaan, että $m | r$, jos $\syt(m, b) = 1$ ja $m | a$.
+Olkoon $r = \frac{a}{b}$, missä $a, b \in \mathbb{Z}$, ja olkoon $m \in \mathbb{Z_+}$. Sanotaan, että $m \mid r$, jos $\syt(m, b) = 1$ ja $m \mid a$.
 
 Määritelmä on hyvin luonnollinen. Osoitetaan ensin perusfaktoja. Yksityiskohtien määrä todistuksissa vähenee loppua kohden.
 
 **Perusominaisuus 1**
 
-Olkoon $m \in \mathbb{Z_+}$ annettu, ja olkoot $s, r \in \mathbb{Q}$. Oletetaan, että $m | s$ ja $m | r$. Tällöin $m | s + r$, $m | s - r$.
+Olkoon $m \in \mathbb{Z_+}$ annettu, ja olkoot $s, r \in \mathbb{Q}$. Oletetaan, että $m \mid s$ ja $m \mid r$. Tällöin $m \mid s + r$, $m \mid s - r$.
 
 **Todistus**
 
-Kirjoitetaan $s = \frac{a}{b}$, $r = \frac{c}{d}$. On annettu $\syt(m, b) = \syt(m, d) = 1$, ja $m | a$, $m | c$. Täten $m | ad + bc$, joten $m | \frac{ad + bc}{bd} = s + r$. Vastaavasti saadaan osoitettua $m | s - r$.
+Kirjoitetaan $s = \frac{a}{b}$, $r = \frac{c}{d}$. On annettu $\syt(m, b) = \syt(m, d) = 1$, ja $m \mid a$, $m \mid c$. Täten $m \mid ad + bc$, joten $m \mid \frac{ad + bc}{bd} = s + r$. Vastaavasti saadaan osoitettua $m \mid s - r$.
 
 **Perusominaisuus 2**
 
-Olkoon $m \in \mathbb{Z_+}$ annettu, ja olkoot $s, r \in \mathbb{Q}$. Oletetaan, että $m | s$, ja että luvulla $m$ ei ole yhteisiä tekijöitä luvun $r$ nimittäjän kanssa. Tällöin $m | sr$.
+Olkoon $m \in \mathbb{Z_+}$ annettu, ja olkoot $s, r \in \mathbb{Q}$. Oletetaan, että $m \mid s$, ja että luvulla $m$ ei ole yhteisiä tekijöitä luvun $r$ nimittäjän kanssa. Tällöin $m \mid sr$.
 
 **Todistus**
 
-Kuten edellä, kirjoitetaan $s = \frac{a}{b}$, $r = \frac{c}{d}$. Annetuista ehdoista seuraa $m | ac$, joten $m | \frac{ac}{bd} = sr$.
+Kuten edellä, kirjoitetaan $s = \frac{a}{b}$, $r = \frac{c}{d}$. Annetuista ehdoista seuraa $m \mid ac$, joten $m \mid \frac{ac}{bd} = sr$.
 
 **Perusominaisuus 3**
 
-Olkoon $p$ alkuluku, ja olkoot $s, r \in \mathbb{Q}$ sellaisia, joiden nimittäjät eivät ole jaollisia luvulla $p$. Oletetaan, että $p | sr$. Tällöin $p | s$ tai $p | r$ (tai molemmat).
+Olkoon $p$ alkuluku, ja olkoot $s, r \in \mathbb{Q}$ sellaisia, joiden nimittäjät eivät ole jaollisia luvulla $p$. Oletetaan, että $p \mid sr$. Tällöin $p \mid s$ tai $p \mid r$ (tai molemmat).
 
 **Todistus**
 
@@ -54,7 +54,7 @@ Kongruessit voidaan määritellä aivan kuten kokonaisluvuille:
 
 **Määritelmä 2**
 
-Olkoot $s, r \in \mathbb{Q}$, ja $m \in \mathbb{Z_+}$. Sanotaan, että $s \equiv r \pmod{m}$, jos $m | s - r$.
+Olkoot $s, r \in \mathbb{Q}$, ja $m \in \mathbb{Z_+}$. Sanotaan, että $s \equiv r \pmod{m}$, jos $m \mid s - r$.
 
 **Rationaaliluvut kokonaislukuina**
 
@@ -62,7 +62,7 @@ Olkoon $s = \frac{a}{b} \in \mathbb{Q}$, ja $m \in \mathbb{Z_+}$. Oletetaan, ett
 
 **Perustelu**
 
-Olkoon $k = \phi(m)$. Eulerin lauseen nojalla $b^k \equiv 1 \pmod{m}$, eli $b^{-1} \equiv b^{k-1} \pmod{m}$. Siis $c = ab^{k-1}$. Nyt, $s - c = \frac{a}{b} - ab^{k-1} = \frac{a - ab^k}{b}$. Täten Eulerin lauseen nojalla $m | s - c$, eli $s \equiv c \pmod{m}$.
+Olkoon $k = \phi(m)$. Eulerin lauseen nojalla $b^k \equiv 1 \pmod{m}$, eli $b^{-1} \equiv b^{k-1} \pmod{m}$. Siis $c = ab^{k-1}$. Nyt, $s - c = \frac{a}{b} - ab^{k-1} = \frac{a - ab^k}{b}$. Täten Eulerin lauseen nojalla $m \mid s - c$, eli $s \equiv c \pmod{m}$.
 
 Rationaalilukujen tulkinta kokonaislukuina on monesti varsin kätevää. Esimerkiksi tutkittaessa tiettyä joukkoa rationaalilukuja modulo alkuluku $p$, voidaan tietyissä tilanteissa poissulkea ne äärellisen monta $p$, jotka jakavat jonkin annetun rationaaliluvun nimittäjän. Muissa tapauksissa ongelma palautuu kokonaislukujen käsittelyyn.
 
@@ -76,7 +76,7 @@ Huomautetaan vielä, että jaollisuus voidaan määritellä myös aritmetiikan p
 
 **Määritelmä 4**
 
-Olkoot $p_1, p_2, \ldots$ alkuluvut pienimmästä suurimpaan. Jokainen nollasta eroava rationaaliluku voidaan aritmetiikan peruslauseen nojalla esittää lukujonolla $\alpha_1, \alpha_2, \ldots$, missä kaikki paitsi äärellisen moni $\alpha_i \in \mathbb{Z}$ on nolla. Olkoot $0 \neq r \in \mathbb{Q}$ ja $m \in \mathbb{Z_+}$. Olkoot $r_1, r_2, \ldots $ ja $m_1, m_2, \ldots $ lukuja $r$ ja $m$ vastaavat lukujonot. Sanotaan, että $m | r$, jos ja vain jos $m_i \le r_i$ kaikilla $i$.
+Olkoot $p_1, p_2, \ldots$ alkuluvut pienimmästä suurimpaan. Jokainen nollasta eroava rationaaliluku voidaan aritmetiikan peruslauseen nojalla esittää lukujonolla $\alpha_1, \alpha_2, \ldots$, missä kaikki paitsi äärellisen moni $\alpha_i \in \mathbb{Z}$ on nolla. Olkoot $0 \neq r \in \mathbb{Q}$ ja $m \in \mathbb{Z_+}$. Olkoot $r_1, r_2, \ldots $ ja $m_1, m_2, \ldots $ lukuja $r$ ja $m$ vastaavat lukujonot. Sanotaan, että $m \mid r$, jos ja vain jos $m_i \le r_i$ kaikilla $i$.
 
 **Huomautus**
 
@@ -86,9 +86,9 @@ Ja vielä yksi vaihtoehtoinen määritelmä:
 
 **Määritelmä 5**
 
-Olkoot $r = \frac{a}{b}$ ja $m \in \mathbb{Z_+}$ annettu. Kirjoitetaan $m | \frac{a}{b}$, jos $mb | a$.
+Olkoot $r = \frac{a}{b}$ ja $m \in \mathbb{Z_+}$ annettu. Kirjoitetaan $m \mid \frac{a}{b}$, jos $mb \mid a$.
 
-Tässä määritelmässä ei tarvitse erikseen huolehtia siitä, ovatko $a$ ja $b$ yhteistekijättömiä. Vastaavasti voidaan myös määritellä $\frac{a}{b} | \frac{c}{d}$, jos $ad | bc$. Tämä jälleen vastaa kokonaislukujen jaollisuutta: $a | b$ jos $\frac{b}{a}$ on kokonaisluku, joten $\frac{a}{b} | \frac{c}{d}$ jos
+Tässä määritelmässä ei tarvitse erikseen huolehtia siitä, ovatko $a$ ja $b$ yhteistekijättömiä. Vastaavasti voidaan myös määritellä $\frac{a}{b} \mid \frac{c}{d}$, jos $ad \mid bc$. Tämä jälleen vastaa kokonaislukujen jaollisuutta: $a \mid b$ jos $\frac{b}{a}$ on kokonaisluku, joten $\frac{a}{b} \mid \frac{c}{d}$ jos
 
 $$\frac{\frac{c}{d}}{\frac{a}{b}} = \frac{bc}{ad}$$
 
