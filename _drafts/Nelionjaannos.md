@@ -113,7 +113,7 @@ Esitetään sitten vastaavassa hengessä ratkaisu ongelmaan 2.
 
 Ratkaisu tähän ongelmaan ei poikkea suuresti edellisen tehtävän ratkaisusta, mutta vaikeutena on se, että edellisessä ongelmassa ainoa erikoinen tapaus oli $a = 0$, ja tässä eri tavalla käyttäytyviä lukuja on äärettömän monta.
 
-Ongelman 1 ratkaisu antaa miltei suoraan ratkaisun siinä tapauksessa, että $|a|$:lla on sellainen pariton alkulukutekijä $q$, jonka eksponentti $|a|$:n alkutekijähajotelmassa on pariton. Tutkitaan tämä tapaus ensimmäisenä.
+Ongelman 1 ratkaisu antaa miltei suoraan ratkaisun siinä tapauksessa, että $\pm a$:lla on sellainen pariton alkulukutekijä $q$, jonka eksponentti $\pm a$:n alkutekijähajotelmassa on pariton. Tutkitaan tämä tapaus ensimmäisenä.
 
 Olkoon siis ratkaisun 1 mukaisesti $p \equiv 1 \pmod{8}$, ja $L(a, p) = L(q_1, p)L(q_2, p) \ldots L(q_m, p)$. Oletuksen nojalla $m \ge 1$, eli kyseessä ei ole tyhjä tulo. Jälleen voidaan käyttää neliönjäännösten resiprookilakia:
 
@@ -128,7 +128,7 @@ Koska $q_1$ on pariton alkuluku, on olemassa sellainen $t \in \mathbb{Z}$, joll
 Kiinalaisen jäännöslauseen ja Dirchlet'n lauseen nojalla tällaisia $p$ on äärettömän monta. Näillä $p$ pätee $L(p, q_i) = 1$ jos ja vain jos $i \neq 1$. Siis täsmälleen yksi tulon $L(p, q_1)L(p, q_2) \ldots L(p, q_m)$ luvuista on $-1$, joten koko tulo on $-1$. Tämä osoittaa väitteen.
 
 
-Tutkitaan sitten se tapaus, jossa $|a|$:lla ei ole parittomia alkulukutekijöitä. Tämä tarkoittaa, että $|a| = 2^b$ jollain $b \ge 0$. Siis $a = \pm 2^b$. Tapaus $b \ge 2$ voidaan redusoida lemman 1 todistuksen kaltaisilla menetelmillä tapaukseen $0 \le b < 2$. Näiden äärellisen monen tapauksen käsittely jätetään lukijalle.
+Tutkitaan sitten se tapaus, jossa $\mid a \mid$:lla ei ole parittomia alkulukutekijöitä. Tämä tarkoittaa, että $\mid a \mid = 2^b$ jollain $b \ge 0$. Siis $a = \pm 2^b$. Tapaus $b \ge 2$ voidaan redusoida lemman 1 todistuksen kaltaisilla menetelmillä tapaukseen $0 \le b < 2$. Näiden äärellisen monen tapauksen käsittely jätetään lukijalle.
 
 
 **Yleistäminen**
