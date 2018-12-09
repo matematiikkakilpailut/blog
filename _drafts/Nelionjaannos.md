@@ -7,9 +7,6 @@ excerpt_separator: "<!--jatkuu-->"
 
 ---
 
-<div class="hidden">
-$\newcommand{\syt}{\mathop{\rm syt}}$
-</div>
 
 Tässä postauksessa käsitellään neliönjäännöksiä. Tarkemmin sanoen käsitellään, milloin luku on neliönjäännös äärettömän monella alkuluvulla sekä muita samanhenkisiä kysymyksiä.
 
@@ -72,7 +69,7 @@ Tutkitaan vain niitä alkulukuja $p$, joilla $p \equiv 1 \pmod{8}$. Näitä on D
 
 **Lemma 1**
 
-Olkoon $k \in \mathbb{Z}$ sellainen, jolla $k \neq 0$. Olkoon $\mid k \mid = 2^{a}p_1^{a_1}p_2^{a_2} \ldots p_n^{a_n}q_1^{b_1} \ldots q_m^{b_m}$, missä parittomat alkuluvut $p_i, q_j$ ovat erisuuria, $a_i \equiv 0 \pmod{2}$ ja $b_j \equiv 1 \pmod{2}$. Tällöin kaikilla $p \equiv 1 \pmod{8}$, joilla $p \not\mid k$, pätee
+Olkoon $k \in \mathbb{Z}$ sellainen, jolla $k \neq 0$. Olkoon $\mid k \mid \ = 2^{a}p_1^{a_1}p_2^{a_2} \ldots p_n^{a_n}q_1^{b_1} \ldots q_m^{b_m}$, missä parittomat alkuluvut $p_i, q_j$ ovat erisuuria, $a_i \equiv 0 \pmod{2}$ ja $b_j \equiv 1 \pmod{2}$. Tällöin kaikilla $p \equiv 1 \pmod{8}$, joilla $p \not\mid k$, pätee
 
 $L(k, p) = L(q_1, p)L(q_2, p) \ldots L(q_m, p)$
 
@@ -139,7 +136,7 @@ Todistetut tulokset ovat varsin kauniita, mutta voiko niitä vielä laajentaa? L
 
 2. Entä ongelman 2 vastaava variantti, missä $a_i$ eivät ole neliölukuja?
 
-3. Ratkaisuissa 1 ja 2 luodut $p$ ovat melko harvassa, esimerkiksi ratkaisun 1 $p$ toteuttavat ehdon $p \equiv 1 \pmod{8q_1q_2 \ldots q_m}$. Kuinka "tiheästi" tällaisia ongelman 1 tai 2 mukaisia $p$ todellisuudessa on?
+3. Ratkaisuissa 1 ja 2 luodut $p$ ovat melko harvassa, esimerkiksi ratkaisun 1 $p$ toteuttavat ehdon $p \equiv 1 \pmod{8q_1q_2 \ldots q_m}$. Kuinka "tiheästi" ongelman 1 tai 2 mukaisia $p$ todellisuudessa on?
 
 Ensimmäisen kysymyksen vastaus lienee ilmeinen: käytännössä sama argumentti käsittelee monen muuttujan tapauksen kuin mitä käytettiin ratkaisussa 1.
 
@@ -153,7 +150,7 @@ Ennen tämän väitteen todistamista määritellään tiheys. Olkoon $S$ jokin 
 
 $$\delta(S) = \lim_{x \to \infty} \frac{S(x)}{\mathbb{P}(x)}$$
 
-Kaikilla joukoilla $S$ tämä raja-arvo ei ole olemassa, mutta tässä postauksessa tutkittavat tiheydet ovat olemassa. Dirichlet'n lauseesta on usein kilpailumatematiikan yhteydessä mainittua versiota voimakkaampi väite, joka kertoo, että niiden $p$ tiheys, joilla $p \equiv a \pmod{m}$, on $\frac{1}{\phi(m)}$ kaikilla $\syt(a, m)$.
+Kaikilla joukoilla $S$ tämä raja-arvo ei ole olemassa, mutta tässä postauksessa tutkittavat tiheydet ovat olemassa. Dirichlet'n lauseesta on usein kilpailumatematiikan yhteydessä mainittua versiota voimakkaampi väite, joka kertoo, että niiden $p$ tiheys, joilla $p \equiv a \pmod{m}$, on $\frac{1}{\phi(m)}$ kaikilla $a, m$, jotka ovat yhteistekijättömiä.
 
 Käyttäen Dirichlet'n lausetta ei ole kovin vaikeaa osoittaa ratkaisun 1 kaltaisesti, että niiden $p$ tiheys, joilla $L(a, p) = 1$, on $\frac{1}{2}$. Tämä voidaan toteuttaa vaikkapa seuraavasti: tutkitaan ensin niitä $p$, joilla $p \equiv 1 \pmod{8}$. Näitä $p$ on neljäsosa alkuluvuista, ja näillä $p$ pätee $L(a, p) = L(p, q_1) \ldots L(p), q_m)$.
 
@@ -174,7 +171,7 @@ $$L(a_2, p)L(a_3, p) \ldots L(a_t, p) = L(a_1, p)$$
 
 Siis jos $a_2, a_3, \ldots , a_t$ ovat kaikki neliönepäjäännöksiä, seuraa tästä $L(a_1, p) = -1$, koska $t$:n oletettiin olevan parillinen.
 
-Tämä idea soveltuu neliönepäjäännösten lisäksi tietysti myös neliönjäännösten tutkimiseen. Esitetään tämän perustelun avulla heuristiikka, johon ilmiö perustuu.
+Tämä idea soveltuu neliönepäjäännösten lisäksi tietysti myös neliönjäännösten tutkimiseen. Tehdään tämä oletus, ja esitetään heuristiikka, johon kysymyksen 2 ilmiö perustuu.
 
 **Heuristiikka**
 
@@ -196,7 +193,7 @@ Lienee mahdollista osoittaa heuristiikan paikkansapätevyys formaalisti kysymyks
 
 **Yleinen toisen asteen polynomi**
 
-Olkoon $P(x) = ax^2 + bx + c$ kokonaislukukertoimien toisen asteen polynomi. Osoita, että äärellisen montaa $p$ lukuun ottamatta yhtälöllä $P(x) \equiv 0 \pmod{p}$ on ratkaisu jos ja vain jos $b^2 - 4ac$ on neliönjäännös modulo $p$.
+Olkoon $P(x) = ax^2 + bx + c$ kokonaislukukertoimien toisen asteen polynomi. Osoita, että äärellisen montaa $p$ lukuun ottamatta yhtälöllä $P(x) \equiv 0 \pmod{p}$ on ratkaisu jos ja vain jos $b^2 - 4ac$ on neliönjäännös modulo $p$ (tai $b^2 - 4ac \equiv 0 \pmod{p}$).
 
 **Erikoistapaus**
 
@@ -208,4 +205,4 @@ Neliönjäännöksiä on puolet luvuista tiettyä $p$ kohden, joten heuristisest
 
 Esitä heuristinen perustelu sille, että $a$ on kuutionjäännös modulo $p$ (eli yhtälöllä $x^3 \equiv a \pmod{p}$ on ratkaisu) $\frac{2}{3}$ alkuluvuista $p$ kun $a$ ei ole kuutioluku. Esitä vastaava perustelu eksponentin $3$ sijasta alkulukueksponentille $q$, jolloin tiheyden tulisi olla $\frac{q-1}{q}$.
 
-Huomautetaan, että heuristiikat todella antavat oikean tuloksen, mutta tämän todistaminen vaatii järeämpää kalustoa. Vinkkinä tehtävään toimii tämän [monisteen](https://matematiikkakilpailut.fi/kirjallisuus/primitiivijuuret.pdf) aihe.
+Huomautetaan, että heuristiikat todella antavat oikean tuloksen, mutta väitteiden todistaminen vaatii järeämpää kalustoa. Vinkkinä tehtävään toimii tämän [monisteen](https://matematiikkakilpailut.fi/kirjallisuus/primitiivijuuret.pdf) aihe.
