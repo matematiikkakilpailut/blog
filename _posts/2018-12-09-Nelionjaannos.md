@@ -8,7 +8,7 @@ excerpt_separator: "<!--jatkuu-->"
 ---
 
 
-Tässä postauksessa käsitellään neliönjäännöksiä. Tarkemmin sanoen käsitellään, milloin luku on neliönjäännös äärettömän monella alkuluvulla sekä muita samanhenkisiä kysymyksiä.
+Tässä postauksessa käsitellään neliönjäännöksiä. Tarkemmin sanoen käsitellään, milloin luku on neliönjäännös äärettömän monella alkuluvulla, sekä muita samanhenkisiä kysymyksiä.
 
 <!--jatkuu-->
 
