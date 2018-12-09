@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Olli Järviniemi
-title: "Neliönjäännöksistä"
+title: "Neliönjäännökset"
 math: true
 excerpt_separator: "<!--jatkuu-->"
 
@@ -19,7 +19,7 @@ Ensin kerrataan neliönjäännöksiin liittyvä teoria. Väitteitä ei todisteta
 
 **Määritelnä (neliönjäännös)**
 
-Olkoon $p$ alkuluku. Sanotaan, että $a$ on neliönjäännös modulo $p$, jos $p \not\mid a$, ja yhtälöllä $x^2 \equiv a \pmod{p}$ on ratkaisu. Jos $p \not\mid a$, ja tällä yhtälöllä ei ole ratkaisua, kutsutaan $a$:ta neliönepäjäännökseksi. Luvut $a$, joilla $p | a$, eivät ole neliönjäännöksiä eivätkä -epäjäännöksiä.
+Olkoon $p$ alkuluku. Sanotaan, että $a$ on neliönjäännös modulo $p$, jos $p \not\mid a$, ja yhtälöllä $x^2 \equiv a \pmod{p}$ on ratkaisu. Jos $p \not\mid a$, ja tällä yhtälöllä ei ole ratkaisua, kutsutaan $a$:ta neliönepäjäännökseksi. Luvut $a$, joilla $p \mid a$, eivät ole neliönjäännöksiä eivätkä -epäjäännöksiä.
 
 Parittomilla $p$ neliönjäännöksiä ovat täsmälleen puolet luvuista $1, 2, \ldots , p-1$.
 
@@ -41,11 +41,11 @@ Olkoot $p$ ja $q$ parittomia alkulukuja. Oletetaan, että joko $p \equiv 1 \pmo
 
 Resiprookkilaki ei kerro, milloin luvut $-1$ ja $2$ ovat neliönjäännöksiä. Näitä varten on seuraavat tulokset:
 
-**-1**
+**Tapaus $a = -1$**
 
 $L(-1, p) = 1$ jos ja vain jos $p \equiv 1 \pmod{4}$ (tai $p = 2$).
 
-**2**
+**Tapaus $a = 2$**
 
 $L(2, p) = 1$ jos ja vain jos $p \equiv \pm 1 \pmod{8}$.
 
@@ -72,19 +72,19 @@ Tutkitaan vain niitä alkulukuja $p$, joilla $p \equiv 1 \pmod{8}$. Näitä on D
 
 **Lemma 1**
 
-Olkoon $k \in \mathbb{Z}$ sellainen, jolla $k \neq 0$. Olkoon $|k| = 2^{a}p_1^{a_1}p_2^{a_2} \ldots p_n^{a_n}q_1^{b_1} \ldots q_m^{b_m}$, missä parittomat alkuluvut $p_i, q_j$ ovat erisuuria, $a_i \equiv 0 \pmod{2}$ ja $b_j \equiv 1 \pmod{2}$. Tällöin kaikilla $p \equiv 1 \pmod{8}$, joilla $p \not| k$, pätee
+Olkoon $k \in \mathbb{Z}$ sellainen, jolla $k \neq 0$. Olkoon $\mid k \mid = 2^{a}p_1^{a_1}p_2^{a_2} \ldots p_n^{a_n}q_1^{b_1} \ldots q_m^{b_m}$, missä parittomat alkuluvut $p_i, q_j$ ovat erisuuria, $a_i \equiv 0 \pmod{2}$ ja $b_j \equiv 1 \pmod{2}$. Tällöin kaikilla $p \equiv 1 \pmod{8}$, joilla $p \not\mid k$, pätee
 
 $L(k, p) = L(q_1, p)L(q_2, p) \ldots L(q_m, p)$
 
 **Huomautus**
 
-Jos $|k|$ on luvun $2$ potenssi, on kyseessä tyhjä tulo, eli $L(k, p) = 1$.
+Jos $\mid k \mid$ on luvun $2$ potenssi, on kyseessä tyhjä tulo, eli $L(k, p) = 1$.
 
 **Todistus**
 
 Ideana on käyttää Legendren symbolin multiplikatiivisuutta, jonka avulla ongelma voidaan hajoittaa pieniin palasiin. Valinnasta $p \equiv 1 \pmod{8}$ ja multiplikatiivisuudesta johtuen
 
-$$L(k, p) = L(|k|, p) = L(2^a, p)L(p_1^{a_1}, p) \ldots L(q_m^{b_m}, p)$$
+$$L(k, p) = L(\mid k \mid, p) = L(2^a, p)L(p_1^{a_1}, p) \ldots L(q_m^{b_m}, p)$$
 
 Tätä voidaan sieventää seuraavin keinoin:
 
@@ -102,7 +102,7 @@ Lemman avulla voidaan siirtyä ratkaisun alussa kuvailtuun vaiheeseen, jossa kä
 
 $$L(a, p) = L(q_1, p) \ldots L(q_m, p) = L(p, q_1) \ldots L(p, q_m)$$
 
-Enää tulee siis varmistaa, että yhtälön oikeanpuoleisin lauseke on $1$. Mutta tämä on helppoa: voidaan esimerkiksi valita $p \equiv 1 \pmod{8q_1q_2 \ldots q_m}$. Tällöin $p \equiv 1 \pmod{8}$ kuten kuuluukin. Lisäksi tärkeimpänä huomiona $p \equiv 1 \pmod{q_i}$ kaikilla $i$, joten $p$ on neliönjäännös modulo $q_i$ kaikilla $i$. Tämä osoittaa, että kaikki tätä muotoa olevat $p$ (poislukien ne, joilla $p | a$) ovat sellaisia, joilla $L(a, p) = 1$. Dirichlet'n lauseen nojalla näitä $p$ on äärettömän monta, mikä todistaa väitteen.
+Enää tulee siis varmistaa, että yhtälön oikeanpuoleisin lauseke on $1$. Mutta tämä on helppoa: voidaan esimerkiksi valita $p \equiv 1 \pmod{8q_1q_2 \ldots q_m}$. Tällöin $p \equiv 1 \pmod{8}$ kuten kuuluukin. Lisäksi tärkeimpänä huomiona $p \equiv 1 \pmod{q_i}$ kaikilla $i$, joten $p$ on neliönjäännös modulo $q_i$ kaikilla $i$. Tämä osoittaa, että kaikki tätä muotoa olevat $p$ (poislukien ne, joilla $p \mid a$) ovat sellaisia, joilla $L(a, p) = 1$. Dirichlet'n lauseen nojalla näitä $p$ on äärettömän monta, mikä todistaa väitteen.
 
 
 Huomaa, että ongelma 1 voidaan ratkaista suoraan [Schurin lauseella](https://blog.matematiikkakilpailut.fi/2018/05/27/Schur.html). Yllä esitetty ratkaisu on kuitenkin tietyssä mielessä parempi, koska se antaa informaatiota siitä, "millaisia" ne $p$ ovat, joilla $L(a, p) = 1$. Tähän keskitytään tarkemmin myöhemmin tässä postauksessa.
