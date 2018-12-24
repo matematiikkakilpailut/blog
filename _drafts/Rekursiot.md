@@ -156,7 +156,7 @@ Ratkaisun toimivuuden voi tarkistaa vielä helpolla induktiolla.
 
 Olkoon $n \ge 0$ kokonaisluku, Osoita, että
 
-$$2^n | \lceil (3 + \sqrt{5})^n \rceil$$
+$$2^n \mid \lceil (3 + \sqrt{5})^n \rceil$$
 
 Tässä $\lceil x \rceil$ kuvaa pienintä kokonaislukua, joka on $\ge x$.
 
@@ -176,7 +176,7 @@ $$(3 + \sqrt{5})^n = 3^n + {n \choose 1}3^{n-1}\sqrt{5} + {n \choose 2}3^{n-2}5 
 
 Rekursioyhtälön karakteristisen polynomin voi keksiä tutkimalla toisen asteen polynomeja $x^2 + ax + b$, ja käyttämällä toisen asteen yhtälön ratkaisukaavaa. Karakteristiseksi polynomiksi saadaan $x^2 - 6x + 4$. Nollakohdat ovat $3 \pm \sqrt{5}$. Idean 1 perusteella olisi luontevaa valita lukujonon alkuarvot niin, että yleinen termi on täsmälleen luvut muotoa $(3 + \sqrt{5})^n + (3 - \sqrt{5})^n$. Alkuarvoiksi tulisi tällöin $a_0 = 2$ ja $a_1 = 6$.
 
-Saadaan siis rekursioyhtälö $a_{n+2} = 6a_{n+1} - 4a_n$ alkuarvoilla $a_0 = 2$ ja $a_1 = 6$. Nyt on helppoa osoittaa induktiolla, että $2^n | a_n$. Mutta $a_n = (3 + \sqrt(5))^n + (3 - \sqrt{5})^n =  \lceil (3 + \sqrt{5})^n \rceil$, joten tämä osoittaa väitteen.
+Saadaan siis rekursioyhtälö $a_{n+2} = 6a_{n+1} - 4a_n$ alkuarvoilla $a_0 = 2$ ja $a_1 = 6$. Nyt on helppoa osoittaa induktiolla, että $2^n \mid a_n$. Mutta $a_n = (3 + \sqrt(5))^n + (3 - \sqrt{5})^n =  \lceil (3 + \sqrt{5})^n \rceil$, joten tämä osoittaa väitteen.
 
 Lopuksi esitetään viikon 50 [viikotehtävä](https://keskustelu.matematiikkakilpailut.fi/t/viikkotehtava-osajoukkojen-summien-jaollisuus-viikko-50-2018/224/4) ja sen ratkaisu. Ratkaisussa esitetään myös, miten voidaan ratkaista ongelma, jonka voi ajatella olevan lineaarisen rekursion yleisen jäsenen määrittämisen ja lineaarisen yhtälöparin yhdistelmä.
 
@@ -257,6 +257,10 @@ Arvolla $n = 400$ saadaan tehtävään ratkaisu $\frac{2^{402} + 2^{2000}}{5}$.
 
 Yllä esitetty metodi rekursioyhtälöparin ratkaisuun yleistynee useammallekin yhtälölle, mutta prosessi tuskin on miellyttävä.
 
+**Huomautus**
+
+Tehtävään on myös aivan toisenlainen ratkaisu, jonka voi lukea [tehtävän keskusteluketjusta](https://keskustelu.matematiikkakilpailut.fi/t/viikkotehtava-osajoukkojen-summien-jaollisuus-viikko-50-2018/224). Vaihtoehtoisen ratkaisun elegantilla menetelmällä on kohtuullisen vakiintunut nimi, "roots of unity filter". Tästä voi lukea lisää vaikkapa Art of Problem Solving -sivuston käyttäjän stuck [blogipostauksesta](https://artofproblemsolving.com/community/c1340h1003741_roots_of_unity_filter).
+
 Lopuksi mainittakoon mielenkiintoinen fakta: olkoot $a_n$ ja $b_n$ lineaarisesti rekursiivisia lukujonoja. Olkoot $c_n = a_nb_n$ ja $d_n = a_n + b_n$. Tällöin $c_n$ ja $d_n$ ovat lineaarisesti rekursiivisia. Lukujonon $d_n$ karakteristinen polynomi on jonojen $a_n$ ja $b_n$ polynomien tulo, mutta lukujonolle $c_n$ on polynomi mutkikkaampi. Keskutelua tästä on käyty [Mathematics Stack Exchange](https://math.stackexchange.com/questions/1348838/sum-and-product-of-linear-recurrences) -sivustolla.
 
 **Harjoitustehtäviä**
@@ -265,16 +269,21 @@ Lopuksi mainittakoon mielenkiintoinen fakta: olkoot $a_n$ ja $b_n$ lineaarise
 
 Olkoon $n$ positiivinen kokonaisluku. Kuinka monella tavalla $2 \times n$ -ruudukon voi laatoittaa $1 \times 2$ -laatoilla?
 
-**Epähomogeeninen rekursioyhtälö**
+**Variantteja**
+
+Seuraavaksi muutama samanhenkinen idea edeten helposta vaikeaan.
 
 Esitä yleinen ratkaisu seuraaville lukujonoille:
 
 1. $a_{n+2} = a_{n+1} + a_n + 1$
 
-2. $a_{n+2} = 3a_{n+1} - 2a_n + 1$
+2. $a_{n+2} = a_{n+1} + a_n + n$
 
-3. $a_{n+2} = 2a_{n+1} - a_n + 1$
+3. $a_{n+2} = 3a_{n+1} - 2a_n + 1$
 
+4. $a_{n+2} = 2a_{n+1} - a_n + 1$
+
+5. $a_{n+2} = 2a_{n+1} - a_n + n$
 
 **Yleisen ratkaisun toimivuuden perustelu**
 
@@ -282,4 +291,4 @@ Olkoot $f_1(n)$ ja $f_2(n)$ funktioita, jotka ovat muotoa
 
 $$Q_1(n)r_1^{n} + Q_2(n)r_2^{n} + \ldots + Q_k(n)r_k^{n}$$
 
-missä $Q_i, r_i$ ovat kuten postauksessa, ja polynomien $Q_i$ kertoimet voivat vaihdella funktioiden $f_1, f_2$ välillä. Osoita, että $f_1(n) = f_2(n)$ kaikilla $n$ vain jos kaikkien polynomien $Q_i$ kertoimet ovat samat funktiolle $f_1$ ja $f_2$.
+missä $Q_i, r_i$ ovat kuten postauksessa, ja polynomien $Q_i$ kertoimet voivat vaihdella funktioiden $f_1, f_2$ välillä. Osoita, että $f_1(n) = f_2(n)$ kaikilla $n$ jos ja vain jos kaikkien polynomien $Q_i$ kertoimet ovat samat funktiolle $f_1$ ja $f_2$.
