@@ -267,11 +267,9 @@ Lopuksi mainittakoon mielenkiintoinen fakta: olkoot $a_n$ ja $b_n$ lineaarise
 
 **Laatoitus**
 
-Olkoon $n$ positiivinen kokonaisluku. Kuinka monella tavalla $2 \times n$ -ruudukon voi laatoittaa $1 \times 2$ -laatoilla?
+Olkoon $n$ positiivinen kokonaisluku. Kuinka monella tavalla $2 \times n$ -ruudukon voi laatoittaa $1 \times 2$ -laatoilla? Laattoja saa asettaa ruudukkoon pysty- ja vaakasuuntaan.
 
 **Variantteja**
-
-Seuraavaksi muutama samanhenkinen idea edeten helposta vaikeaan.
 
 Esitä yleinen ratkaisu seuraaville lukujonoille:
 
@@ -284,6 +282,8 @@ Esitä yleinen ratkaisu seuraaville lukujonoille:
 4. $a_{n+2} = 2a_{n+1} - a_n + 1$
 
 5. $a_{n+2} = 2a_{n+1} - a_n + n$
+
+Tutki lukujonon 3 käyttäytymistä joillain alkuarvoilla, ja vertaa tätä lukujonoon $a_{n+2} = 3a_{n+1} - 2a_n$ samoilla alkuarvoilla. Tee sama lukujonoille 4 ja 5. Mitä huomaat, ja mistä ilmiö johtuu?
 
 **Yleisen ratkaisun toimivuuden perustelu**
 
