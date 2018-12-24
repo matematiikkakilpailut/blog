@@ -7,7 +7,7 @@ excerpt_separator: "<!--jatkuu-->"
 
 ---
 
-Tässä postauksessa käsitellään lineaarisia rekursioita.
+Tässä postauksessa käsitellään lineaarisia rekursioita. Postauksen pääpointtina on lineaaristen rekursioiden yleisen termin lausekkeen esittäminen, jonka jälkeen käydään läpi esimerkkitehtäviä.
 
 <!--jatkuu-->
 
