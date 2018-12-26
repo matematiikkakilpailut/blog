@@ -151,7 +151,7 @@ Siis ainoat ratkaisut alkuperäiseen tehtävään ovat $m = 0, 1, 2$.
 
 
 **Harjoitustehtäviä**
-Tässä on pari tehtävää, joiden (yksi) ratkaisu perustuu paljolti tekijöihinjakoon (aika spoilaus).
+Tässä on pari tehtävää, joiden (yksi) ratkaisu perustuu paljolti tekijöihinjakoon.
 
 **Lukion matematiikkakilpailun loppukilpailu, 1999, tehtävä 3**
 
