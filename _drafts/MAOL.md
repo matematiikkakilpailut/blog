@@ -116,7 +116,6 @@ Akseli Jussinmäki kertoi minulle seuraavan ratkaisun, jonka kertoi kuulleensa t
 
 Kuva tehtävästä:
 
-![MAOL 2019, T3](/MAOL2019.png "MAOL 2019, T3")
 
 **Lemma 1**
 
