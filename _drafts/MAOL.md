@@ -107,10 +107,6 @@ Kilpailussa tein pienen ajatusvirheen $2 - \sqrt{5} > 0$. T채m채n seurauksena p�
 
 Akseli Jussinm채ki kertoi minulle seuraavan ratkaisun, jonka kertoi kuulleensa toiselta kilpailijalta. Tulostaulukon perusteella ratkaisu on varmaankin Asla Heiskasen, mutten ole t채st채 aivan varma.
 
-Kuva teht채v채st채:
-
-![MAOL 2019, T3](/MAOL2019.png "MAOL 2019, T3")
-
 **Lemma 1**
 
 $FH \perp AB$.
