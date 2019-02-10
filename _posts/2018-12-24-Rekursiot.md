@@ -12,7 +12,7 @@ Tässä postauksessa käsitellään lineaarisia rekursioita. Postauksen pääpoi
 <!--jatkuu-->
 
 Testi
-===
+----
 
 Määritellään ensin lineaariset rekursiot.
 
