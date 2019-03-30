@@ -119,8 +119,7 @@ Ehto 2 käytännössä tarkoittaa sitä, että kanta ei sisällä "turhia" alkio
 
 **Huomautus**
 
-Näillekin ehdoille on omat nimensä. Ehtoon 1 viitataan sanomalla, että vektorit $v_1, \ldots , v_n$ virittävät vektoriavaruuden $V$. Lisäksi sanotaan, että $w$ voidaan esittää vektorien $v_1, \ldots , v_n$ lineaarikombinaationa. Ehto 2 esitetään tavallisesti seuraavasti: olkoot $v_1, v_2, \ldots , v_n \in V$. Sanotaan, että ne ovat lineaarisesti riippumattomia (kunnan $K$ yli), jos yhtälö $a_1v_1 + a_2v_2 + \ldots + a_nv_n = 0$ pätee vain jos $a_1 = a_2 = \ldots = a_n = 0$.
-
+Näillekin ehdoille on omat nimensä. Ehtoon 1 viitataan sanomalla, että vektorit $v_1, \ldots , v_n$ virittävät vektoriavaruuden $V$. Lisäksi sanotaan, että $w$ voidaan esittää vektorien $v_1, \ldots , v_n$ lineaarikombinaationa. Ehto 2 esitetään usein sanomalla, että vektorit $v_i$ ovat lineaarisesti riippumattomia. Tällä tarkoitetaan, että mikäli $a_1v_1 + a_2v_2 + \ldots + a_nv_n = 0$, niin $a_1 = a_2 = \ldots = a_n = 0$.
 
 **Esimerkki (kanta)**
 
@@ -129,18 +128,48 @@ Olkoon $S$ niiden enintään toisen asteen polynomien joukko (mukaanlukien vakio
 
 **Todistus (kahden algebrallisen luvun summa on algebrallinen)**
 
-Olkoot $\alpha$ ja $\beta$ joidenkin kahden polynomin $P, Q$ nollakohtia, missä $P$ ja $Q$ ovat kokonaislukukertoimisia. Olkoon $n = \deg(P)$ ja $m = \deg(Q)$. Olkoon $V$ se $\mathbb{Q}$-vektoriavaruus, joka sisältää kaikki luvut muotoa $q_0 + q_1\alpha + q_2\alpha^2 + \ldots $, missä $q_i \in \mathbb{Q}$. On selvää, että $\lbrace 1, \alpha, \alpha^2, \ldots \rbrace $ virittää $V$:n, mutta tämä ei ole kanta: luku $\alpha^n$ voidaan esittää lukujen $1, \alpha, \ldots , \alpha^{n-1}$ avulla. Vastaavasti millä tahansa $k \ge n$ luku $\alpha^k$ voidaan esittää lukujen $1, \alpha, \ldots , \alpha^{n-1}$ lineaarikombinaationa. Tämän vuoksi $\lbrace 1, \alpha, \alpha^2, \ldots \alpha^{n-1}\rbrace $ virittää vektoriavaruuden $V$. Tämäkään ei vielä välttämättä ole kanta, mutta ei välitetä siitä. Määritellään $W$ vastaavasti luvulle $\beta$, jolloin $\lbrace 1, \beta, \ldots , \beta^{m-1} \rbrace $ virittää $W$:n.
+Olkoot $\alpha$ ja $\beta$ joidenkin kahden polynomin $P, Q$ nollakohtia, missä $P$ ja $Q$ ovat kokonaislukukertoimisia. Olkoon $n = \deg(P)$ ja $m = \deg(Q)$. Olkoon $V$ se $\mathbb{Q}$-vektoriavaruus, joka sisältää kaikki luvut muotoa $q_0 + q_1\alpha + q_2\alpha^2 + \ldots q_k\alpha^k$, missä $q_i \in \mathbb{Q}$ ja $k$ on kokonaisluku.. On selvää, että $\lbrace 1, \alpha, \alpha^2, \ldots \rbrace $ virittää $V$:n, mutta tämä ei ole kanta: luku $\alpha^n$ voidaan esittää lukujen $1, \alpha, \ldots , \alpha^{n-1}$ avulla. Esimerkiksi jos $P(x) = x^3 - x - 1$, niin $\alpha^3 - \alpha - 1 = 0$, eli $\alpha^3 = \alpha + 1$, ja näin $\alpha^3$ voidaan esittää pienempien luvun $\alpha$ potenssien avulla.
 
-Olkoon nyt $U$ niiden lukujen joukko, jotka voidaan esittää muotoa $q \alpha^i \beta^j$, missä $q \in \mathbb{Q}$, $i, j \in \mathbb{Z_{\ge 0}}$, olevien termien summana. Tämä $U$ voidaan virittää lukujoukolla $B$, joka sisältää luvut muotoa $\alpha^i \beta^j$, missä $i < n$ ja $j < m$. Miksi? On selvää, että jos unohdamme ehdon $i < n$, $j < $m, niin väite pätee. Jos $i \ge n$, voidaan luku $\alpha^i\beta^j$ kirjoittaa lukujen $\alpha^k\beta^j$ lineaarikombinaationa, missä $0 \le k < n$. Tämän takia luvut muotoa $\alpha^i\beta^j$, missä $i \ge n$ tai $j \ge m$, ovat "turhia", sillä ne voidaan esittää em. luvuilla.
+Vastaavasti millä tahansa $k \ge n$ luku $\alpha^k$ voidaan esittää lukujen $1, \alpha, \ldots , \alpha^{n-1}$ lineaarikombinaationa. Tämän vuoksi $\lbrace 1, \alpha, \alpha^2, \ldots \alpha^{n-1}\rbrace $ virittää vektoriavaruuden $V$. Tämäkään ei vielä välttämättä ole kanta, koska alkiot eivät välttämättä ole lineaarisesti riippumattomia, mutta ei välitetä siitä (jos $P$ on jaoton polynomi, niin kyseessä on kanta, ja muuten ei - todistus sivuutetaan). Määritellään $W$ vastaavasti luvulle $\beta$, jolloin $\lbrace 1, \beta, \ldots , \beta^{m-1} \rbrace $ virittää $W$:n.
 
-Osoitetaan nyt, että $\alpha + \beta$ on algebrallinen. Olkoon $T$ se $\mathbb{Q}$-vektoriavaruus, joka sisältää luvut muotoa $q(\alpha + \beta)^i$, $q \in \mathbb{Q}, i \in \mathbb{Z_{\ge 0}}$, ja tätä muotoa olevien lukujen summat. $T$ on $U$:n osajoukko, joten $T$:n voi virittää äärellisellä määrällä (oikeastaan, $nm$ kappalella) alkioita. Tämä tarkoittaa, että $(\alpha + \beta)^{nm}$, voidaan esittää luvun $\alpha + \beta$ pienempien potenssien lineaarikombinaationa, eli $(\alpha + \beta)^{nm} = q_0 + q_1(\alpha + \beta)^1 + \ldots + q_{nm-1}(\alpha + \beta)^{nm - 1}$ jollain rationaaliluvuilla $q_i$. Tämä antaa suoraan polynomin, jonka nollakohtana on $\alpha + \beta$. Siis $\alpha + \beta$ on algebrallinen.
+Olkoon nyt $U$ niiden lukujen joukko, jotka voidaan esittää muotoa $q \alpha^i \beta^j$, missä $q \in \mathbb{Q}$, $i, j \in \mathbb{Z_{\ge 0}}$, olevien termien summana. Tämä $U$ voidaan virittää lukujoukolla $B$, joka sisältää luvut muotoa $\alpha^i \beta^j$, missä $i < n$ ja $j < m$. Miksi? On selvää, että jos unohdamme ehdon $i < n$, $j < $m, niin väite pätee. Jos $i \ge n$, voidaan luku $\alpha^i\beta^j$ kirjoittaa lukujen $\alpha^k\beta^j$ lineaarikombinaationa, missä $0 \le k < n$. Aiemmin esitettiin tämä redusointimenetelmä tapauksessa $P(x) = x^3 - x - 1$, nyt uutena asiana on kerroin $\beta^j$, joka ei kuitenkaan oleellisesti muuta tilannetta. Tämän takia luvut muotoa $\alpha^i\beta^j$, missä $i \ge n$ tai $j \ge m$, ovat "turhia", sillä ne voidaan esittää pienemmän eksponentin omaavilla luvuilla.
+
+Osoitetaan nyt, että $\alpha + \beta$ on algebrallinen. Olkoon $T$ se $\mathbb{Q}$-vektoriavaruus, joka sisältää luvut muotoa $q(\alpha + \beta)^i$, $q \in \mathbb{Q}, i \in \mathbb{Z_{\ge 0}}$, ja tätä muotoa olevien lukujen summat. $T$ on $U$:n osajoukko, joten $T$:n voi virittää äärellisellä määrällä (tarkemmin, $nm$ kappalella) alkioita. Tämä tarkoittaa, että $(\alpha + \beta)^{nm}$, voidaan esittää luvun $\alpha + \beta$ pienempien potenssien lineaarikombinaationa, eli $(\alpha + \beta)^{nm} = q_0 + q_1(\alpha + \beta)^1 + \ldots + q_{nm-1}(\alpha + \beta)^{nm - 1}$ jollain rationaaliluvuilla $q_i$. Tämä antaa suoraan polynomin, jonka nollakohtana on $\alpha + \beta$. Siis $\alpha + \beta$ on algebrallinen.
 
 
 **Huomautus**
 
 Jos todistuksen viimeisen kappaleen termit $\alpha + \beta$ korvaa termeillä $\alpha \beta$, on meillä valmis todistus sille, että $\alpha \beta$ on algebrallinen.
 
+**Esimerkki / toinen tapa ajatella asiaa**
 
+Olkoot $\alpha = \sqrt{2}$ ja $\beta = i$. Väite sanoo, että $\alpha + \beta$ on algebrallinen, eli jonkin polynomin nollakohta, ja todistus vielä osoittaa, että tällaisen polynomin aste voidaan valita olemaan $4$. Osoitetaan tämä tutkimalla luvun $\gamma \alpha + \beta$ potensseja:
+
+$$\gamma^0 = (\alpha + \beta)^0 = 1$$
+
+$$\gamma^1 = (\alpha + \beta)^1 = \alpha + \beta$$
+
+$$\gamma^2 = (\alpha + \beta)^2 = \alpha^2 + 2\alpha\beta + \beta^2 = 1 + 2\alpha\beta$$
+
+Huomaa, että tässä käytettiin ehtoa $\alpha^2 = 2$, eli kuten todistuksessa todettiin, luvun $\alpha$ suuret potenssit voidaan esittää pienempien potenssien avulla. Samalla idealla voidaan sieventää vielä seuraavat potenssit:
+
+$$\gamma^3 = (\alpha + \beta)^3 = (\alpha + \beta)^2(\alpha + \beta) = (1 + 2\alpha\beta)(\alpha + \beta) = (\alpha + 4\beta) + (\beta - 2\alpha) = -\alpha + 5\beta$$
+
+$$\gamma^4 = (\alpha + \beta)^4 = (-\alpha + 5\beta)(\alpha + \beta) = -7 + 4\alpha\beta$$
+
+Yritetään nyt löytää neljännen asteen polynomi, jonka nollakohta $\gamma$ on. Toisin sanoen,
+
+$$q_4\gamma^4 + q_3\gamma^3 + q_2\gamma^2 + q_1\gamma + q_0 = 0$$
+
+jollain rationaaliluvuilla $q_i$. Tämän yhtälön vasemman puolen voi esittää lukujen $1, \alpha, \beta$ ja $\alpha\beta$ rationaalisten monikertojen summana käyttäen yllä laskettuja esityksiä luvuille $\gamma^i$. Yhtälö toteutuu ainakin silloin, jos lukujen $1, \alpha, \beta, \alpha\beta$ kertoimet ovat $0$. Tästä saadaan yhtälöryhmä luvuille $q_i$. Esimerkiksi luvun $\alpha$ kertoimeksi saadaan purkamalla esitykset $\gamma^i$
+
+$$0q_4 + (-q_3) + 0q_2 + (q_1) + 0q_0 = q_1 - q_3$$
+
+Siis valitaan $q_1 = q_3$.
+
+Vastaavasti voidaan muiden kertoimien kautta muodostaa yhtälöitä. Tällä yhtälöryhmällä on tässä tapauksessa, ja yleisestikin, ratkaisu, jossa kaikki $q_i$ eivät ole nollia. Syynä sille, miksi aina löytyy ratkaisu, on se, että muuttujia on $nm$ (tässä $nm = 2 \cdot 2 = 4$) kappaletta, ja samoin yhtälöitä on $nm$. Yhtälöt eivät voi olla keskenään ristiriidassa, kuten yhtälöparissa $x+y = 0, 3x+3y = 2$, koska yhtälöryhmällä on aina ratkaisu $q_0 = q_1 = \ldots = 0$.
+
+Tässä tapauksessa saadaan, että luku $\gamma = \alpha + \beta = \sqrt{2} + i$ on polynomin $x^4 - 2x^2 + 9$ nollakohta.
 
 **Harjoitustehtäviä**
 
