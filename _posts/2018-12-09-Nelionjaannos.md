@@ -95,7 +95,7 @@ Edellisten huomioiden nojalla saadaan $L(k, p) = L(q_1, p) \ldots L(q_m, p)$. T�
 
 **Ratkaisun 1 viimeistely**
 
-Lemman avulla voidaan siirtyä ratkaisun alussa kuvailtuun vaiheeseen, jossa käännetään symbolin $L(a, p)$ tutkiminen siihen, milloin $p$ on neliönjäännös. Kirjoitetaan $L(a, p) = L(q_1, p) \ldots L(q_m, p)$, missä $q_i$ ovat parittomia alkulukuja. Koska valinnan mukaan $p \equiv 1 \pmod{8}$, on $p \equiv 1 \pmod{4}$, joten voimme käyttää neliönjäännösten resiprookkilakia:
+Lemman avulla voidaan siirtyä ratkaisun alussa kuvailtuun vaiheeseen, jossa käännetään symbolin $L(a, p)$ tutkiminen siihen, milloin $p$ on neliönjäännös. Kirjoitetaan $L(a, p) = L(q_1, p) \ldots L(q_m, p)$, missä $q_i$ ovat parittomia alkulukuja. Koska valinnan mukaan $p \equiv 1 \pmod{8}$, on $p \equiv 1 \pmod{4}$, joten voimme käyttää neliönjäännösten resiprookkilakia ilman etumerkkien vaihtumista:
 
 $$L(a, p) = L(q_1, p) \ldots L(q_m, p) = L(p, q_1) \ldots L(p, q_m)$$
 
@@ -132,15 +132,15 @@ Tutkitaan sitten se tapaus, jossa $\mid a \mid$:lla ei ole parittomia alkulukute
 
 Todistetut tulokset ovat varsin kauniita, mutta voiko niitä vielä laajentaa? Luonnollisia kysymyksiä ovat esimerkiksi seuraavat:
 
-1. Päteekö ongelman 1 variantti, jossa vaaditaan $L(a_i, p) = 1$ kaikilla $i$ ja äärettömän monella $p$, missä $a_1, a_2, \ldots a_n$ ovat annettuja nollasta eroavia kokonaislukuja.
+1. Päteekö ongelman 1 variantti, jossa vaaditaan $L(a_i, p) = 1$ kaikilla $i$ ja äärettömän monella $p$, missä $a_1, a_2, \ldots a_n$ ovat annettuja nollasta eroavia kokonaislukuja?
 
 2. Entä ongelman 2 vastaava variantti, missä $a_i$ eivät ole neliölukuja?
 
 3. Ratkaisuissa 1 ja 2 luodut $p$ ovat melko harvassa, esimerkiksi ratkaisun 1 $p$ toteuttavat ehdon $p \equiv 1 \pmod{8q_1q_2 \ldots q_m}$. Kuinka "tiheästi" ongelman 1 tai 2 mukaisia $p$ todellisuudessa on?
 
-Ensimmäisen kysymyksen vastaus lienee ilmeinen: käytännössä sama argumentti käsittelee monen muuttujan tapauksen kuin mitä käytettiin ratkaisussa 1.
+Ensimmäisen kysymyksen vastaus on melko ilmeinen: käytännössä sama argumentti käsittelee monen muuttujan tapauksen kuin mitä käytettiin ratkaisussa 1.
 
-Kysymyksen 2 vastaus ei ole niin ilmeinen: olkoot $a_1 = 2 \cdot 3$, $a_2 = 3 \cdot 5$ ja $a_3 = 2 \cdot 5$. Jos olisi olemassa $p$, jolla $L(a_i, p) = -1$ kaikilla $i$, niin pätisi $-1 = L(a_1, p)L(a_2, p)L(a_3, p) = L(a_1a_2a_3, p) = L((2\cdot3\cdot5)^2, p) = 1$. Tämä on selvästi mahdotonta. Yleisesti voidaan todistaa vastaavasti, että minkään parittoman määrän lukuja $a_i$ tulo ei saa olla neliöluku. Onko tämä riittävä ehto? Osoittautuu, että näin on. Heuristinen selitys tälle esitetään kysymyksen 3 käsittelyn jälkeen. Kirjoittajan formaali todistus on liian pitkä tähän postaukseen, mutta se saatetaan nähdä myöhemmässä postauksessa.
+Kysymyksen 2 vastaus ei ole niin ilmeinen: olkoot $a_1 = 2 \cdot 3$, $a_2 = 3 \cdot 5$ ja $a_3 = 2 \cdot 5$. Jos olisi olemassa $p$, jolla $L(a_i, p) = -1$ kaikilla $i$, niin pätisi $-1 = L(a_1, p)L(a_2, p)L(a_3, p) = L(a_1a_2a_3, p) = L((2\cdot3\cdot5)^2, p) = 1$. Tämä on selvästi mahdotonta. Yleisesti voidaan todistaa vastaavasti, että minkään parittoman määrän lukuja $a_i$ tulo ei saa olla neliöluku. Onko tämä riittävä ehto, eli jos tämä ehto täyttyy, niin onko olemassa äärettömän monta kelpaavaa $p$? Osoittautuu, että on. Heuristinen selitys tälle esitetään kysymyksen 3 käsittelyn jälkeen. Kirjoittajan formaali todistus on liian pitkä tähän postaukseen, mutta se saatetaan nähdä myöhemmässä postauksessa.
 
 **Kysymys 3**
 
@@ -152,7 +152,9 @@ $$\delta(S) = \lim_{x \to \infty} \frac{S(x)}{\mathbb{P}(x)}$$
 
 Kaikilla joukoilla $S$ tämä raja-arvo ei ole olemassa, mutta tässä postauksessa tutkittavat tiheydet ovat olemassa. Dirichlet'n lauseesta on usein kilpailumatematiikan yhteydessä mainittua versiota voimakkaampi väite, joka kertoo, että niiden $p$ tiheys, joilla $p \equiv a \pmod{m}$, on $\frac{1}{\phi(m)}$ kaikilla $a, m$, jotka ovat yhteistekijättömiä.
 
-Käyttäen Dirichlet'n lausetta ei ole kovin vaikeaa osoittaa ratkaisun 1 kaltaisesti, että niiden $p$ tiheys, joilla $L(a, p) = 1$, on $\frac{1}{2}$. Tämä voidaan toteuttaa vaikkapa seuraavasti: tutkitaan ensin niitä $p$, joilla $p \equiv 1 \pmod{8}$. Näitä $p$ on neljäsosa alkuluvuista, ja näillä $p$ pätee $L(a, p) = L(p, q_1) \ldots L(p), q_m)$.
+Käyttäen Dirichlet'n lausetta ei ole kovin vaikeaa osoittaa ratkaisun 1 kaltaisesti, että niiden $p$ tiheys, joilla $L(a, p) = 1$, on $\frac{1}{2}$. Tämä voidaan toteuttaa vaikkapa seuraavasti:
+
+Ttkitaan ensin niitä $p$, joilla $p \equiv 1 \pmod{8}$. Näitä $p$ on neljäsosa alkuluvuista, ja näillä $p$ pätee $L(a, p) = L(p, q_1) \ldots L(p, q_m)$.
 
 Olkoon $T = (t_1, t_2, \ldots , t_m)$ jokin $m$ luvun jono, joka koostuu luvusta $-1$ ja $1$. Kiinalaisen jäännöslauseen ja Dirichlet'n lauseen tiheysversion avulla saadaan, että niiden $p$ tiheys, joilla $L(p, q_i) = t_i$ kaikilla $i$ on $2^{-m}$. Niitä $T$, jotka sisältävät parillisen määrän lukua $-1$ on $2^{m-1}$ kappaletta. Tästä saadaan, että yhteensä niitä $p$, joilla $L(a, p) = 1$ on tapauksessa $p \equiv 1 \pmod{8}$ puolet alkuluvuista.
 
