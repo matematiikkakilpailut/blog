@@ -91,7 +91,7 @@ Jälleen, määritelmät ovat intuitiivisia, vaikkeikaan ehkä niin luonnollisia
 
 **Esimerkki (vektoriavaruus)**
 
-Olkoon $\mathbb{Q}$ rationaalilukujen joukko, ja olkoon $V$ funktioiden $f : \mathbb{Q} \to \mathbb{Q}$ joukko. Voimme määritellä $f \bigodot g$ luonnollisesti funktioksi $h$, jolla $h(a) = f(a) + g(a)$ kaikilla $a \in \mathbb{Q}$. Vastaavasti määritellään kertolasku rationaaliluvulla: $V$:n alkio $a \bigodot f$ on se funktio $h$, jolla $h(b) = a \cdot f(b)$ kaikilla $b \in \mathbb{Q}$.
+Olkoon $\mathbb{Q}$ rationaalilukujen joukko, ja olkoon $V$ funktioiden $f : \mathbb{Q} \to \mathbb{Q}$ joukko. Voimme määritellä $f \bigoplus g$ luonnollisesti funktioksi $h$, jolla $h(a) = f(a) + g(a)$ kaikilla $a \in \mathbb{Q}$. Vastaavasti määritellään kertolasku rationaaliluvulla: $V$:n alkio $a \bigodot f$ on se funktio $h$, jolla $h(b) = a \cdot f(b)$ kaikilla $b \in \mathbb{Q}$.
 
 On helppoa todistaa, että $V$ on $\mathbb{Q}$-avaruus käymällä jokaisen tarvittavan ehdon läpi (tämän pitäisi myös olla melko intuitiivista). Huomaa, että jälleen ei ole määritelty, millainen olisi "kertolasku" $V$:n alkioiden välillä, eikä tarvitsekaan.
 
