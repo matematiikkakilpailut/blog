@@ -25,4 +25,12 @@ Tässä postauksessa esitetään motivaatio lauseen 1 todistuksen takana.
 10. [Osa 10 - sovelluksia](https://blog.matematiikkakilpailut.fi/2019/06/4/PYAsovelluksia.html)
 11. [Osa 11 - lisäaiheita](https://blog.matematiikkakilpailut.fi/2019/06/4/PYAlisaaiheita.html)
 
-ABBACD.
+### Kysymys 2
+
+Kysymyksenä 2 oli siis: onko $S(A) \cap S(B)$ ääretön kaikilla $A, B \in \mathbb{Z_c}[x]$? Esitetään tälle väitteelle todistus. Todistus ei ole minun, vaan voidaan löytää esimerkiksi artikkelista [On the prime divisors of polynomials](www.jstor.org/stable/2317521) (Irving Grest, John Brillhart)
+
+**Todistus**
+
+Olkoot $\alpha, \beta$ jotkin $A$:n ja $B$:n juuret. Olkoon $\gamma$ sellainen, että $\mathbb{Q}(\alpha, \beta) = \mathbb{Q}(\gamma)$ (mahdollista Primitive element theoremin nojalla, kts. esitiedot). Olkoon $D$ luvun $\gamma$ minimaalinen polynomi. Osoitetaan, että $D$:llä on seuraava ominaisuus:
+
+Kaikki paitsi äärellisen moni $D$:n alkutekijä on sekä $A$:n että $B$:n alkutekijä.
