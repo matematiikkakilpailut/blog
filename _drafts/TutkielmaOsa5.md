@@ -42,15 +42,15 @@ Ehto siitä, että $A, B$ ovat pääpolynomeja, ei ole niin ilmeinen. Syy tämä
 
 Heikon version ehdot saadaan siis suoraan siitä, mitä muunnoksia kyetään tekemään.
 
-## Todistus
+# Todistus
 
 Kuten edellisessä postauksessa mainittiin, osoitetaan ensin, että on olemassa vastaavuus kompleksijuurien ja nollakohtien (mod $p^k$) välillä.
 
-### Vastaavuus
+## Vastaavuus
 
 Olkoon $A(\alpha) = 0$, $A$ jaoton pääpolynomi, ja olkoon $A(a) \equiv 0 \pmod{p^k}$. Tavoitteena on luoda hyvin määritelty kuvaus, joka kuvaa luvun $\alpha$ lukuun $a$. Tätä alustetaan seuraavalla lemmalla.
 
-#### Lemma 3
+## Lemma 3
 
 Olkoon $A \in \mathbb{Z_c}[x]$ jaoton, ja olkoon $\alpha$ jokin sen juuri. Olkoon $p$ sellainen, joka ei jaa $A$:n korkeimman asteen termin kerrointa. Olkoot $k \in \mathbb{Z}_+$ ja $a \in \mathbb{Z}$ sellaisia, joilla $A(a) \equiv 0 \pmod{p^k}$.
 
@@ -96,7 +96,7 @@ $$p_{d_a + i} = \frac{v}{w} + \frac{x}{y} = \frac{vy + wx}{yw}$$
 Tässä $p \mid yw$, mutta $p \nmid vy + wx$, koska $p \mid wx$ ja $p \nmid vy$. Olemme saaneet aikaan ristiriidan.
 
 
-#### Alustus lemmalle 4
+## Alustus lemmalle 4
 
 Lemma 4 muodostaa halutun kuvauksen, joka formalisoi aiemmin mainitun vastaavuuden. Tätä ennen määritellään joukko $\mathbb{Z}_p(\alpha)$. Määrittely voi tuntua hieman ikävältä, mutta idea on yksinkertainen: haluamme kuvata $\mathbb{Q}(\alpha)$:n alkioita kokonaisluvuille mod $p^k$. Lukua $\frac{1}{p} \in \mathbb{Q}(\alpha)$ on kuitenkin käytännössä katsoen mahdotonta kuvata kokonaisluvuksi mod $p^k$ niin, että lopputulos olisi järkevä. Meidän tulee siis hieman valikoida lukuja, joita kuvaamme.
 
@@ -134,7 +134,7 @@ Joku voisi väittää, että tällä $f$ ehto $2$ ei toteudu, onhan $0=f(0) = f
 
 Tämä homomorfismi on juurikin se "hyvin määritelty kuvaus" mistä olen aiemmin puhunut:
 
-### Lemma 4
+## Lemma 4
 
 Olkoon $A \in \mathbb{Z_c}[x]$ jaoton, ja olkoon $p$ alkuluku, joka ei jaa $A$:n korkeimman asteen termin kerrointa. Olkoon $A(a) \equiv 0 \pmod{p^k}$.
 
@@ -151,7 +151,7 @@ Olkoot $P_1, P_2$ jotain polynomeja, joiden kertoimet eivät ole jaollisia $p$:l
 
 Olkoon $P(x) = P_1(x) - P_2(x)$. Tiedämme siis, että $P(\alpha) = 0$, ja haluamme osoittaa, että $P(a) \equiv 0 \pmod{p^k}$. Tämä pätee lemman 3 nojalla.
 
-### Lemma 5
+## Lemma 5
 
 Lemman 5 tavoite on osoittaa, että $S_v(A) \cap S_v(B) \subset S_v(D)$, kun $D$ valitaan sopivasti. Määritellään seuraavaksi $D$.
 
@@ -180,7 +180,7 @@ Osoitetaan nyt, että $p \in S_v(A) \cap S_v(B) \implies p \in S_v(D)$.
 
 Olkoon $k$ jokin mielivaltaisen suuri kokonaisluku, ja oletetaan, että $A(a) \equiv B(b) \equiv 0 \pmod{p^k}$.
 
-Olkoon $f : \mathbb{Z}_p(\alpha) \to \mathbb{Z}_{p^k}$ lemman 4 mukainen homomorfismi. Koska $A$ on pääpolynomi, $p$ ei jaa $A$:n korkeimman asteen termin kerrointa, eli tämä kuvaus on olemassa. Sijoitetaan yllä olevaan yhtälöön $x = b$, jolloin
+Olkoon $f : \mathbb{Z}_p(\alpha) \to \mathbb{Z_{p^k}}$ lemman 4 mukainen homomorfismi. Koska $A$ on pääpolynomi, $p$ ei jaa $A$:n korkeimman asteen termin kerrointa, eli tämä kuvaus on olemassa. Sijoitetaan yllä olevaan yhtälöön $x = b$, jolloin
 
 $$c_1c_2 \ldots c_tD_1(\alpha + n_1b) \ldots = B(b)H(b)$$
 
@@ -216,7 +216,7 @@ Aivan vastaavasti voidaan suorittaa yhtälön $D_i(a + n_ib) \equiv 0 \pmod{p^k}
 
 
 
-### Heikon version todistuksen viimeistely
+## Heikon version todistuksen viimeistely
 
 Edellä osoitettiin, että $S_v(A) \cap S_v(B) \subset S_v(D)$. Osoitetaan vielä toinen halutuista ehdoista, eli $S(A) \cap S(B) \approx S(D)$. Tämä on oikeastaan todistettu jo. Nimittäin, valitaan jokin $p \in S_v(D)$. Tällöin $p \in S_v(D_i)$ jollain $i$ (helppo vastaoletustodistus). Tällöin kysymyksen 2 todistuksen nojalla kaikilla paitsi äärellisen monella $p$ pätee väite $p \in S_v(A) \cap S_v(B)$.
 
