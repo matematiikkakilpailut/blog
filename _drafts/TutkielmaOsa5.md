@@ -98,25 +98,25 @@ Tässä $p \mid yw$, mutta $p \nmid vy + wx$, koska $p \mid wx$ ja $p \nmid vy$.
 
 ## Alustus lemmalle 4
 
-Lemma 4 muodostaa halutun kuvauksen, joka formalisoi aiemmin mainitun vastaavuuden. Tätä ennen määritellään joukko $\mathbb{Z}_p(\alpha)$. Määrittely voi tuntua hieman ikävältä, mutta idea on yksinkertainen: haluamme kuvata $\mathbb{Q}(\alpha)$:n alkioita kokonaisluvuille mod $p^k$. Lukua $\frac{1}{p} \in \mathbb{Q}(\alpha)$ on kuitenkin käytännössä katsoen mahdotonta kuvata kokonaisluvuksi mod $p^k$ niin, että lopputulos olisi järkevä. Meidän tulee siis hieman valikoida lukuja, joita kuvaamme.
+Lemma 4 muodostaa halutun kuvauksen, joka formalisoi aiemmin mainitun vastaavuuden. Tätä ennen määritellään joukko $\mathbb{Z_p}(\alpha)$. Määrittely voi tuntua hieman ikävältä, mutta idea on yksinkertainen: haluamme kuvata $\mathbb{Q}(\alpha)$:n alkioita kokonaisluvuille mod $p^k$. Lukua $\frac{1}{p} \in \mathbb{Q}(\alpha)$ on kuitenkin käytännössä katsoen mahdotonta kuvata kokonaisluvuksi mod $p^k$ niin, että lopputulos olisi järkevä. Meidän tulee siis hieman valikoida lukuja, joita kuvaamme.
 
-**Määritelmä - $\mathbb{Z}_p(\alpha)$**
+**Määritelmä - $\mathbb{Z_p}(\alpha)$**
 
-Kunta $\mathbb{Q}(\alpha)$ voidaan tulkita $\mathbb{Q}$-vektoriavaruutena, jonka kanta on $\lbrace 1, \alpha, \alpha^2, \ldots , \alpha^{n-1}\rbrace$ (tässä $n$ on $\alpha$:n minimaalisen polynomin aste). Olkoon $\mathbb{Z}_p(\alpha)$ niiden $x \in \mathbb{Q}(\alpha)$ joukko, joilla $x$:n esitys kannan avulla ei sisällä rationaalilukuja, joiden nimittäjät ovat jaollisia $p$:llä.
+Kunta $\mathbb{Q}(\alpha)$ voidaan tulkita $\mathbb{Q}$-vektoriavaruutena, jonka kanta on $\lbrace 1, \alpha, \alpha^2, \ldots , \alpha^{n-1}\rbrace$ (tässä $n$ on $\alpha$:n minimaalisen polynomin aste). Olkoon $\mathbb{Z_p}(\alpha)$ niiden $x \in \mathbb{Q}(\alpha)$ joukko, joilla $x$:n esitys kannan avulla ei sisällä rationaalilukuja, joiden nimittäjät ovat jaollisia $p$:llä.
 
-Toisin sanoen, $\mathbb{Z}_p(\alpha)$ sisältää ne luvut $x$, jotka ovat muotoa $P(\alpha)$, $\deg(P) < n$, ja $P$:n kertoimien nimittäjät eivät ole jaollisia $p$:llä.
+Toisin sanoen, $\mathbb{Z_p}(\alpha)$ sisältää ne luvut $x$, jotka ovat muotoa $P(\alpha)$, $\deg(P) < n$, ja $P$:n kertoimien nimittäjät eivät ole jaollisia $p$:llä.
 
 Esimerkiksi $\mathbb{Z}_7(\sqrt{2})$ sisältää luvut muotoa $a + b\sqrt{2}, a, b \in \mathbb{Q}$, missä $7$ ei jaa lukujen $a, b$ nimittäjiä.
 
-Olkoon $A \in \mathbb{Z_c}[x]$ jaoton, ja olkoon $\alpha$ sen juuri. Olkoon $p$ alkuluku, joka ei jaa $A$:n korkeimman asteen termin kerrointa. Väitän, että $\mathbb{Z}_p(\alpha)$ on rengas, eli siis eritysesti kahden joukon $\mathbb{Z}_p(\alpha)$ tulo on myös tämän joukon alkio.
+Olkoon $A \in \mathbb{Z_c}[x]$ jaoton, ja olkoon $\alpha$ sen juuri. Olkoon $p$ alkuluku, joka ei jaa $A$:n korkeimman asteen termin kerrointa. Väitän, että $\mathbb{Z_p}(\alpha)$ on rengas, eli siis eritysesti kahden joukon $\mathbb{Z_p}(\alpha)$ tulo on myös tämän joukon alkio.
 
 Tämä on helppoa visualisoida samalla tavalla kuin osoitettiin, että $\alpha^k$ voidaan esittää pienempien $\alpha$:n potenssien avulla. Olkoon $A(x) = a_nx^n + \ldots + a_1x + a_0$. Tällöin
 
 $$\alpha^n = -\frac{a_{n-1}\alpha^{n-1} + \ldots + a_0}{a_n}$$
 
-Siispä $\alpha^n \in \mathbb{Z}_p(\alpha)$.
+Siispä $\alpha^n \in \mathbb{Z_p}(\alpha)$.
 
-Yleisesti, kuvitellaan operaatiosarjaa, jolla redusoidaan $\alpha^k$ pienempien $\alpha$:n potenssien esitykseksi. Tällöin $\alpha^k$:n esityksessä käytetyt kertoimet eivät ole jaollisia $p$:llä (mistä $p$:llä jaollinen nimittäjä muka syntyisi?). Jos ei tähän vielä usko, niin voi osoittaa induktiolla muuttujan $k$ suhteen, että $\alpha^k \in \mathbb{Z}_p(\alpha)$.
+Yleisesti, kuvitellaan operaatiosarjaa, jolla redusoidaan $\alpha^k$ pienempien $\alpha$:n potenssien esitykseksi. Tällöin $\alpha^k$:n esityksessä käytetyt kertoimet eivät ole jaollisia $p$:llä (mistä $p$:llä jaollinen nimittäjä muka syntyisi?). Jos ei tähän vielä usko, niin voi osoittaa induktiolla muuttujan $k$ suhteen, että $\alpha^k \in \mathbb{Z_p}(\alpha)$.
 
 Vielä määritellään homomorfismi.
 
@@ -138,7 +138,7 @@ Tämä homomorfismi on juurikin se "hyvin määritelty kuvaus" mistä olen aiemm
 
 Olkoon $A \in \mathbb{Z_c}[x]$ jaoton, ja olkoon $p$ alkuluku, joka ei jaa $A$:n korkeimman asteen termin kerrointa. Olkoon $A(a) \equiv 0 \pmod{p^k}$.
 
- On olemassa homomorfismi $f : \mathbb{Z}_p(\alpha) \to \mathbb{Z}_{p^k}$ (eli joukolta $\mathbb{Z}_p(\alpha)$ joukolle "kokonaisluvut modulo $p^k$"), jolla $f(\alpha) = a$.
+ On olemassa homomorfismi $f : \mathbb{Z_p}(\alpha) \to \mathbb{Z}_{p^k}$ (eli joukolta $\mathbb{Z_p}(\alpha)$ joukolle "kokonaisluvut modulo $p^k$"), jolla $f(\alpha) = a$.
 
 
 **Todistus**
@@ -172,7 +172,7 @@ Täten on olemassa sellainen polynomi $G_i \in \mathbb{Q}(\alpha)[x]$, jolla $F_
 
 $$D_1(\alpha + n_1x)\ldots D_t(\alpha + n_tx) = E_1(x) \ldots E_t(x)G_1(x) \ldots G_t(x) = B(x)G_1(x) \ldots G_t(x)$$
 
-Olkoot $c_1, c_2, \ldots , c_t$ polynomien $G_1, G_2, \ldots , G_t$ kertoimien nimittäjien tulot. Olkoon $H_i(x) = G_i(x) \cdot c_i$, ja olkoon $H$ kaikkien $H_i$ tulo. Tällöin $H_i$:n kertoimet kuuluvat joukkoon $\mathbb{Z}_p(\alpha)$.
+Olkoot $c_1, c_2, \ldots , c_t$ polynomien $G_1, G_2, \ldots , G_t$ kertoimien nimittäjien tulot. Olkoon $H_i(x) = G_i(x) \cdot c_i$, ja olkoon $H$ kaikkien $H_i$ tulo. Tällöin $H_i$:n kertoimet kuuluvat joukkoon $\mathbb{Z_p}(\alpha)$.
 
 $$c_1c_2 \ldots c_t D_1(\alpha + n_1x) \ldots D_t(\alpha + n_tx) = B(x)H(x)$$
 
@@ -180,7 +180,7 @@ Osoitetaan nyt, että $p \in S_v(A) \cap S_v(B) \implies p \in S_v(D)$.
 
 Olkoon $k$ jokin mielivaltaisen suuri kokonaisluku, ja oletetaan, että $A(a) \equiv B(b) \equiv 0 \pmod{p^k}$.
 
-Olkoon $f : \mathbb{Z}_p(\alpha) \to \mathbb{Z_{p^k}}$ lemman 4 mukainen homomorfismi. Koska $A$ on pääpolynomi, $p$ ei jaa $A$:n korkeimman asteen termin kerrointa, eli tämä kuvaus on olemassa. Sijoitetaan yllä olevaan yhtälöön $x = b$, jolloin
+Olkoon $f : \mathbb{Z_p}(\alpha) \to \mathbb{Z_{p^k}}$ lemman 4 mukainen homomorfismi. Koska $A$ on pääpolynomi, $p$ ei jaa $A$:n korkeimman asteen termin kerrointa, eli tämä kuvaus on olemassa. Sijoitetaan yllä olevaan yhtälöön $x = b$, jolloin
 
 $$c_1c_2 \ldots c_tD_1(\alpha + n_1b) \ldots = B(b)H(b)$$
 
