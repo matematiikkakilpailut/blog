@@ -33,7 +33,7 @@ Tämä on postaussarjan vaikein postaus, koska uusia asioita tulee paljon. Samal
 
 Muuttujalla $p$ viitataan **aina** alkulukuun. Muuttujat $n, m, k$ viittaavat kokonaislukuihin, useimmiten positiivisiin kokonaislukuihin.
 
-Kokonaislukukertoimisten polynomien joukkoa merkitään $\mathbb{Z}[x]$. Ei-vakioita kokonaislukukertoimia polynomeja merkitään $\mathbb{Z_*}[x]$ (tämä notaatio siksi, että vakiopolynomit eivät ole mielenkiintoisia).
+Kokonaislukukertoimisten polynomien joukkoa merkitään $\mathbb{Z}[x]$. Ei-vakioita kokonaislukukertoimia polynomeja merkitään $\mathbb{Z_c}[x]$ (tämä notaatio siksi, että vakiopolynomit eivät ole mielenkiintoisia).
 
 Polynomin $P$ **alkutekijöiksi** kutsutaan niitä $p$, joilla yhtälöllä $P(x) \equiv 0 \pmod{p}$. $P$:n alkutekijöiden joukkoa merkitään notaatiolla $S(P)$. Yleisesti sanotaan, että $m \in \mathbb{Z_+}$ on $P$:n tekijä, jos yhtälöllä $P(x) \equiv 0 \pmod{m}$ on ratkaisu. Tekijöiden joukkoa merkitään $S_d(P)$. Vielä kolmas määritelmä: $p$:tä kutsutaan $P$:n **vahvaksi alkutekijäksi**, jos $p^k \in S_d(P)$ kaikilla $k \in \mathbb{Z_+}$. Vahvojen alkutekijöiden joukkoa merkitään $S_v(P)$. Ei ole ilmeistä, että vahvoja alkutekijöitä on olemassa, mutta **kaikki paitsi äärellisen moni alkutekijä on vahva alkutekijä**. Tämä ei ole triviaalia, ja tähän palataan myöhemmin itse todistuksessa.
 
@@ -69,7 +69,7 @@ Seuraavaksi ne asiat, joita moni lukija ei varmaankaan ole aiemmin nähnyt, mutt
 
 Ennen teoriaa haluan mainita, että vaikka määritelmissä on monessa kohtaa rationaalilukuja $\mathbb{Q}$, voi määritelmät laajentaa vastaavasti myös muille kunnille. Kunnan määritelmän voi lukea vaikkapa [täältä](https://blog.matematiikkakilpailut.fi/2018/09/02/Algebralliset.html).
 
-Lukua $\alpha$ kutsutaan **algebralliseksi luvuksi**, jos on olemassa sellainen polynomi $P \in \mathbb{Z_*}[x]$, jonka nollakohta se on. Usein algebrallisia lukuja merkitään kirjaimin $\alpha, \beta, \gamma, \ldots$, ja niin tehdään myös näissä blogipostauksissa.
+Lukua $\alpha$ kutsutaan **algebralliseksi luvuksi**, jos on olemassa sellainen polynomi $P \in \mathbb{Z_c}[x]$, jonka nollakohta se on. Usein algebrallisia lukuja merkitään kirjaimin $\alpha, \beta, \gamma, \ldots$, ja niin tehdään myös näissä blogipostauksissa.
 
 ### Minimaalinen polynomi
 

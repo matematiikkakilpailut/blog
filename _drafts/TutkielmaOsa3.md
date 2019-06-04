@@ -73,7 +73,7 @@ Yleisessä tapauksessa hajotetaan $P$ jaottomien polynomien tuloksi: $P = P_1P_2
 
 Tutkielman päätulos on seuraava:
 
-Olkoot $P_1, P_2, \ldots , P_n \in \mathbb{Z_*}[x]$. On olemassa sellainen $D \in \mathbb{Z_*}[x]$, jolla
+Olkoot $P_1, P_2, \ldots , P_n \in \mathbb{Z_c}[x]$. On olemassa sellainen $D \in \mathbb{Z_c}[x]$, jolla
 
 $$S_d(D) = S_d(P_1) \cap S_d(P_2) \cap \ldots \cap S_d(P_n).$$
 
@@ -118,13 +118,13 @@ Todistamme lauseen 1 todistuksessa, että tämä äärellisen monen alkutekijän
 
 Lause 2 toimii yleistyksenä Schurin lauseelle.
 
-Olkoot $P_1, P_2, \ldots , P_n \in \mathbb{Z_*}[x]$. Pätee
+Olkoot $P_1, P_2, \ldots , P_n \in \mathbb{Z_c}[x]$. Pätee
 
 $$\delta(S_v(P_1) \cap S_v(P_2) \cap \ldots \cap S_v(P_n)) \ge \frac{1}{\deg(P_1)\deg(P_2) \ldots \deg(P_n)}$$
 
 (Vasemman puolen tiheys on olemassa)
 
-Lauseen 2 todistus seuraa suoraan lauseesta 1 ja lemmasta 2, kun osoitetaan, että $\delta(S(P)) \ge \frac{1}{\deg(P)}$ kaikilla $P \in \mathbb{Z_*}[x]$ (miksi? Muista raja $D$:n asteelle). Tämän osoittaminen ei ole kuitenkaan aivan triviaalia.
+Lauseen 2 todistus seuraa suoraan lauseesta 1 ja lemmasta 2, kun osoitetaan, että $\delta(S(P)) \ge \frac{1}{\deg(P)}$ kaikilla $P \in \mathbb{Z_c}[x]$ (miksi? Muista raja $D$:n asteelle). Tämän osoittaminen ei ole kuitenkaan aivan triviaalia.
 
 Lisäksi lauseen 2 alaraja on tiukka, eli se saavutetaan jollain polynomien $P_i$ valinnoilla (ja tarkemmin, monenlaisilla eri valinnoilla).
 
@@ -135,13 +135,13 @@ Monessa tapauksessa polynomien $P_i$ yhteisten alkutekijöiden tiheys voidaan la
 
 **Juurikunta**
 
-Olkoon polynomin $P \in \mathbb{Z_*}[x]$ juuret $\alpha_1, \alpha_2, \ldots , \alpha_n$. Polynomin $P$ juurikunta määritellään olemaan kunta $\mathbb{Q}(\alpha_1, \alpha_2, \ldots , \alpha_n)$.
+Olkoon polynomin $P \in \mathbb{Z_c}[x]$ juuret $\alpha_1, \alpha_2, \ldots , \alpha_n$. Polynomin $P$ juurikunta määritellään olemaan kunta $\mathbb{Q}(\alpha_1, \alpha_2, \ldots , \alpha_n)$.
 
 Juurikunta on siis pienin kunta, jossa $P$ jakautuu ensimmäisen asteen tekijöihin. Se on samalla pienin kunta, joka sisältää kaikki $P$:n juuret.
 
 Lauseen 3 muotoilu on seuraava:
 
-Olkoot $P_1, P_2, \ldots , P_n \in \mathbb{Z_*}[x]$. Olkoon $F_i$ polynomin $P_i$ juurikunta, ja olkoon $F$ polynomin $P_1P_2 \ldots P_n$ juurikunta (eli siis pienin kunta, joka sisältää kaikkien $P_i$ kaikki juuret). Oletetaan, että
+Olkoot $P_1, P_2, \ldots , P_n \in \mathbb{Z_c}[x]$. Olkoon $F_i$ polynomin $P_i$ juurikunta, ja olkoon $F$ polynomin $P_1P_2 \ldots P_n$ juurikunta (eli siis pienin kunta, joka sisältää kaikkien $P_i$ kaikki juuret). Oletetaan, että
 
 $$[F : \mathbb{Q}] = [F_1 : \mathbb{Q}][F_2 : \mathbb{Q}] \cdots [F_n : \mathbb{Q}]$$
 
