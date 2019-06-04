@@ -1,0 +1,148 @@
+---
+layout: post
+author: "Olli Järviniemi"
+title: "Polynomien yhteiset alkutekijät, osa 8: lause 3"
+math: true
+excerpt_separator: "<!--jatkuu-->"
+
+---
+
+Tässä postauksessa esitetään todistus lauseelle 3, eli muodostetaan tapa laskea polynomien yhteisten alkutekijöiden tiheys tietyin oletuksin.
+
+<!--jatkuu-->
+
+**Sisällysluettelo**
+
+1. [Osa 1 - johdanto](https://blog.matematiikkakilpailut.fi/2019/06/4/PYAjohdanto.html)
+2. [Osa 2 - esitiedot](https://blog.matematiikkakilpailut.fi/2019/06/4/PYAesitiedot.html)
+3. [Osa 3 - tulokset](https://blog.matematiikkakilpailut.fi/2019/06/4/PYAtulokset.html)
+4. [Osa 4 - motivaatio](https://blog.matematiikkakilpailut.fi/2019/06/4/PYAmotivaatio.html)
+5. [Osa 5 - heikko versio](https://blog.matematiikkakilpailut.fi/2019/06/4/PYAheikko.html)
+6. [Osa 6 - yleinen tapaus](https://blog.matematiikkakilpailut.fi/2019/06/4/PYAyleinen.html)
+7. [Osa 7 - lause 2](https://blog.matematiikkakilpailut.fi/2019/06/4/PYAlause2.html)
+8. Osa 8 - lause 3
+9. [Osa 9 - lause 4](https://blog.matematiikkakilpailut.fi/2019/06/4/PYAlause4.html)
+10. [Osa 10 - sovelluksia](https://blog.matematiikkakilpailut.fi/2019/06/4/PYAsovelluksia.html)
+11. [Osa 11 - lisäaiheita](https://blog.matematiikkakilpailut.fi/2019/06/4/PYAlisaaiheita.html)
+
+
+**Tavoite:**
+
+Olkoot $P_1, P_2, \ldots , P_n \in \mathbb{Z_c}[x]$. Olkoon $F_i$ polynomin $P_i$ juurikunta, ja olkoon $F$ polynomin $P_1P_2 \ldots P_n$ juurikunta. Oletetaan, että
+
+$$[F : \mathbb{Q}] = [F_1 : \mathbb{Q}] \ldots [F_n : \mathbb{Q}].$$
+
+Tällöin
+
+$$\delta(S(P_1) \cap \ldots \cap S(P_n)) = \delta(S(P_1)) \ldots \delta(S(P_n)).$$
+
+**Idea:**
+
+Alkuperäinen ideani ei toiminut, ja huomasin virheen vasta tätä blogipostausta kirjoittaessani. Ideanani oli tutkia lauseen 1 antamia $D$, eli yhteiset alkutekijät karakterisoivaa polynomia. Tämä on kuitenkin turhan monimutkaista, koska saman voi tehdä tutkimalla polynomien tuloja:
+
+Tutkitaan hetken ajan tapausta $n = 2$. Inkluusio-ekskluusion nojalla pätee
+
+$$\delta(S(P_1) \cap S(P_2)) + \delta(S(P_1) \cup S(P_2)) = \delta(S(P_1)) + \delta(S(P_2)).$$
+
+Miksi voimme käyttää inkluusioekskluusiota tiheyksille? Tämä toimii kyllä (ja lienee melko intuitiivista): olkoon $S(P, x)$ niiden $P$:n alkutekijöiden $p$ joukko, joilla $p \le x$. Tällöin tavallisen inkluusio-ekskluusion avulla (eli siis $\mid A \cup B \mid + \mid A \cap B \mid \ = \ \mid A \mid + \mid B \mid$) saadaan
+
+$$\mid S(P_1, x) \cap S(P_2, x) \mid + \mid S(P_1, x) \cup S(P_2, x) \mid \ = \ \mid S(P_1, x) \mid + \mid S(P_2, x) \mid.$$
+
+Jaetaan yhtälö puolittain suureella $\pi(x)$, eli niiden alkulukujen määrällä, jotka ovat enintään $x$. Annetaan vielä $x$:n lähestyä ääretöntä. Yhtälön molemmilla puolilla summataan termejä muotoa
+
+$$\lim_{x \to \infty} \frac{\mid S(P_1, x) \mid}{\pi(x)}.$$
+
+Mutta tämä on luonnollisen tiheyden määritelmä.
+
+Jos siis saamme laskettua joukon $S(P_1) \cup S(P_2)$, eli joukon $S(P_1P_2)$, tiheyden, saamme myös tiheyden $\delta(S(P_1) \cap S(P_2))$ laskettua. Tämä on helpompaa kuin se, että generoisimme lauseen 1 avulla sellaisen $D$, jolla $S(D) = S(P_1) \cap S(P_2)$, ja tutkisimme joukon $S(D)$ tiheyttä. Syy tämän taustalla on se, että aiomme käyttää Frobeniuksen lausetta tiheyksien laskemiseen, ja tämä vaatii tietoa polynomien juurista. Tiedämme heti, mitä ovat polynomin $P_1P_2$ juuret, mutta polynomin $D$ juurien käsittely on vaikeampaa.
+
+Ennen kuin mennään lauseen todistukseen, kirjoittelen muutamia huomioita.
+
+**Huomautus**
+
+Kirjoitin tulokset-postauksessa siitä, kuinka lauseen ehto on vain tapa sanoa se, että polynomit $P_i$ eivät kommunikoi keskenään. Tässä kohtaa väite voi tuntua jo hieman uskottavammalta: Frobeniuksen lause ottaa sisään tietoa juurista ja niiden generoimista kuntalaajennuksista, ja antaa takaisin tietoa alkutekijöistä.
+
+Mainitsin aiemmin myös siitä, että tapauksessa $n = 2$ ehto on ekvivalenttia sen kanssa, että $F_1 \cap F_2 = \mathbb{Q}$ (tämä on melko intuitiivista). Yleisessä tapauksessa ehdosta seuraa kyllä, että juurikunnat eivät leikkaa toisiaan (paitsi rationaaliluvuissa), mutta tämä ei ole riittävä ehto. Ekvivalentti ehto voitaisiin muotoilla seuraavasti:
+
+Olkoon $P$ polynomien $P_i$ tulo. Oletetaan, että kaikilla $1 \le i \le n$ polynomien $\frac{P}{P_i}$ ja $P_i$ juurikuntien leikkaus on rationaaliluvut.
+
+**Huomautus**
+
+Olkoot $P_1(x) = x^3 - 2$ ja $P_2(x) = x^2 + x + 1$. Näiden polynomien juurikunnat leikkaavat: jos $\omega$ on jokin $P_2$:n juuri, niin $\omega^3 = 1$, ja $P_1$:n juuret ovat $\sqrt[3]{2}, \sqrt[3]{2}\omega$ ja $\sqrt[3]{2}\omega^2$. Selvästi $\omega$ kuuluu $P_1$:n juurikuntaan.
+
+Tällä esimerkillä on mielenkiintoisia ominaisuuksia.
+
+Jaottomien kolmannen asteen polynomien alkutekijöiden tiheys on joko $\frac{1}{3}$ tai $\frac{2}{3}$ (ei ole vaikeaa osoittaa Frobeniuksen lauseen nojalla, joukolla $\lbrace 1, 2, 3 \rbrace$ kun on vain $6$ permutaatiota, ja ei kovin montaa osaryhmää).
+
+Osoittautuu, että $\delta(S(P_1)) = \frac{2}{3}$. Lisäksi (jaottomille) toisen asteen polynomeilla pätee $\delta(S(P_2)) = \frac{1}{2}$.
+
+Yhteisten alkutekijöiden tiheyden olettaisi olevan siis $\frac{1}{3}$, mutta näin ei ole. Tiheys on **vähemmän**, $\frac{1}{6}$. Inkluusio-ekskluusion nojalla (kts. yllä) $\delta(S(P_1) \cup S(P_2)) = \frac{1}{2} + \frac{1}{3} - \frac{1}{6} = 1$
+
+Esimerkissä on kolme mielenkiintoista pointtia:
+
+1. Yhteisten alkutekijöiden tiheys on vähemmän kuin annettujen polynomien alkutekijöiden tiheys. Tämä yllätti minut täysin - olin pitkään ajatellut tämän olevan mahdotonta, eli ajattelin epäyhtälön $\delta(S(A) \cap S(B)) \ge \delta(S(A))\delta(S(B))$ pätevän aina. Lisäksi en näe intuitiivista syytä sille, mistä tämä johtuu: helpossa esimerkeissä tapahtumat "p on $A$:n alkutekijä" ja "p on $B$:n alkutekijä" ovat riippumattomia, tai toisen pätevyys aiheuttaa suuremman todennäköisyyden myös toiselle päteä. Näin käy esimerkiksi jos $A(x) = x^{10} - 2$ ja $B(x) = x^6 - 2$, mutta nyt tilanne on päinvastainen.
+
+2. $\delta(S(P_1) \cup S(P_2)) = 1$. Tämä ei vielä todista, että kaikki $p$ ovat polynomin $P_1P_2$ alkutekijöitä (poikkeustapauksia voisi olla hyvin harvassa ilman, että tämä vaikuttaa tiheyteen), mutta tämäkin pätee. Aiemmin esitettiin polynomi $(x^2 - 2)(x^2 - 3)(x^2 - 6)$ ratkaisuna ongelmaan "onko olemassa polynomia, jolla ei ole rationaalisia juuria, mutta jonka alkutekijöitä ovat kaikki alkuluvut?". Polynomi $P_1P_2$ antaa ratkaisun, jonka aste on $5$. Epätriviaaliksi harjoitustehtäväksi jätetään sen osoittaminen, että ei ole olemassa ratkaisua, jonka aste on alle $5$.
+
+
+3. Jos $\alpha$ ja $\beta$ ovat mielivaltaiset polynomien $P_1$ ja $P_2$ juuret, niin pätee $[\mathbb{Q}(\alpha, \beta) : \mathbb{Q}] = 6$. Tästä huolimatta juurikunnat leikkaavat.
+
+Miksi kaikki alkuluvut ovat joko $P_1$:n tai $P_2$:n alkutekijöitä? Jos $p \equiv 1 \pmod{3}$, niin se on kolmannen syklotomisen polynomin $P_2$ alkutekijä. Jos taas $p \equiv 2 \pmod{3}$, niin funktio $f(x) = x^3$ on bijektio mod $p$, eli $p \in S(P_1)$. Jos taas $p = 3$, niin $p \in S(P_1)$.
+
+Seuraavaksi osoitetaan lause 3. Todistus ei sisällä mitään kovin mielenkiintoista, mutta demonstroi Frobeniuksen lauseen käyttämistä tositilanteissa. Itse pidän todistusta hieman puuduttavana, lähinnä koska todistuksen toteutus on melko vaivalloinen. Idea lauseessa 3 on siitä huolimatta hyvin luonnollinen.
+
+##Todistus
+
+Todistan väitteen vain tapauksessa $n = 2$. Todistin työssäni yleisen tapauksen induktiolla - todistus oli mielestäni hyvin puuduttava, eikä sisältänyt mitään oivaltavaa. Siispä keskitytään hieman mielenkiintoisempaan osaan todistuksesta.
+
+Oletetaan siis, että $n = 2$.
+
+Olkoon $G_1$ polynomin $P_1$ Galois'n ryhmä, $G_2$ vastaavasti $P_2$:n, ja vielä $G_{12}$ polynomin $P_1P_2$ Galois'n ryhmä.
+
+Jos $A, B$ ovat joukkoja, joukolla $A \times B$ viitataan parien $(a, b), a \in A, b \in B$ joukkoon.
+
+Keith Conradin [Galois Theory At Work](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.211.2314&rep=rep1&type=pdf)-monisteen (linkki) lause 5.1. kertoo, että $G_{12}$ on isomorfinen joukon $G_1 \times G_2$ kanssa, seuraten ehdosta $[F : \mathbb{Q}] = [F_1 : \mathbb{Q}][F_2 : \mathbb{Q}]$. On siis olemassa bijektio $f$ näiden joukkojen välillä. Tämä bijektio on varsin luonnollinen: olkoon $\sigma_{12} \in G_{12}$ jokin alkio. Määritellään $\sigma_1(x) = \sigma_{12}(x)$ kaikilla $x \in F_1$, ja määritellään vastaavasti $\sigma_2$. On selvää, että $\sigma_i \in G_i$, $i = 1, 2$. Kuvataan $f(\sigma_{12}) = (\sigma_1, \sigma_2)$.
+
+Joukon $G_{12}$ koko on bijektion olemassaolon vuoksi joukkojen $G_1$ ja $G_2$ kokojen tulo.
+
+Suunnitelmana on käyttää Frobeniuksen lausetta polynomin $P_1P_2$ alkutekijöiden tiheyden määrittämiseen. Tätä varten meidän tulee määrittää niiden $\sigma_{12} \in G_{12}$ määrä, jotka kuvaavat jonkin polynomin $P_1P_2$ juurista itselleen. Olkoon näiden kuvausten joukko $N_{12}$. Määritellään vastaavasti $N_1$ ja $N_2$.
+
+Frobeniuksen lause sanoo siis, että
+
+$$\delta(S(P_1P_2)) = \frac{\mid N_{12} \mid}{\mid G_{12} \mid}.$$
+
+Miten määritämme joukon $N_{12}$ koon? Ideana on valita joukon $G_{12}$ alkioita $\sigma_{12}$, ja tutkia, millainen pari $(\sigma_1, \sigma_2)$ tulee ulos kuvatessa bijektiolla $f$. Tähän on neljä tapausta:
+
+1. $\sigma_1 \in N_1, \sigma_2 \in N_2$. Tämä tarkoittaa siis, että on olemassa polynomin $P_1$ juuri $\alpha_1$, jolla $\sigma_1(\alpha_1) = \alpha_1$ (ja vastaavasti polynomille $P_2$). Bijektion määrittelyn nojalla nyt pätee $\sigma_{12}(\alpha_1) = \sigma_1(\alpha_1) = \alpha_1$. Siis kuvaus $\sigma_{12}$ kuvaa polynomin $P_1P_2$ juuren $\alpha_1$ itselleen, eli $\sigma_{12} \in N_{12}$. Siis jos $f(\sigma_{12}) \in N_1 \times N_2$, pätee $\sigma_{12} \in N_{12}$.
+
+2. $\sigma_1 \in N_1$, mutta $\sigma_2 \not\in N_2$. Voimme edetä kuten tapauksessa 1: missään kohtaa ei käytetty tietoa $\sigma_2 \in N_2$. Tässä tapauksessa pätee myös $\sigma_{12} \in N_{12}$.
+
+3. $\sigma_1 \not\in N_1$ ja $\sigma_2 \in N_2$. Tapauksen 1 käsittely toimii tutkimalla kuvausta $\sigma_2$ ja jotain polynomin $P_2$ juurta $\alpha_2$. SIis $\sigma_{12} \in N_{12}$.
+
+4. $\sigma_1 \not\in N_1$ ja $\sigma_2 \not\in N_2$. Tässä tapauksessa päteekin $\sigma_{12} \not\in N_{12}$. Tämä on helppoa osoittaa vastaoletuksella: oletetaan, että olisi olemassa jokin polynomin $P_1P_2$ juuri $\alpha$, jolla $\sigma_{12}(\alpha) = \alpha$. Jos $\alpha$ on $P_1$:n juuri, pätee bijektion määrittelyn nojalla $\sigma_1(\alpha) = \sigma_{12}(\alpha) = \alpha$, ristiriita ehdon $\sigma_1 \not\in N_1$ kanssa. Vastaavasti ristiriita, jos $\alpha$ on $P_2$:n juuri.
+
+Tapauskäsittelyn pohjalta on helppoa laskea joukon $N_{12}$ koko: se on tapausten $1, 2, 3$ mukaisten parien $(\sigma_1, \sigma_2)$ määrä. Ensimmäisen tapauksen kuvaksien määrä on $\mid N_1 \mid \cdot \mid N_2 \mid$. Toisen tapauksen mukaisia pareja on
+
+$$\mid N_1 \mid (\mid G_2 \mid - \mid N_2 \mid).$$
+
+Kolmannen tapauksen mukaisia taas on
+
+$$(\mid G_1 \mid - \mid N_1 \mid)\mid N_2 \mid.$$
+
+Summaamalla nämä yhteen saadaan
+
+$$\mid N_{12} \mid \ =  \ \mid N_1 \mid \mid G_2 \mid + \mid N_2 \mid\mid G_1 \mid - \mid N_1 \mid \mid N_2 \mid.$$
+
+Frobeniuksen lauseen nojalla
+
+$$\delta(S(P_1P_2)) = \frac{\mid N_{12} \mid}{\mid G_{12} \mid} = \frac{\mid N_1 \mid }{\mid G_1 \mid} + \frac{\mid N_2 \mid}{\mid G_2 \mid} - \frac{\mid N_1 \mid \mid N_2 \mid}{\mid G_1 \mid \mid G_2 \mid},$$
+
+missä on Frobeniuksen lauseen nojalla
+
+$$\delta(S(P_i)) = \frac{\mid N_i \mid}{\mid G_i \mid},$$
+
+joten yllä oleva summa on vain
+
+$$\delta(S(P_1)) + \delta(S(P_2)) - \delta(S(P_1))\delta(S(P_2)).$$
+
+Inkluusio-ekskluusion nojalla $\delta(S(P_1) \cap \delta(S(P_2)) = \delta(S(P_1))\delta(S(P_2))$.
