@@ -25,17 +25,4 @@ Tässä postauksessa esitetään motivaatio lauseen 1 todistuksen takana.
 10. [Osa 10 - sovelluksia](https://blog.matematiikkakilpailut.fi/2019/06/4/PYAsovelluksia.html)
 11. [Osa 11 - lisäaiheita](https://blog.matematiikkakilpailut.fi/2019/06/4/PYAlisaaiheita.html)
 
-
-### Kysymys 2
-
-Kysymyksenä 2 oli siis: onko $S(A) \cap S(B)$ ääretön kaikilla $A, B \in \mathbb{Z_c}[x]$? Esitetään tälle väitteelle todistus. Todistus ei ole minun, vaan voidaan löytää esimerkiksi artikkelista [On the prime divisors of polynomials](www.jstor.org/stable/2317521) (Irving Grest, John Brillhart)
-
-**Todistus**
-
-Olkoot $\alpha, \beta$ jotkin $A$:n ja $B$:n juuret. Olkoon $\gamma$ sellainen, että $\mathbb{Q}(\alpha, \beta) = \mathbb{Q}(\gamma)$ (mahdollista Primitive element theoremin nojalla, kts. esitiedot). Olkoon $D$ luvun $\gamma$ minimaalinen polynomi. Osoitetaan, että $D$:llä on seuraava ominaisuus:
-
-Kaikki paitsi äärellisen moni $D$:n alkutekijä on sekä $A$:n että $B$:n alkutekijä.
-
-Huomaa, että $D$ ei ole välttämättä kokonaislukukertoiminen, mutta $D$:tä voidaan kertoa sopivalla kokonaisluvulla, eikä todistettava väite muutu. Tämä on esimerkki laajennetun jaollisuuden määritelmän kiertämisestä. Oletetaan siis, että $D$ on kokonaislukukertoiminen.
-
-Koska $\alpha \in \mathbb{Q}(\alpha) \subset \mathbb{Q}(\alpha, \beta) = \mathbb{Q}(\gamma)$, voidaan $\alpha$ esittää polynomina luvusta $\gamma$. Siis $\alpha = q_0 + q_1\gamma + \ldots + q_{n-1}\gamma^{n-1}$ jollain rationaaliluvuilla $q_i$ ja kokonaisluvulla $n$. Olkoon $A_1(x) = q_0 + q_1x + \ldots + q_{n-1}x^{n-1}$. Tällöin
+ABBACD.
