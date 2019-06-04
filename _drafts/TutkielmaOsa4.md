@@ -27,4 +27,4 @@ Tässä postauksessa esitetään motivaatio lauseen 1 todistuksen takana.
 
 ### Kysymys 2
 
-Kysymyksenä 2 oli siis: onko $S(A) \cap S(B)$ ääretön kaikilla $A, B$? [Osa 11 - lisäaiheita](https://blog.matematiikkakilpailut.fi/2019/06/4/PYAlisaaiheita.html). Ääh.
+Kysymyksenä 2 oli siis: onko $S(A) \cap S(B)$ ääretön kaikilla $A, B$? [AAA](https://www.jstor.org/stable/2317521?seq=1#page_scan_tab_contents). Ääh.
