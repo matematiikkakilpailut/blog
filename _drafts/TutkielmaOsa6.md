@@ -31,7 +31,7 @@ Tämän postauksen tulokset ovat täysin alkeellisia, joten jätän joitain ruti
 
 Ensiksi tämän postauksen tärkein ja vaikein lemma, joka on mielestäni melko pitkästyttävä. On varmaankin nautinnollisempaa yrittää todistaa lause itse kuin lukea kirjoittamani todistus.
 
-### Lemma 7
+## Lemma 7
 
 Olkoot $A, B \in \mathbb{Z_c}[x]$. Oletetaan, että on olemassa sellainen $D \in \mathbb{Z_c}[x]$, jolla pätee seuraavat ehdot:
 
@@ -58,7 +58,7 @@ Tapaus 2. $p^k \in S_d(D)$, mutta $p^k \not\in S_d(A) \cap S_d(B)$. Ideana on el
 
 Olkoon $v = v_p(D(0))$, mikä on äärellinen edellisen nojalla. Valitaan
 
-$$D_p(x) = \frac{D(p^{v+1}x)}{p^v}$$
+$$D_p(x) = \frac{D(p^{v+1}x)}{p^v}.$$
 
 Ei ole vaikeaa osoittaa, että seuraavat ehdot pätevät:
 
@@ -70,7 +70,7 @@ Tämän jälkeen kerrotaan $D_p$ sopivalla $p$:n potenssilla, jotta alkuluku $p$
 
 Suorittamalla operaatiot kaikille äärellisen monelle $p$ saadaan luotua $D_1$, jolla $p^k \in S_d(A) \cap S_d(B) \Leftrightarrow p^k \in S_d(D_1)$. Lemman 1 nojalla pätee $S_d(A) \cap S_d(B) = S_d(D_1)$.
 
-### Lemma 8
+## Lemma 8
 
 Lemma 8 käsittelee pääpolynomeja: tällä saadaan korjattua heikossa versiossa tehty oletus siitä, että $A$ ja $B$ ovat pääpolynomeja.
 
@@ -82,12 +82,12 @@ Olkoon $P \in \mathbb{Z_c}[x]$. On olemassa pääpolynomi $Q \in \mathbb{Z_c}[x]
 
 Olkoon $d = \deg(P)$ ja $c$ polynomin $P$ korkeimman asteen termin kerroin. Valitaan
 
-$$Q(x) = c^{d-1}P(\frac{x}{c})$$
+$$Q(x) = c^{d-1}P(\frac{x}{c}).$$
 
 Ei ole vaikeaa osoittaa, että $q^t \in S_d(Q) \Leftrightarrow q^t \in S_d(P)$ kaikilla alkuluvuilla $q \nmid c$. Lisäksi on helppoa osoittaa $S_v(P) \subset S_v(Q)$. Lisäksi helppo lasku osoittaa, että $Q$ on kokonaislukukertoiminen pääpolynomi.
 
 
-### Lemma 9
+## Lemma 9
 
 Lemma 9 osoittaa, että lauseen 1 väite pätee kaikilla jaottomilla $A, B$. Tämän jälkeen ei ole enää vaikeaa osoittaa väitettä kaikille $A, B$.
 
@@ -103,7 +103,7 @@ Olkoot $A, B \in \mathbb{Z_c}[x]$ nyt mielivaltaisia jaottomia polynomeja. Olkoo
 
 Lemman 8 nojalla pätee $S_v(A) \cap S_v(B) \subset S_v(A_1) \cap S_v(B_1) = S_v(D_1)$. Vastaavasti, $S(A) \cap S(B) \approx S(A_1) \cap S(B_1) = S(D_1)$. Polynomi $D_1$ on täten lemman 7 mukaisesti tarpeeksi lähellä toimivuutta polynomeille $A, B$, joten on olemassa sellainen $D$, jolla $S_d(A) \cap S_d(B) = S_d(D)$.
 
-### Lemma 10
+## Lemma 10
 
 Lemma 10 on hyvin helppo, mutta myös mielenkiintoinen - se todistaa lauseen 1 väitteen tekijöiden yhdisteelle leikkauksen sijasta.
 
@@ -118,7 +118,7 @@ Valitaan $D = AB$. Ei ole vaikeaa nähdä, että $D$ toteuttaa lemman 7 ehdot p
 
 Lemman tuloksen voi yleistää induktiolla mielivaltaiselle määrälle polynomeja.
 
-## Lauseen 1 todistus
+# Lauseen 1 todistus
 
 Pääsemme vihdoinkin itse asiaan. Väite pätee jo jaottomille $A, B$ lemman 9 nojalla. Osoitetaan väite nyt mielivaltaisille $A, B$. Ideana on yhdistellä lemman 9 mukaisia polynomeja $A$:n ja $B$:n jaottomille tekijöille lemman 10 avulla. Tämä ei ole kovin vaikeaa.
 
@@ -126,18 +126,18 @@ Olkoot $A = A_1A_2 \ldots A_a$ ja $B = B_1B_2 \ldots B_b$, missä $A_i, B_j \in 
 
 Olkoon $D_{i, j}$ lemman 9 mukaisesti sellainen, jolla $S_d(A_i) \cap S_d(B_j) = S_d(D_{i, j})$. Olkoon $D$ lemman 10 mukaisesti sellainen, jolla
 
-$$S_d(D) = \bigcup_{i, j} S_d(D_{i, j})$$
+$$S_d(D) = \bigcup_{i, j} S_d(D_{i, j}).$$
 
 On suoraviivaista tarkistaa, että $S_v(D) = S_v(A) \cap S_v(B)$ (valitse jokin $p \in S_v(D)$, ja osoita, että $p \in S_v(A) \cap S_v(B)$. Toista toiseen suuntaan). Täten lemman 7 nojalla on olemassa selliainen $D_1$, jolla $S_d(D_1) = S_d(A_1) \cap S_d(B_1)$.
 
 
-### $D$:n aste
+## $D$:n aste
 
 Lauseessa luvattiin myös, että $\deg(D) = \deg(P_1)\deg(P_2) \ldots \deg(P_n)$. Riittää osoittaa tämä kun $n = 2$, koska induktio hoitaa loput $n$.
 
 Tutkitaan ensin heikon version tuottamaa $D$. Se on tulo polynomeista $D_1, D_2, \ldots , D_t$. Polynomin $D_i$ aste on sama kuin kuntalaajennuksen $\mathbb{Q}(\gamma_i) / \mathbb{Q}$ aste. Siispä
 
-$$\deg(D_i) = [\mathbb{Q}(\gamma_i) : \mathbb{Q}] = [\mathbb{Q}(\alpha, \beta_i) : \mathbb{Q}]$$
+$$\deg(D_i) = [\mathbb{Q}(\gamma_i) : \mathbb{Q}] = [\mathbb{Q}(\alpha, \beta_i) : \mathbb{Q}].$$
 
 Käyttäen tulon kuntalaajennusten multiplikatiivisuutta
 
@@ -152,6 +152,6 @@ Siis $\deg(D_i) = \deg(A)\deg(E_i)$. Täten
 
 $$\deg(D) = \deg(D_1D_2 \ldots D_t) = \deg(D_1) + \deg(D_2) + \ldots + \deg(D_t)$$
 
-$$ = \deg(A) \sum \deg(E_i) = \deg(A)\deg(B)$$
+$$ = \deg(A) \sum \deg(E_i) = \deg(A)\deg(B).$$
 
 Tämä osoittaa väitteen. Se, että tämä on joskus pienin mahdollinen aste, todistetaan lauseen 2 yhteydessä.
