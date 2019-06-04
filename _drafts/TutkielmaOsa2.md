@@ -198,23 +198,23 @@ Väitteen todistus perustuu [Ken Brownin luentomateriaaliin](http://pi.math.corn
 
 Olkoot $\alpha, \beta$ algebrallisia lukuja, ja olkoot $f, g \in \mathbb{Q}[x]$ niiden minimaaliset polynomit. Olkoon $\gamma = \alpha + \lambda\beta$, missä $\lambda \in \mathbb{Q}$ on myöhemmin valittava vakio. Tulemme valitsemaan luvun $\lambda$ niin, että $\mathbb{Q}(\alpha, \beta) = \mathbb{Q}(\gamma)$.
 
-Olkoon $g_*$ luvun $\beta$ minimaalinen polynomi kunnassa $\mathbb{Q}(\gamma)$. Aiomme osoittaa, että $\deg(g_*) = 1$. Tämä todistaa väitteen, koska silloin on olemassa $a, b \in \mathbb{Q}(\gamma)$, joilla $g_*(x) = ax + b$, eli $0 = g_*(\beta) = a\beta + b$, eli $\beta = -\frac{b}{a}$. Tällöin $\beta \in \mathbb{Q}(\gamma)$, eli myös $\alpha = \gamma - \lambda\beta \in \mathbb{Q}(\gamma)$.
+Olkoon $g_{\gamma}$ luvun $\beta$ minimaalinen polynomi kunnassa $\mathbb{Q}(\gamma)$. Aiomme osoittaa, että $\deg(g_{\gamma}) = 1$. Tämä todistaa väitteen, koska silloin on olemassa $a, b \in \mathbb{Q}(\gamma)$, joilla $g_{\gamma}(x) = ax + b$, eli $0 = g_{\gamma}(\beta) = a\beta + b$, eli $\beta = -\frac{b}{a}$. Tällöin $\beta \in \mathbb{Q}(\gamma)$, eli myös $\alpha = \gamma - \lambda\beta \in \mathbb{Q}(\gamma)$.
 
-**Idea:** Etsitään kaksi polynomia, jotka $g_*$ jakaa. Osoitetaan, että näiden polynomien syt on 1.
+**Idea:** Etsitään kaksi polynomia, jotka $g_{\gamma}$ jakaa. Osoitetaan, että näiden polynomien syt on 1.
 
-Koska $g \in \mathbb{Q}[x]$, ovat $g$:n kertoimet rationaalilukuja ja täten kunnan $\mathbb{Q}(\gamma)$ alkioita. Voidaan siis kirjoittaa, hieman erikoisesti mutta hyödyllisesti, $g \in \mathbb{Q}(\gamma)[x]$. Lisäksi määritelmän nojalla $g(\beta) = 0$. $g$ on siis polynomi, jonka kertoimet ovat kunnassa $\mathbb{Q}(\gamma)$, ja jolla on nollakohta $\beta$. Sen siis tulee olla jaollinen luvun $\beta$ minimaalisella polynomilla kunnassa $\mathbb{Q}(\gamma)$, eli polynomilla $g_*$. Tämä saattaa tuntua hämmentävältä, joten esitetään tämä vielä toisella tavalla:
+Koska $g \in \mathbb{Q}[x]$, ovat $g$:n kertoimet rationaalilukuja ja täten kunnan $\mathbb{Q}(\gamma)$ alkioita. Voidaan siis kirjoittaa, hieman erikoisesti mutta hyödyllisesti, $g \in \mathbb{Q}(\gamma)[x]$. Lisäksi määritelmän nojalla $g(\beta) = 0$. $g$ on siis polynomi, jonka kertoimet ovat kunnassa $\mathbb{Q}(\gamma)$, ja jolla on nollakohta $\beta$. Sen siis tulee olla jaollinen luvun $\beta$ minimaalisella polynomilla kunnassa $\mathbb{Q}(\gamma)$, eli polynomilla $g_{\gamma}$. Tämä saattaa tuntua hämmentävältä, joten esitetään tämä vielä toisella tavalla:
 
-Jaetaan polynomi $g \in \mathbb{Q}(\gamma)[x]$ polynomilla $g_* \in \mathbb{Q}(\gamma)[x]$ jakokulmassa. Siis $g = g_*A + B$, missä $\deg(B) < \deg(g_*)$, $B \in \mathbb{Q}(\gamma)[x]$. Sijoittamalla muuttujaksi $\beta$ saadaan $g(\beta) = g_*(\beta)A(\beta) + B(\beta)$. Koska $g(\beta) = 0 = g_*(\beta)$, pätee $B(\beta) = 0$. Mutta $g_*$ määriteltiin olemaan luvun $\beta$ minimaalinen polynomi, ja pätee $\deg(B) < \deg(g')$. Tämä on määritelmien nojalla mahdollista vain, jos $B$ on nollapolynomi, eli $g_* \mid g$.
+Jaetaan polynomi $g \in \mathbb{Q}(\gamma)[x]$ polynomilla $g_{\gamma} \in \mathbb{Q}(\gamma)[x]$ jakokulmassa. Siis $g = g_{\gamma}A + B$, missä $\deg(B) < \deg(g_{\gamma})$, $B \in \mathbb{Q}(\gamma)[x]$. Sijoittamalla muuttujaksi $\beta$ saadaan $g(\beta) = g_{\gamma}(\beta)A(\beta) + B(\beta)$. Koska $g(\beta) = 0 = g_{\gamma}(\beta)$, pätee $B(\beta) = 0$. Mutta $g_{\gamma}$ määriteltiin olemaan luvun $\beta$ minimaalinen polynomi, ja pätee $\deg(B) < \deg(g')$. Tämä on määritelmien nojalla mahdollista vain, jos $B$ on nollapolynomi, eli $g_{\gamma} \mid g$.
 
 Siis
 
-$$g_* \mid g.$$
+$$g_{\gamma} \mid g.$$
 
-Etsitään sitten, idean mukaisesti, vielä toinen polynomi $h$, jolla pätee $g_* \mid h$. Tämä $h$ valitaan asettamalla $h(x) = f(\gamma - \lambda x)$. Tällöin $h(\beta) = f(\alpha) = 0$, ja $h \in \mathbb{Q}(\gamma)[x]$. Kuten edellä, tulee myös $h$:n olla jaollinen polynomilla $g_*$. Siis
+Etsitään sitten, idean mukaisesti, vielä toinen polynomi $h$, jolla pätee $g_{\gamma} \mid h$. Tämä $h$ valitaan asettamalla $h(x) = f(\gamma - \lambda x)$. Tällöin $h(\beta) = f(\alpha) = 0$, ja $h \in \mathbb{Q}(\gamma)[x]$. Kuten edellä, tulee myös $h$:n olla jaollinen polynomilla $g_{\gamma}$. Siis
 
-$$g_* \mid h.$$
+$$g_{\gamma} \mid h.$$
 
-Osoittaaksemme $\deg(g_*) = 1$ riittää siis osoittaa, että polynomien $g$ ja $h$ suurimman yhteisen tekijän aste on $1$ (huomaa, että tiedämme sytin asteen olevan vähintään $1$, koska $g(\beta) = h(\beta) = 0$). Osoitetaan tämä vastaoletuksella: polynomien $g$ ja $h$ suurimman yhteisen tekijän aste on vähintään $2$.
+Osoittaaksemme $\deg(g_{\gamma}) = 1$ riittää siis osoittaa, että polynomien $g$ ja $h$ suurimman yhteisen tekijän aste on $1$ (huomaa, että tiedämme sytin asteen olevan vähintään $1$, koska $g(\beta) = h(\beta) = 0$). Osoitetaan tämä vastaoletuksella: polynomien $g$ ja $h$ suurimman yhteisen tekijän aste on vähintään $2$.
 
 Tällöin on olemassa jokin algebrallinen luku $\beta'$, jolla $g(\beta') = h(\beta') = 0$. Osoitetaan, että $\beta' \neq \beta$, eli siis että $\beta$ ei ole $g$:n kaksinkertainen juuri, minkä jälkeen saatetaan todistus maaliin.
 
