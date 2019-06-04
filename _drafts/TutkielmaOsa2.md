@@ -27,7 +27,7 @@ Tässä postauksessa esitetään tutkielman kannalta tärkeitä esitietoja sekä
 
 Tämä on postaussarjan vaikein postaus, koska uusia asioita tulee paljon. Samalla postaus on hyvin pitkä, koska olen koittanut avata sisältöä esimerkkien kautta. Kannattaa edetä rauhassa. Netistä löytää helposti oheismateriaalia, joiden kautta voi etsiä lisäselitystä epäselviin kohtiini. Kaikkia esitietoja ei tulla käyttämään ihan heti, joten niihin voi olla hyvä palata myöhemmin.
 
-## Perusjuttuja
+# Perusjuttuja
 
 **Notaatio**
 
@@ -35,9 +35,9 @@ Muuttujalla $p$ viitataan **aina** alkulukuun. Muuttujat $n, m, k$ viittaavat k
 
 Kokonaislukukertoimisten polynomien joukkoa merkitään $\mathbb{Z}[x]$. Ei-vakioita kokonaislukukertoimia polynomeja merkitään $\mathbb{Z_*}[x]$ (tämä notaatio siksi, että vakiopolynomit eivät ole mielenkiintoisia).
 
-Polynomin $P$ **alkutekijöiksi** kutsutaan niitä $p$, joilla yhtälöllä $P(x) \equiv 0 \pmod{p}$. $P$:n alkutekijöiden joukkoa merkitään notaatiolla $S(P)$. Yleisesti sanotaan, että $m \in \mathbb{Z_+}$ on $P$:n tekijä, jos yhtälöllä $P(x) \equiv 0 \pmod{m}$ on ratkaisu. Tekijöiden joukkoa merkitään $S_d(P)$. Vielä kolmas määritelmä: $p$:tä kutsutaan $P$:n **vahvaksi alkutekijäksi**, jos $p^k \in S_d(P)$ kaikilla $k \in \mathbb{Z}_+$. Vahvojen alkutekijöiden joukkoa merkitään $S_v(P)$. Ei ole ilmeistä, että vahvoja alkutekijöitä on olemassa, mutta **kaikki paitsi äärellisen moni alkutekijä on vahva alkutekijä**. Tämä ei ole triviaalia, ja tähän palataan myöhemmin itse todistuksessa.
+Polynomin $P$ **alkutekijöiksi** kutsutaan niitä $p$, joilla yhtälöllä $P(x) \equiv 0 \pmod{p}$. $P$:n alkutekijöiden joukkoa merkitään notaatiolla $S(P)$. Yleisesti sanotaan, että $m \in \mathbb{Z_+}$ on $P$:n tekijä, jos yhtälöllä $P(x) \equiv 0 \pmod{m}$ on ratkaisu. Tekijöiden joukkoa merkitään $S_d(P)$. Vielä kolmas määritelmä: $p$:tä kutsutaan $P$:n **vahvaksi alkutekijäksi**, jos $p^k \in S_d(P)$ kaikilla $k \in \mathbb{Z_+}$. Vahvojen alkutekijöiden joukkoa merkitään $S_v(P)$. Ei ole ilmeistä, että vahvoja alkutekijöitä on olemassa, mutta **kaikki paitsi äärellisen moni alkutekijä on vahva alkutekijä**. Tämä ei ole triviaalia, ja tähän palataan myöhemmin itse todistuksessa.
 
-Olkoot $S_1, S_2 \subset \mathbb{Z}_+$. Kirjoitetaan, että $S_1 \approx S_2$, ja sanotaan, että joukot $S_1$ ja $S_2$ ovat miltei samat, jos seuraava ehto pätee: on olemassa vain äärellisen monta alkulukua $p$, joita kohden on olemassa $k \in \mathbb{Z}_+$, jolla $p^k$ kuuluu vain toiseen joukoista $S_1, S_2$. Määritelmä voi tuntua tässä kohtaa oudolta. Määritelmän hyödyllisyys perustuu siihen, että joukon $S_d(P)$ alkiot määräytyvät joukon $S_d(P)$ niiden alkioiden perusteella, jotka ovat alkulukujen potensseja (tarkempi kuvaus myöhemmin), joten määritelmä antaa kätevän tavan verrata tällaisia joukkoja.
+Olkoot $S_1, S_2 \subset \mathbb{Z_+}$. Kirjoitetaan, että $S_1 \approx S_2$, ja sanotaan, että joukot $S_1$ ja $S_2$ ovat miltei samat, jos seuraava ehto pätee: on olemassa vain äärellisen monta alkulukua $p$, joita kohden on olemassa $k \in \mathbb{Z_+}$, jolla $p^k$ kuuluu vain toiseen joukoista $S_1, S_2$. Määritelmä voi tuntua tässä kohtaa oudolta. Määritelmän hyödyllisyys perustuu siihen, että joukon $S_d(P)$ alkiot määräytyvät joukon $S_d(P)$ niiden alkioiden perusteella, jotka ovat alkulukujen potensseja (tarkempi kuvaus myöhemmin), joten määritelmä antaa kätevän tavan verrata tällaisia joukkoja.
 
 **Polynomit kongruensseissa**
 
@@ -63,7 +63,7 @@ Tiheyttä merkitään $\delta(S)$. Huomaa, että tiheyden ei välttämättä tar
 
 Tiheyksiä voidaan määritellä myös muiden joukkojen suhteen. On myös muunlaisia tiheyksiä, tunnetuin on Dirichlet'n tiheys (tätä ei tarvita tässä työssä, mutta mainitsen sen yleisen mielenkiinnon vuoksi). Tämä määritellään niin, että suhteen $\frac{S(x)}{\pi(x)}$ sijasta tutkitaankin joukon $S$ enintään $x$ olevien alkioiden käänteislukujen summaa, ja jaetaan tämä vastaavalla suureella kaikkien alkulukujen yli. Osoittautuu, että jos luonnollinen tiheys $\delta(S)$ on olemassa, niin myös Dirichlet'n tiheys on, ja nämä tiheydet ovat samat. Dirichlet'n tiheys voi olla olemassa myös silloin kun $\delta(S)$ ei ole, joten Dirichlet'n tiheyttä voidaan ajatella luonnollisen tiheyden yleistyksenä.
 
-## Kovempi kama
+# Kovempi kama
 
 Seuraavaksi ne asiat, joita moni lukija ei varmaankaan ole aiemmin nähnyt, mutta toivottavasti oppii tämän ja mahdollisesti muiden materiaalien kautta. Tämän osion asiat ovat se, mihin aiemmin viitattiin korkeammalla matematiikalla. Vastedes viittaan tämäntyyppisiin asioihin käsitteellä algebrallinen lukuteoria, vaikka tämä ei olekaan aivan korrektia.
 
@@ -71,7 +71,7 @@ Ennen teoriaa haluan mainita, että vaikka määritelmissä on monessa kohtaa ra
 
 Lukua $\alpha$ kutsutaan **algebralliseksi luvuksi**, jos on olemassa sellainen polynomi $P \in \mathbb{Z_*}[x]$, jonka nollakohta se on. Usein algebrallisia lukuja merkitään kirjaimin $\alpha, \beta, \gamma, \ldots$, ja niin tehdään myös näissä blogipostauksissa.
 
-#### Minimaalinen polynomi
+### Minimaalinen polynomi
 
 Jokaiselle algebralliselle luvulle $\alpha$ määritellään ns. **minimaalinen polynomi** $P \in \mathbb{Q}[x]$ olemaan se polynomi, joka toteuttaa seuraavat ehdot:
 
@@ -85,7 +85,7 @@ Minimaalisella polynomilla pätee seuraava ominaisuus: jos $Q(\alpha) = 0$ jolla
 
 Esimerkiksi siis luvun $\sqrt{2}$ minimaalinen polynomi on $x^2 - 2$, ja luvun $\frac{\sqrt{2}}{100}$ minimaalinen polynomi on $x^2 - \frac{2}{100^2}$.
 
-#### Kuntalaajennus
+### Kuntalaajennus
 
 Olkoon $\alpha$ jokin algebrallinen luku. Olkoon $K$ niiden lukujen joukko, jotka ovat muotoa $P(\alpha)$, missä $P$ käy läpi kaikki rationaalilukukertoimiset polynomit. $K$ on kunta, ja sitä merkitään notaatiolla $\mathbb{Q}(\alpha)$. Tätä kutsutaan kuntalaajennukseksi.
 
@@ -123,7 +123,7 @@ On selvää, että $K$ on kertolaskun suhteen suljettu joukko: kahden polynomin 
 Tämä siis osoittaa, että $K$ on rengas. Mutta miksi se on kunta, eli miksi käänteisalkio on aina olemassa? En tiedä tälle yksinkertaista todistusta, minkä vuoksi perustelu tässä jää puutteelliseksi. Annan kuitenkin heuristisen perustelun ja teen tästä formaalin käyttäen ns. dimensiolausetta, mutta koska tämä ei oikein liity itse työhön, on tämä perustelu lykätty tämän postauksen loppuun.
 
 
-#### Kuntalaajennuksen aste
+### Kuntalaajennuksen aste
 
 Huomautus: tätä osiota varten on hyvä lukea postaus [Algebrallisista luvuista ja vektoriavaruuksista](https://blog.matematiikkakilpailut.fi/2018/09/02/Algebralliset.html). Toisaalta, jos osaa olla välittämättä niistä kohdista mitä ei ymmärrä, ja poimii perusidean kuntalaajennuksen asteesta, niin voi pärjätä ihan hyvin.
 
@@ -143,7 +143,7 @@ Mainitaan vielä uudestaan tärkein asia:
 
 Kuntalaajennuksen $B / A$ astetta merkitään $[B : A]$.
 
-#### Kuntalaajennusten asteiden multiplikatiivisuus
+### Kuntalaajennusten asteiden multiplikatiivisuus
 
 Olkoot $A \subset B \subset C$ kuntia. Kuntalaajennusten asteille pätee seuraava kaava:
 
@@ -172,7 +172,7 @@ $$x + y\sqrt{3} = a + b\sqrt{2} + (c + d\sqrt{2})\sqrt{3} = a + b\sqrt{2} + c\sq
 $C$ on $A$-vektoriavaruus, jonka kantana on $\lbrace 1, \sqrt{2}, \sqrt{3}, \sqrt{6} \rbrace$ (on selvää, että nämä luvut virittävät $C$:n, mutta ei aivan ilmeistä, että ne ovat lineaarisesti riippumattomia. Tämän osoittaminen sivuutetaan, vaikkakin se on mahdollista tehdä täysin alkeellisesti). Siis $[C : A] = 4$, kuten kuuluukin.
 
 
-#### Primitive element theorem
+### Primitive element theorem
 
 Tutkitaan edellisen esimerkin mukaista $C$. $C$ on siis se kunta, joka saadaan lisäämällä rationaalilukuihin ensiksi luku $\sqrt{2}$ ja sitten luku $\sqrt{3}$. Tämä voidaan kirjoittaa muodossa $C = \mathbb{Q}(\sqrt{2}, \sqrt{3})$. Luonnollinen kysymys on, olisiko tämän laajennuksen voinut tehdä vain yhdellä alkiolla $\gamma$? Toisin sanoen, onko olemassa sellainen $\gamma$, jolla $\mathbb{Q}(\sqrt{2}, \sqrt{3}) = \mathbb{Q}(\gamma)$?
 
@@ -194,7 +194,7 @@ Väite yleistyy suoraviivaisesti induktiolla $n$:lle luvulle, eli laajennus $\ma
 
 Väitteen todistus perustuu [Ken Brownin luentomateriaaliin](http://pi.math.cornell.edu/~kbrown/6310/primitive.pdf).
 
-#### Todistus (Primitive element theorem)
+### Todistus (Primitive element theorem)
 
 Olkoot $\alpha, \beta$ algebrallisia lukuja, ja olkoot $f, g \in \mathbb{Q}[x]$ niiden minimaaliset polynomit. Olkoon $\gamma = \alpha + \lambda\beta$, missä $\lambda \in \mathbb{Q}$ on myöhemmin valittava vakio. Tulemme valitsemaan luvun $\lambda$ niin, että $\mathbb{Q}(\alpha, \beta) = \mathbb{Q}(\gamma)$.
 
@@ -238,7 +238,7 @@ olemme saaneet ristiriidan. Tämä todistaa väitteen.
 
 Lopuksi vielä aiemmin luvattu perustelu sille, että $\mathbb{Q}(\alpha)$ on näillä määritelmillä kunta.
 
-#### Perustelu sille, että $\mathbb{Q}(\alpha)$ on kunta
+### Perustelu sille, että $\mathbb{Q}(\alpha)$ on kunta
 
 Olkoon $d$ luvun $\alpha$ minimaalisen polynomin aste kunnan $\mathbb{Q}$ yli. Olkoon $R \in \mathbb{Q}[x]$ jokin polynomi, jolla $R(\alpha) \neq 0$. Tavoitteena on löytää sellainen polynomi $Q \in \mathbb{Q}[x]$, jolla $\frac{1}{R(\alpha)} = Q(\alpha)$. Toisin sanoen, $1 = R(\alpha)Q(\alpha)$.
 
