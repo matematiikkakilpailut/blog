@@ -27,4 +27,4 @@ Tässä postauksessa esitetään motivaatio lauseen 1 todistuksen takana.
 
 ### Kysymys 2
 
-Kysymyksenä 2 oli siis: onko $S(A) \cap S(B)$ ääretön kaikilla $A, B \in \mathbb{Z_c}[x]$? Esitetään tälle väitteelle todistus. Todistus ei ole minun, vaan voidaan löytää esimerkiksi artikkelista [On the prime divisors of polynomials](www.jstor.org/stable/2317521)
+Kysymyksenä 2 oli siis: onko $S(A) \cap S(B)$ ääretön kaikilla $A, B$?
