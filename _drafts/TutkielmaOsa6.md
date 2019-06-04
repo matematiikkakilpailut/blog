@@ -50,7 +50,7 @@ Tutkitaan siis niitä äärellisen montaa $p$, joilla $p^k$ kuuluu vain toiseen 
 
 Tapaus 1. $p^k \in S_d(A) \cap S_d(B)$, mutta $p^k \not\in S_d(D)$. Ehdon 2 nojalla tälöin $p \not\in S_v(A) \cap S_v(B)$, koska muuten $p \in S_v(D)$. Olkoon $v_1$ suurin luku, jolla $p^{v_1} \in S_d(A) \cap S_d(B)$. Olkoon $v_2$ vastaavasti suurin, jolla $p^{v_2} \in S_d(D)$. Olkoon $D_p(x) = p^{v_2 - v_1}D(x)$. Ei ole vaikeaa osoittaa, että polynomilla $D_p$ on seuraava ominaisuus:
 
-Kaikilla alkuluvuilla $q \neq p$ pätee $q^t \in S_d(D) \Leftrightarrow q^t \in S_d(D_p)$ kaikilla $t \in \mathbb{Z}_+$, ja $p^s \in S_d(A) \cap S_d(B) \Leftrightarrow p^s \in S_d(D_p) \forall s \in \mathbb{Z}_+$.
+Kaikilla alkuluvuilla $q \neq p$ pätee $q^t \in S_d(D) \Leftrightarrow q^t \in S_d(D_p)$ kaikilla $t \in \mathbb{Z_+}$, ja $p^s \in S_d(A) \cap S_d(B) \Leftrightarrow p^s \in S_d(D_p) \forall s \in \mathbb{Z_+}$.
 
 Tämä operaatio siis korjaa alkuluvun $p$.
 
@@ -141,7 +141,7 @@ $$\deg(D_i) = [\mathbb{Q}(\gamma_i) : \mathbb{Q}] = [\mathbb{Q}(\alpha, \beta_i)
 
 Käyttäen tulon kuntalaajennusten multiplikatiivisuutta
 
-$$= [\mathbb{Q}(\alpha, \beta_i) : \mathbb{Q}(\alpha)][\mathbb{Q}(\alpha) : \mathbb{Q}]$$
+$$= [\mathbb{Q}(\alpha, \beta_i) : \mathbb{Q}(\alpha)][\mathbb{Q}(\alpha) : \mathbb{Q}].$$
 
 Kuntalaajennuksen $\mathbb{Q}(\alpha) / \mathbb{Q}$ aste on luvun $\alpha$ minimaalisen polynomin aste (kunnassa $\mathbb{Q}$), eli $\deg(A)$.
 
