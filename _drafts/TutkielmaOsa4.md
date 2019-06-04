@@ -26,9 +26,9 @@ Tässä postauksessa esitetään motivaatio lauseen 1 todistuksen takana.
 11. [Osa 11 - lisäaiheita](https://blog.matematiikkakilpailut.fi/2019/06/4/PYAlisaaiheita.html)
 
 
-### Kysymys 2
+## Kysymys 2
 
-Kysymyksenä 2 oli siis: onko $S(A) \cap S(B)$ ääretön kaikilla $A, B \in \mathbb{Z_c}[x]$? Esitetään tälle väitteelle todistus. Todistus ei ole minun, vaan voidaan löytää esimerkiksi artikkelista [On the prime divisors of polynomials](https://www.jstor.org/stable/2317521?seq=1#page_scan_tab_contents) (Irving Grest, John Brillhart)
+Kysymyksenä 2 oli: onko $S(A) \cap S(B)$ ääretön kaikilla $A, B \in \mathbb{Z_c}[x]$? Esitetään tälle väitteelle todistus. Todistus ei ole minun, vaan voidaan löytää esimerkiksi artikkelista [On the prime divisors of polynomials](https://www.jstor.org/stable/2317521?seq=1#page_scan_tab_contents) (Irving Grest, John Brillhart).
 
 **Todistus**
 
@@ -107,11 +107,13 @@ $$a_df(n)^dg(n)^{(p-2)d} + a_{d-1}f(n)^{d-1}g(n)^{(p-2)(d-1)} + \ldots + a_0 \eq
 Mutta yhtälön vasen puoli on vain $A(f(n)g(n)^{p-2})$. Siis $A(f(n)g(n)^{p-2}) \equiv 0 \pmod{p}$, joten $p \in S(A)$.
 
 
-## Suunnitelma
+# Suunnitelma
 
 Esitetään suunnitelma, jolla lause 1 todistetaan.
 
-### Esimerkki
+## Esimerkki
+
+Matemaatikko David Hilbertille omistetaan lainaus "The art of doing mathematics is finding that special case that contains all the germs of generality.". Toimimme niin tässä.
 
 Olkoon $A(x) = x^2 + 1$, $B(x) = x^2 - 2$. Edellisessä todistuksessa voidaan valita vaikkapa $\alpha = i$, $\beta = \sqrt{2}$, ja $\gamma = \alpha + \beta$. Tällöin luvun $\gamma$ minimaalinen polynomi on $D(x) = x^4 - 2x^2 + 9$ (minimaalisen polynomin laskeminen ei ole aivan triviaalia, eikä siihen keskitytä nyt). Todistus osoittaa, että $S(D) \subset S(A) \cap S(B)$ (poislukien äärellisen monta poikkeustapausta).
 
