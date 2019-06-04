@@ -30,7 +30,7 @@ Tässä postauksessa esitetään tutkielman merkittävimmät tulokset.
 
 Ennen kuin mennään varsinaisiin päätuloksiin, pidetään jännitystä yllä ja esitetään ensiksi kaksi lemmaa, jotka kertovat paljon polynomien tekijöistä. Syynä se, että tulokset aukeavat tämän jälkeen ehkä hieman paremmin.
 
-### Lemma 1
+## Lemma 1
 
 Olkoon positiivisen kokonaisluvun $m$ alkutekijähajotelma $p_1^{\alpha_1}p_2^{\alpha_2} \ldots p_n^{\alpha_n}$, ja olkoon $P \in \mathbb{Z}[x]$. Tällöin $m \in S_d(P)$ jos ja vain jos $p_i^{\alpha_i} \in S_d(P)$ kaikilla $i$.
 
@@ -48,7 +48,7 @@ $$P(y) \equiv P(x_i) \equiv 0 \pmod{p_i^{\alpha_i}} \ \forall 1 \le i \le n$$
 
 Siis luku $P(y)$ on jaollinen luvulla $p_i^{\alpha_i}$ kaikilla $i$. Täten $P(y)$ on jaollinen näiden lukujen tulolla, eli $m \mid P(y)$. Tämä osoittaa väitteen "jos"-suunnan.
 
-### Lemma 2
+## Lemma 2
 
 Olkoon $P \in \mathbb{Z}[x]$. Kaikilla paitsi äärellisen monella $p$ pätee $p \in S(P) \implies p \in S_v(P)$. Käyttäen $\approx$-notaatiota (kts. edellinen postaus) voidaan sama ilmaista sanoen $S(P) \approx S_v(P)$.
 
@@ -67,15 +67,15 @@ Olemme siis todistaneet väitteen jaottomille $P$. Osoitetaan se vielä, kun $P$
 Yleisessä tapauksessa hajotetaan $P$ jaottomien polynomien tuloksi: $P = P_1P_2 \ldots P_n$, missä $P_i \in \mathbb{Z}[x]$ eivät jakaudu. Polynomit $P_i$ voidaan siis valita kokonaislukukertoimisiksi, kuten todettiin edellisessä postauksessa. Nyt, jos $p \in S(P)$, pätee $p \in S(P_i)$ jollain $i$. Soveltaen edellisen kappaleen tulosta polynomille $P_i$ saadaan, että kaikilla paitsi äärellisen monella $p$ pätee $p \in S_v(P_i)$, joten $p \in S_v(P)$. Tämä osoittaa väitteen kaikille $P$.
 
 
-## Tulokset
+# Tulokset
 
-### Lause 1
+## Lause 1
 
 Tutkielman päätulos on seuraava:
 
 Olkoot $P_1, P_2, \ldots , P_n \in \mathbb{Z_*}[x]$. On olemassa sellainen $D \in \mathbb{Z_*}[x]$, jolla
 
-$$S_d(D) = S_d(P_1) \cap S_d(P_2) \cap \ldots \cap S_d(P_n)$$
+$$S_d(D) = S_d(P_1) \cap S_d(P_2) \cap \ldots \cap S_d(P_n).$$
 
 
 Todistus on konstruktiivinen, eli se antaa tavan löytää tällaisen $D$, eikä vain todista sen olemassaoloa. Lisäksi konstruoidun $D$ aste on $\deg(P_1)\deg(P_2) \ldots \deg(P_n)$. Aina ei ole olemassa pienempiasteista $D$, joka kelpaisi lauseen 1 mukaiseksi $S$. Konstruktio on siis jollain mittapuulla luonnollinen, "paras mahdollinen".
@@ -84,7 +84,7 @@ Selvästi riittää osoittaa väite tapauksessa $n = 2$, koska $n > 2$ seuraa s
 
 Tutki-Kokeile-Kehitä -kilpailun finaalin jälkeen aloin tutkimaan seuraavaa lauseen 1 yleistystä: lause 1 voidaan tulkita niin, että yhtälöryhmällä $P_i(x_i) \equiv 0 \pmod{p}$ on ratkaisu modulo $p$ jos ja vain jos yhtälöllä $D(x) \equiv 0 \pmod{p}$ on ratkaisu modulo $p$. Tämä voidaan yleistää yleiselle polynomiyhtälöryhmälle:
 
-### Lause 1'
+## Lause 1'
 
 Olkoot $F_1, F_2, \ldots , F_k$ kokonaislukukertoimisia polynomeja muuttujissa $x_1, x_2, \ldots , x_n$. On olemassa sellainen $D \in \mathbb{Z}[x]$, jolla pätee seuraava väite:
 
@@ -114,7 +114,7 @@ Lause 1' seuraa siis James Axin lauseesta 1 sekä minun lauseesta 1, sekä seura
 Todistamme lauseen 1 todistuksessa, että tämä äärellisen monen alkutekijän poistaminen voidaan tehdä myös muulla tavalla ilman komplementteja.
 
 
-### Lause 2
+## Lause 2
 
 Lause 2 toimii yleistyksenä Schurin lauseelle.
 
@@ -129,7 +129,7 @@ Lauseen 2 todistus seuraa suoraan lauseesta 1 ja lemmasta 2, kun osoitetaan, ett
 Lisäksi lauseen 2 alaraja on tiukka, eli se saavutetaan jollain polynomien $P_i$ valinnoilla (ja tarkemmin, monenlaisilla eri valinnoilla).
 
 
-### Lause 3
+## Lause 3
 
 Monessa tapauksessa polynomien $P_i$ yhteisten alkutekijöiden tiheys voidaan laskea. Lauseen väite on hieman tekninen, joten määritellään sitä ennen ns. juurikunta (engl. splitting field).
 
@@ -185,7 +185,7 @@ Mainitaan vielä, että tapauksessa $n = 2$ ehto $[F : \mathbb{Q}] = [F_1 : \ma
 
 Myöhemmässä postauksessa todistan lausetta 3 käyttäen [Neliönjäännökset](https://blog.matematiikkakilpailut.fi/2018/12/09/Nelionjaannos.html)-postauksessa esitettyjen heuristiikkojen tulosten paikkansapitävyyden. Ensimmäinen tulos on, tämän työn termistöä käyttäen, polynomien $x^2 - a_i$ yhteisten alkutekijöiden tiheys. Toinen tulos on viimeisen harjotustehtävän mukaisten polynomien $x^q - a$ alkutekijöiden tiheys, sekä tätä muotoa olevien polynomien yhteiset alkutekijät. Näitä asioita en tilanpuutteen vuoksi esittänyt varsinaisessa tutkielmassani.
 
-### Lause 4
+## Lause 4
 
 Mitä arvoja $\delta(S(P))$ voi saada? Lause 4 vastaa tähän kysymykseen:
 
