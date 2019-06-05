@@ -206,3 +206,5 @@ Olkoot $m, n \in \mathbb{Z_+}$, ja olkoon $d$ niiden syt. Olkoon vielä $a \in \
 $$S(x^m - a) \cap S(x^n - a) = S(x^d - a).$$
 
 Kiinnostunut lukija voi itse kokeilla, millaisia tuloksia saa irti näillä tiedoilla. Hyvä harjoitustethävä onkin todistaa, että tiheyden yläraja $1 - \frac{1}{n}$ on saavutettavissa.
+
+[Seuraava postaus.](https://blog.matematiikkakilpailut.fi/2019/06/05/PYA01lisaaiheita.html)
