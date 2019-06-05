@@ -224,3 +224,5 @@ Edellisissä osioissa on monessa kohtaa poissuljettu jotkin äärellisen monta p
 Kutsun osan 1 todistusta lauseen 1 **heikoksi versioksi**. Heikon version todistus perustuu yllä esitetyn konstruktion toimivuuden todistamiseen. Tämä tehdään todistamalla, että on olemassa vastaavuus "polynomin juuret $\to$ nollakohta modulo $p$". Lopullinen todistus on aika paljon yksinkertaisempi (ja toimivampi) kuin se, jonka keksin ensimmäisenä.
 
 Osan 2 todistus, eli **yleisen tapauksen todistus**, on täysin alkeellinen, eli se ei käytä algebrallista lukuteoriaa. Lemmat ovat enemmän tai vähemmän kisamatematiikkahenkisiä. Suosittelen yrittämään lemmojen todistamista itse.
+
+[Seuraava postaus.](https://blog.matematiikkakilpailut.fi/2019/06/05/PYA07heikko.html)
