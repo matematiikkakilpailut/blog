@@ -1,0 +1,183 @@
+---
+layout: post
+author: "Olli Järviniemi"
+title: "Polynomien yhteiset alkutekijät, osa 9: lause 4"
+math: true
+excerpt_separator: "<!--jatkuu-->"
+
+---
+
+Tässä postauksessa todistetaan tutkielman lause 4, eli että kaikki välin $[0, 1]$ rationaaliluvut esiintyvät jonkin polynomin alkutekijöiden tiheytenä.
+
+<!--jatkuu-->
+
+**Sisällysluettelo**
+
+1. [Osa 1 - johdanto](https://blog.matematiikkakilpailut.fi/2019/06/4/PYAjohdanto.html)
+2. [Osa 2 - esitiedot](https://blog.matematiikkakilpailut.fi/2019/06/4/PYAesitiedot.html)
+3. [Osa 3 - tulokset](https://blog.matematiikkakilpailut.fi/2019/06/4/PYAtulokset.html)
+4. [Osa 4 - motivaatio](https://blog.matematiikkakilpailut.fi/2019/06/4/PYAmotivaatio.html)
+5. [Osa 5 - heikko versio](https://blog.matematiikkakilpailut.fi/2019/06/4/PYAheikko.html)
+6. [Osa 6 - yleinen tapaus](https://blog.matematiikkakilpailut.fi/2019/06/4/PYAyleinen.html)
+7. [Osa 7 - lause 2](https://blog.matematiikkakilpailut.fi/2019/06/4/PYAlause2.html)
+8. [Osa 8 - lause 3](https://blog.matematiikkakilpailut.fi/2019/06/4/PYAlause3.html)
+9. Osa 9 - lause 4
+10. [Osa 10 - sovelluksia](https://blog.matematiikkakilpailut.fi/2019/06/4/PYAsovelluksia.html)
+11. [Osa 11 - lisäaiheita](https://blog.matematiikkakilpailut.fi/2019/06/4/PYAlisaaiheita.html)
+
+
+Frobeniuksen lauseen nojalla $\delta(S(P))$ on aina rationaalinen, joten keskitytään rationaalilukujen tutkimiseen.
+
+Suunnitelmana on osoittaa väite induktiolla, mikä onnistuu rationaaliluvuilla näppärästi. Saamme luotua polynomeja, joilla on halutunlaisia tiheyksiä käyttäen alla esitettyä lemmaa 4.2. ja lausetta 3.
+
+Tavoitteena on siis käyttää lausetta 3. Tätä varten pitää luoda metodi, jolla voidaan generoida lauseen 3 mukaisesti riippumattomia polynomeja. Tämän hoitaa lemma 4.2.
+
+
+Todistuksen lähtökohtana toimii seuraava jo itsessään kaunis tulos:
+
+## Lemma 4.1.
+
+Olkoon $k \in \mathbb{Z_+}$, ja olkoon $S$ niiden $1 \le n \le k$ joukko, joilla $syt(n, k) = 1$. Olkoon $H$ jokin $S$:n osajoukko, joka on kertolaskun suhteen suljettu, kun kertolasku tehdään modulo $k$. On olemassa polynomi $P \in \mathbb{Z_c}[x]$, jolla on seuraavat ominaisuudet:
+
+1. $p \in S(P)$ jos ja vain jos $p \equiv h \pmod{k}$ jollain $h \in H$.
+
+2. $P$:n juurikunta $F_P$ on kunnan $\mathbb{Q}(\zeta_k)$ osakunta.
+
+Tässä $\zeta_k$ on ns. primiitivien $k$:nnes yksikköjuuri (engl. roots of unity). Siis $\zeta_k^k = 1$, mutta $\zeta_k^n \neq 1$ kaikilla $1 \le n < k$.
+
+**Todistus**
+
+Tuloksen ovat osoittaneet Ram Murty ja Nithum Thain artikkelissaan [Primes in Certain Arithmetic Progressions](https://projecteuclid.org/euclid.facm/1229442627) (Funct. Approx. Comment. Math. Volume 35 (2006), 249-259.). Ehto 1 seuraa lauseista 4 ja 5, ja ehto 2 seuraa konstruktiosta.
+
+Esimerkiksi syklotomiset polynomit toteuttavat ehdon, kun $H = \lbrace 1 \rbrace$.
+
+**Huomautus**
+
+Myös seuraava, samanhenkinen ja kaunis tulos pätee:
+
+Olkoon $k$ jokin positiivinen kokonaisluku, ja olkoon $T$ jokin $S$:n osajoukko, missä $S$ on kuten lemmassa 4.1.. Oletetaan, että on olemassa polynomi $P \in \mathbb{Z}[x]$ niin, että kaikilla paitsi äärellisen monella $p$ pätee $p \in S(P) \implies p \equiv t \pmod{k}$ jollain $t \in T$. Tällöin $T$:n tulee olla $S$:n jokin kertolaskun suhteen suljettu osajoukko, kun kertolasku tehdään modulo $p$.
+
+Tämän todistus löytyy artikkelista [Euclidean Proofs of Dirichlet's Theorem](https://kconrad.math.uconn.edu/blurbs/gradnumthy/dirichleteuclid.pdf), jonka on kirjoittanut Keith Conrad. Artikkelin johdanto on kaikelle yleisölle sopiva ja hyvin mielenkiintoinen, kannattaa vilkaista!
+
+## Lemma 4.2.
+
+Lemman 4.1. avulla saadaan tarkoituksiamme varten hyvä tulos. Kannattaa yrittää itse todistaa tulos ennen todistuken lukemista - todistus on alkeellinen, eikä kovin vaikea.
+
+### Väite
+
+Olkoon $n \ge 2$ kokonaisluku. On olemassa äärettömän monta $p$, joita kohden on olemassa $P$, jolla pätee seuraavat ominaisuudet:
+
+1. $\delta(S(P)) = \frac{1}{n}$
+
+2. Polynomin $P$ juurikunta on kunnan $\mathbb{Q}(\zeta_p)$ osakunta.
+
+### Todistus
+
+Avainsana on primitiivijuuri. Valitaan $p \equiv 1 \pmod{n}$. Dirichlet'n lauseen nojalla tällaisia $p$ on äärettömän monta. Olkoon $g$ primitiivijuuri modulo $p$.
+
+Olkoon $p-1 = mn, m \in \mathbb{Z_+}$. Valitaan lemman 4.1. mukaiseksi $H$ luvut muotoa $g^{ni}$, $i = 0, 1, \ldots , m-1$. On helppoa nähdä (Fermat'n pienen lauseen avulla), että $H$ on kertolaskun suhteen suljettu joukko, jonka koko on $m$.
+
+Dirichlet'n lauseen tiheysversion nojalla niiden $q$ tiheys, joilla $q \equiv h \pmod{p}$ jollain $h \in H$ on $\frac{m}{p-1} = \frac{1}{n}$.
+
+Valtiaan siis $P$ kuten lemmassa 4.1 tätä $H$ vastaavaksi. Tämä kelpaa.
+
+### Huomautus
+
+Lemman 4.1. avulla voidaan generoida ainoastaan tiheyksiä muotoa $\frac{1}{n}$. Tämä perustuu siihen faktaan, että osaryhmän koko jakaa ryhmän koon, eli siis $\mid H \mid$ jakaa $\mid S \mid \ = \phi(k)$. On siis luonnollista tutkia, miten näitä tiheyksiä voidaan generoida, ja sovittaa muu osa todistuksesta tähän. Siirrymme tähän seuraavaksi.
+
+# Lauseen todistus
+
+## Motivaatio
+
+Millaisia operaatioita voimme tehdä tiheyksille? Tiedämme, että lauseen 3 avulla kaksi tiheyttä voidaan monessa tapauksessa kertoa keskenään. Tästä ei kuitenkaan ole nyt juurikaan apua: kahden muotoa $\frac{1}{n}$ olevan luvun tulo on tätä muotoa. Ideana on käyttää inkluusio-ekskluusiota. Jos olemme luoneet polynomit $X$ ja $Y$, joiden alkutekijöiden tiheydet ovat $x$ ja $y$, lauseen 3 mukaan yhteisten alkutekijöiden tiheys on $xy$, joten polynomin $XY$ alkutekijöiden tiheys on $x + y - xy$. Tämä osoittautuu hyödyllisemmäksi.
+
+Aiomme varmaankin valita toisen luvuista $x, y$ olemaan muotoa $\frac{1}{n}$ lemman 4.2. mukaisesti. Kokeilin muutamaa eri ideaa, ja lopulta päädyin seuraavaan ratkaisuun.
+
+## Ratkaisu
+
+Osoitetaan induktiolla muuttujan $k$ suhteen, että $\frac{m}{k}$ voidaan esittää jonkin polynomin $P$ alkutekijöiden tiheytenä kaikilla $0 \le m \le k$.
+
+Tapaus $k = 1$ on selvä. Oletetaan, että väite pätee arvolla $k < n$ ja osoitetaan väite arvolla $k = n$.
+
+Ratkaisu perustuu identiteettiin
+
+$$\frac{m-1}{n-1} + \frac{1}{n} - \frac{m-1}{n(n-1)} = \frac{m}{n}$$
+
+$m = 0$ on triviaali tapaus, joten oletetaan $m > 0$. Olkoon $P$ sellainen, jolla $\delta(S(P)) = \frac{m-1}{n-1}$.
+
+Enää tulee siis vain osoittaa, että voimme valita sellaisen $Q$, jolla $\delta(S(Q)) = \frac{1}{n}$ ja jolla $P$:n ja $Q$:n juurikunnat eivät leikkaa, jolloin lauseen 3 nojalla
+
+$$\delta(S(PQ)) = \delta(S(P)) + \delta(S(Q)) - \delta(S(P))\delta(S(Q)) = \frac{m}{n}$$
+
+Tämä vaatii vielä viimeisen puristuksen.
+
+Tutkitaan lemman 4.2. mukaisia polynomeja eri $p$:n arvoilla. Nämä polynomit ovat sellaisia, joiden juurikunta on kunnan $\mathbb{Q}(\zeta_p)$ osakuntia. Väite, jonka haluamme osoittaa onkin seuraava:
+
+$P$:n juurikunta ei leikkaa kuntaa $\mathbb{Q}(\zeta_p)$, kun $p$ on tarpeeksi suuri.
+
+Hyvin uskottavan kuuloista.
+
+Ikävä kyllä minulla ei ole tähän mitään helppoa one-liner -ratkaisua. Ainakin voin opettaa vielä yhden asian teoriasta.
+
+## Fundamental theorem of Galois theory
+
+Esitän vain version, joka käsittelee rationaalilukujen laajennuksia. Yleinen tapaus ei liene vaikeampi, mutta rationaaliluvut ovat tutumpia niin minulle kuin lukijoille.
+
+Olkoon $F$ jonkin polynomin juurikunta, ja olkoon $G$ sen Galois'n ryhmä. Ennen lauseen väitettä määritellään ns. fixed field. En tiedä tälle termille suomennosta, joten käytän englanninkielistä termiä.
+
+**Määritelmä - fixed field**
+
+Olkoon $\sigma \in G$ jokin isomorfismi. Olkoon $K$ niiden $x \in F$ joukko, joilla $\sigma(x) = x$. Joukkoa $K$ kutsutaan $\sigma$:n fixed field:ksi. On helppoa osoittaa, että $K$ todella on kunta.
+
+Fundamental theorem of Galois theory (suomeksi Galois'n teorian peruslause?) kertoo, että $F$:n osakunnilla ja $G$:n osaryhmien välillä on luonnollinen bijektio. Lauseen yhteyteen listataan usein monia eri ominaisuuksia, tässä tyydytään yhteen yksinkertaiseen lisätulokseen.
+
+**Galois'n teorian peruslause**
+
+Olkoon $F$ juurikunta ja olkoon $G$ sen Galois'n ryhmä. Olkoon $H$ jokin $G$:n osaryhmä, ja olkoon $K$ $H$:n alkioiden fixed field:ien leikkaus.
+
+Olkoon $f$ kuvaus $G$:n osaryhmiltä $F$:n osakunnille, joka määritellään kuvaamalla $H$ kunnalle $K$.
+
+Väite: $f$ on bijektio.
+
+Lisäksi, jos $G$:n osaryhmillä $H_1, H_2$ pätee $H_1 \subset H_2$, niin $f(H_2) \subset f(H_1)$.
+
+**Esimerkki**
+
+Tutkitaan polynomin $x^2 - 2$ juurikuntaa $\mathbb{Q}(\sqrt{2})$ ja sen Galois'n ryhmää $G$. $G$:hen kuuluu kaksi alkiota $\sigma_1, \sigma_2$, joilla
+
+$$\sigma_1(a + b\sqrt{2}) = a + b\sqrt{2}, a, b \in \mathbb{Q}$$
+
+ja
+
+$$\sigma_2(a + b\sqrt{2}) = a - b\sqrt{2}, a, b \in \mathbb{Q}$$
+
+Kuvauksen $\sigma_1$ fixed field on $\mathbb{Q}(\sqrt{2})$, ja kuvauksen $\sigma_2$ fixed field on $\mathbb{Q}$.
+
+$G$:llä on kaksi osaryhmää: toinen sisältää vain kuvauksen $\sigma_1$, ja toinen sisältää molemmat kuvaukset $\sigma_1$ ja $\sigma_2$. Huomaa, että $\lbrace \sigma_2 \rbrace$ **ei** ole $G$:n osa**ryhmä**: kuvauksen $\sigma(x) = \sigma_2(\sigma_2(x))$ tulisi kuulua tähän osa**ryhmään**, mutta näin ei ole.
+
+Ensin mainitun $G$:n osaryhmän määritelmän mukainen $K$ on $\mathbb{Q}(\sqrt{2})$. Siispä osaryhmä $\lbrace \sigma_1 \rbrace$ kuvataan kunnan $\mathbb{Q}(\sqrt{2})$ osakunnalle $K = \mathbb{Q}(\sqrt{2})$.
+
+Jälkimmäisen $G$:n osaryhmän $K$ on vain $\mathbb{Q}$, joten $G$:n osaryhmä $\lbrace \sigma_1, \sigma_2 \rbrace$ kuvataan kunnan $\mathbb{Q}(\sqrt{2})$ osakunnalle $\mathbb{Q}$.
+
+
+## Todistuksen viimeistely
+
+Galois'n teorian peruslause on varsin kaunis tulos, mutta miten se hyödyttää meitä? Näin:
+
+Olkoon $F_P$ jonkin polynomin $P$ juurikunta. $F_P$:llä on vain äärellinen määrä osakuntia (tarkemmin sanoen $P$:n Galois'n ryhmän osaryhmien määrän verran osakuntia).
+
+Myös muilla kunnilla kuin juurikunnilla on vain äärellinen määrä osakuntia, koska ne voidaan laajentaa juurikunniksi. En ole varma, onko näille väitteille helpompia todistuksia kuin esittämäni. Oli miten oli, tulokset lienevät uskottavia.
+
+Mihin jäimme lauseen todistuksen kanssa? Halusimme osoittaa, että $\mathbb{Q}(\zeta_p)$ ei voi leikata $P$:n juurikuntaa äärettömän monella $p$.
+
+Osoitetaan tämä vastaoletuksella. Määritellään $K_p = \mathbb{Q}(\zeta_p) \cap F_P$ kaikilla äärettömän monella lemman 4.2. mukaisella $p$. $K_p$ on kunnan $F_P$ osakunta, joita on edellisen nojalla äärellisen monta. Lisäksi vastaoletuksen nojalla $K_p \neq \mathbb{Q}$ kaikilla näillä $p$.
+
+On siis olemassa kaksi alkulukua $p \neq q$, joilla $K_p = K_q \neq \mathbb{Q}$. Siis kunnilla $\mathbb{Q}(\zeta_p)$ ja $\mathbb{Q}(\zeta_q)$ on muitakin yhteisiä alkioita kuin rationaaliluvut: kaikilla $x \in K_p = K_q$ pätee $x \in \mathbb{Q}(\zeta_p) \cap \mathbb{Q}(\zeta_q)$.
+
+Tämä vaikuttaa ristiriidalta, ja sitä se onkin. Kukapa muukaan kuin Keith Conrad on kirjoittanut monisteen [Cyclotomic extensions](http://www.math.uconn.edu/~kconrad/blurbs/galoistheory/cyclotomic.pdf), jonka lause 3.4. osoittaa seuraavan väitteen:
+
+Olkoot $m$ ja $n$ positiivisia kokonaislukuja, joiden syt on $d$. Tällöin
+
+$$\mathbb{Q}(\zeta_m) \cap \mathbb{Q}(\zeta_n) = \mathbb{Q}(\zeta_d).$$
+
+Todistus ei ole kamalan vaikea, joten näistä aiheista kiinnostunut lukija voi yrittää ymmärtää sen.
