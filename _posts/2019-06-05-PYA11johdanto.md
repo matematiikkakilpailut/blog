@@ -111,18 +111,4 @@ Olen myös keksinyt yksinkertaisempia todistuksia joillekin tuloksille, ja saanu
 Lisäksi lyhyt päivitys kilpailujen näkökulmasta: työni pääsi Tutki-Kokeile-Kehitä -kilpailun finaaliin, ja voitin kilpailun! (Voittajatöitä valitaan perinteisesti kaksi, ja olin toinen niistä.) Siispä minä edustan Suomea European Union Competition for Young Scientists -kilpailussa syyskuussa 2019. Kilpailuun työtä tuli tiivistää vielä entisestään - maksimipituus oli 10 sivua. Palautettuani kilpailutyöni EUCYSiin aloin muokkaamaan näitä blogipostauksia.
 
 
-
-**Sisällysluettelo**
-
-
-1. Osa 1 - johdanto
-2. [Osa 2 - esitiedot](https://blog.matematiikkakilpailut.fi/2019/06/05/PYA10esitiedot.html)
-3. [Osa 3 - tulokset](https://blog.matematiikkakilpailut.fi/2019/06/05/PYA09tulokset.html)
-4. [Osa 4 - motivaatio](https://blog.matematiikkakilpailut.fi/2019/06/05/PYA08motivaatio.html)
-5. [Osa 5 - heikko versio](https://blog.matematiikkakilpailut.fi/2019/06/05/PYA07heikko.html)
-6. [Osa 6 - yleinen tapaus](https://blog.matematiikkakilpailut.fi/2019/06/05/PYA06yleinen.html)
-7. [Osa 7 - lause 2](https://blog.matematiikkakilpailut.fi/2019/06/05/PYA05lause2.html)
-8. [Osa 8 - lause 3](https://blog.matematiikkakilpailut.fi/2019/06/05/PYA04lause3.html)
-9. [Osa 9 - lause 4](https://blog.matematiikkakilpailut.fi/2019/06/05/PYA03lause4.html)
-10. [Osa 10 - sovelluksia](https://blog.matematiikkakilpailut.fi/2019/06/05/PYA02sovelluksia.html)
-11. [Osa 11 - lisäaiheita](https://blog.matematiikkakilpailut.fi/2019/06/05/PYA01lisaaiheita.html)
+[Seuraava postaus.](https://blog.matematiikkakilpailut.fi/2019/06/05/PYA10esitiedot.html)
