@@ -195,3 +195,20 @@ Olkoon $r \in [0, 1]$. On olemassa sellainen $P$, jolla $\delta(S(P)) = r$, jos 
 Oikeastaan osoitin pelkästään "jos"-puolen - "vain jos"-puoli seuraa suoraan myöhemmin esitettävästä Frobeniuksen lauseesta.
 
 Lause 4 on tuloksena mielenkiintoinen, mutta sillä ei tunnu olevan mielenkiintoisia seurauksia (jos keksit jotain, kerro minulle!). Se kuitenkin toimii esimerkkinä siitä, mitä työn tuloksilla voidaan todistaa.
+
+
+
+**Sisällysluettelo**
+
+
+1. [Osa 1 - johdanto](https://blog.matematiikkakilpailut.fi/2019/06/05/PYA11johdanto.html)
+2. [Osa 2 - esitiedot](https://blog.matematiikkakilpailut.fi/2019/06/05/PYA10esitiedot.html)
+3. Osa 3 - tulokset
+4. [Osa 4 - motivaatio](https://blog.matematiikkakilpailut.fi/2019/06/05/PYA08motivaatio.html)
+5. [Osa 5 - heikko versio](https://blog.matematiikkakilpailut.fi/2019/06/05/PYA07heikko.html)
+6. [Osa 6 - yleinen tapaus](https://blog.matematiikkakilpailut.fi/2019/06/05/PYA06yleinen.html)
+7. [Osa 7 - lause 2](https://blog.matematiikkakilpailut.fi/2019/06/05/PYA05lause2.html)
+8. [Osa 8 - lause 3](https://blog.matematiikkakilpailut.fi/2019/06/05/PYA04lause3.html)
+9. [Osa 9 - lause 4](https://blog.matematiikkakilpailut.fi/2019/06/05/PYA03lause4.html)
+10. [Osa 10 - sovelluksia](https://blog.matematiikkakilpailut.fi/2019/06/05/PYA02sovelluksia.html)
+11. [Osa 11 - lisäaiheita](https://blog.matematiikkakilpailut.fi/2019/06/05/PYA01lisaaiheita.html)
