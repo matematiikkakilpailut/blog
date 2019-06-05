@@ -102,7 +102,7 @@ $x^2 + 1$ on neliö mod $2$, koska $x^2 + 1 \equiv (x + 1)^2 \pmod{2}$. Vastaava
 
 1. Äärellisen kunnan koko on aina alkuluvun potenssi. Jos kunnan koko on $p^k$, niin $p \cdot a = 0$ kaikilla $a$, jotka kuuluvat tähän kuntaan.
 
-2. Kaikilla alkuluvun potensseilla $p^k$ on olemassa äärellinen kunta $\mathbb{F}_{p^k}$, jonka koko on $p^k$. **Tämä kunta on uniikki** isomorfisia kuntia lukuun ottamatta.
+2. Kaikilla alkuluvun potensseilla $p^k$ on olemassa äärellinen kunta $\mathbb{F_{p^k}}$, jonka koko on $p^k$. **Tämä kunta on uniikki** isomorfisia kuntia lukuun ottamatta.
 
 Äärellisten kuntien kuntalaajennuksista voidaan sanoa seuraavat asiat:
 
@@ -159,13 +159,13 @@ Tutkitaan sitten tapausta $x^2 - 3y^2 = 1$. Tässä saamme pienimmän ratkaisun 
 
 $$x_n = \frac{(2 + \sqrt{3})^n - (2 - \sqrt{3})^n}{2}.$$
 
-Nyt ongelmaksi muodostuu se, että $\sqrt{3}$ ei olekaan kokonaisluku modulo $7$. Edellä tutkimme lukuja $x_n$ kunnassa $\mathbb{F}_7$, mutta nyt joudumme tutkimaan isompaa kuntaa $\mathbb{F}_7(\sqrt{3})$. Tämä kunta sisältää siis luvut muotoa $a + b\sqrt{3}$, missä $a, b \in \mathbb{F}_7$. Yhteenlasku ja kertolasku määritellään aivan kuten luulisikin, eli esimerkiksi kertolasku on
+Nyt ongelmaksi muodostuu se, että $\sqrt{3}$ ei olekaan kokonaisluku modulo $7$. Edellä tutkimme lukuja $x_n$ kunnassa $\mathbb{F_7}$, mutta nyt joudumme tutkimaan isompaa kuntaa $\mathbb{F_7}(\sqrt{3})$. Tämä kunta sisältää siis luvut muotoa $a + b\sqrt{3}$, missä $a, b \in \mathbb{F_7}$. Yhteenlasku ja kertolasku määritellään aivan kuten luulisikin, eli esimerkiksi kertolasku on
 
 $$(a + b\sqrt{3})(c + d\sqrt{3}) = ac + (ad + bc)\sqrt{3} + bd\sqrt{3}^2 = (ac + 3bd) + (ad + bc)\sqrt{3}$$
 
-Ajatusta voi helpottaa vertaamalla tilannetta kompleksilukuihin, joille määritellään kertolasku aivan vastaavasti. Sen sijaan, että laajentaisimme reaalilukuja $i$:llä, niin laajennamme kuntaa $\mathbb{F}_7$ luvulla $\sqrt{3}$.
+Ajatusta voi helpottaa vertaamalla tilannetta kompleksilukuihin, joille määritellään kertolasku aivan vastaavasti. Sen sijaan, että laajentaisimme reaalilukuja $i$:llä, niin laajennamme kuntaa $\mathbb{F_7}$ luvulla $\sqrt{3}$.
 
-Siispä, kun yhtäsuuruus tulkitaan kunnassa $\mathbb{F}_7(\sqrt{3})$, pätee
+Siispä, kun yhtäsuuruus tulkitaan kunnassa $\mathbb{F_7}(\sqrt{3})$, pätee
 
 $$x_n = 4\Big( (2 + \sqrt{3})^n - (2 - \sqrt{3})^n \Big),$$
 
@@ -177,7 +177,7 @@ Tekemällä yllä esitetyt ideat molemmille yhtälöistä $x^2 - 2y^2 = 1$ ja $x
 
 ### Huomautus (Fermat'n pieni lause)
 
-Totesimme edellä. että $(2 + \sqrt{3})^4 = -1$, eli $(2 + \sqrt{3})^8 = 1$ kunnassa $\mathbb{F}_7(\sqrt{3})$. Ei ole yllättävää, että jossain kohtaa potenssiinkorotus johtaa lukuun $1$. Tälle on hyvin yksinkertainen selitys:
+Totesimme edellä. että $(2 + \sqrt{3})^4 = -1$, eli $(2 + \sqrt{3})^8 = 1$ kunnassa $\mathbb{F_7}(\sqrt{3})$. Ei ole yllättävää, että jossain kohtaa potenssiinkorotus johtaa lukuun $1$. Tälle on hyvin yksinkertainen selitys:
 
 Fermat'n pieni lause todistetaan yleensä seuraavasti: olkoon $a \not\equiv 0 \pmod{p}$. Tällöin luvut $a, 2a, 3a, \ldots , (p-1)a$ ovat vain lukujen $1, 2, \ldots , p-1$ permutaatio. Siispä
 
@@ -185,21 +185,21 @@ $$a \cdot 2a \cdot 3a \cdot \ldots \cdot (p-1)a \equiv 1 \cdot 2 \cdot \ldots \c
 
 Supistamalla termejä pois saadaan $a^{p-1} \equiv 1 \pmod{p}$.
 
-Todistetaan nyt vastaavasti yleistys Fermat'n pienelle lauseelle mille tahansa äärelliselle kunnalle. Konkreettisena esimerkkinä kannattaa miettiä yllä esitettyä tapausta $\mathbb{F}_7(\sqrt{3})$.
+Todistetaan nyt vastaavasti yleistys Fermat'n pienelle lauseelle mille tahansa äärelliselle kunnalle. Konkreettisena esimerkkinä kannattaa miettiä yllä esitettyä tapausta $\mathbb{F_7}(\sqrt{3})$.
 
 **Fermat'n pienen lauseen yleistys**
 
-Olkoon $\mathbb{F}_{p^k}$ (se) kunta, jonka koko on $p^k$. Tällöin $a^{p^k - 1} = 1$ kaikilla $a \in \mathbb{F}_{p^k}$, joilla $a \neq 0$.
+Olkoon $\mathbb{F_{p^k}}$ (se) kunta, jonka koko on $p^k$. Tällöin $a^{p^k - 1} = 1$ kaikilla $a \in \mathbb{F_{p^k}}$, joilla $a \neq 0$.
 
 **Todistus**
 
-Olkoon $S$ joukko, joka sisältää luvut muotoa $at, t \in \mathbb{F}_{p^k}$, missä $t \neq 0$. Osoitetaan, että $S$ sisältää jokaisen joukon $\mathbb{F}_{p^k}$ nollasta eroavan luvun (täsmälleen kerran). Selvästi kaikilla $s \in S$ pätee $s \neq 0$ - muutenhan pätisi $s = at = 0$. Mutta koska $a, t \neq 0$, on niillä olemassa käänteisalkiot $a^{-1}$ ja $t^{-1}$ (käsittelemmehän kuntaa!), ja kertomalla yhtälön $at = 0$ puolittain tulolla $a^{-1}t^{-1}$ saamme $1 = 0$.
+Olkoon $S$ joukko, joka sisältää luvut muotoa $at, t \in \mathbb{F_{p^k}}$, missä $t \neq 0$. Osoitetaan, että $S$ sisältää jokaisen joukon $\mathbb{F_{p^k}}$ nollasta eroavan luvun (täsmälleen kerran). Selvästi kaikilla $s \in S$ pätee $s \neq 0$ - muutenhan pätisi $s = at = 0$. Mutta koska $a, t \neq 0$, on niillä olemassa käänteisalkiot $a^{-1}$ ja $t^{-1}$ (käsittelemmehän kuntaa!), ja kertomalla yhtälön $at = 0$ puolittain tulolla $a^{-1}t^{-1}$ saamme $1 = 0$.
 
-Oletetaan sitten, että $at = at'$ jollain $t, t' \in \mathbb{F}_{p^k}$. Kertomalla puolittain luvulla $a^{-1}$ saamme $t = t'$.
+Oletetaan sitten, että $at = at'$ jollain $t, t' \in \mathbb{F_{p^k}}$. Kertomalla puolittain luvulla $a^{-1}$ saamme $t = t'$.
 
-Siispä luvut $at, t \in \mathbb{F}_{p^k}$ ovat erisuuria, nollasta eroavia alkioita, mikä todistaa väitteen.
+Siispä luvut $at, t \in \mathbb{F_{p^k}}$ ovat erisuuria, nollasta eroavia alkioita, mikä todistaa väitteen.
 
-Ja nyt, kuten Fermat'n pienen lauseen todistuksessa, joukon $S$ alkioiden tulo on sama kuin kunnan $\mathbb{F}_{p^k}$ nollasta eroavien alkioiden tulo. Ja kuten edellisessä todistuksessa, sieventämällä saamme $a^{p^k - 1} = 1$.
+Ja nyt, kuten Fermat'n pienen lauseen todistuksessa, joukon $S$ alkioiden tulo on sama kuin kunnan $\mathbb{F_{p^k}}$ nollasta eroavien alkioiden tulo. Ja kuten edellisessä todistuksessa, sieventämällä saamme $a^{p^k - 1} = 1$.
 
 ### Huomautus (asteet)
 
@@ -207,16 +207,16 @@ Fermat'n pienen lauseen yleistys takaa, että $(2 + \sqrt{3})^{48} = 1$, mutta t
 
 Kokonaisluvuille modulo $p$ määritellään usein ns. aste tai kertaluku: olkoon $ord_p(a)$ pienin positiivinen kokonaisluku $e$, jolla $a^e \equiv 1 \pmod{p}$, kun $a \not\equiv 0 \pmod{p}$. Tunnetusti jos $a^x \equiv 1 \pmod{p}$, niin $ord_p(a) \mid x$.
 
-Voimme yleistää asteen määritelmää yleisesti äärellisille kunnille: esimerkiksi luvun $2 + \sqrt{3}$ asteeksi tulisi $8$ kunnassa $\mathbb{F}_{7}(\sqrt{3})$. Huomaamme, että tämä aste jakaa luvun $48$, jonka Fermat'n pienen lauseen yleistys antaa, kuten kuuluukin.
+Voimme yleistää asteen määritelmää yleisesti äärellisille kunnille: esimerkiksi luvun $2 + \sqrt{3}$ asteeksi tulisi $8$ kunnassa $\mathbb{F_7}(\sqrt{3})$. Huomaamme, että tämä aste jakaa luvun $48$, jonka Fermat'n pienen lauseen yleistys antaa, kuten kuuluukin.
 
 Hyvä tuuri, että luvun $2 + \sqrt{3}$ aste oli niinkin pieni kuin $8$ - muuten manuaalista laskemista olisi tullut paljon enemmän!
 
 
 ### Huomautus (kuntien isomorfisuus)
 
-Puhumme todistuksessa kunnasta $\mathbb{F}_7(\sqrt{3})$. Tämä on hieman epätyypillistä: kuten yllä huomautettiin, äärelliset kunnat, joiden koot ovat samat, ovat isomorfisia. Yleensä siis kirjoitettaisiin vain $\mathbb{F}_{49}$.
+Puhumme todistuksessa kunnasta $\mathbb{F_7}(\sqrt{3})$. Tämä on hieman epätyypillistä: kuten yllä huomautettiin, äärelliset kunnat, joiden koot ovat samat, ovat isomorfisia. Yleensä siis kirjoitettaisiin vain $\mathbb{F_{49}}$.
 
-Esimerkki isomorfisuudesta: $5$ ei ole neliönjäännös modulo $7$, joten kunnan $\mathbb{F}_7(\sqrt{5})$ koko on $49$, ja sen tulisi olla isomorfinen kunnan $\mathbb{F}_7(\sqrt{3})$ kanssa. Näin onkin: olkoon $f$ funktio, jolla $f(a + b\sqrt{3}) = a + 3b\sqrt{5}$. On helppoa varmistaa, että tämä on isomorfismi - tarkistetaan vaikein ehto eli multiplikatiivisuus $f(xy) = f(x)f(y)$:
+Esimerkki isomorfisuudesta: $5$ ei ole neliönjäännös modulo $7$, joten kunnan $\mathbb{F_7}(\sqrt{5})$ koko on $49$, ja sen tulisi olla isomorfinen kunnan $\mathbb{F_7}(\sqrt{3})$ kanssa. Näin onkin: olkoon $f$ funktio, jolla $f(a + b\sqrt{3}) = a + 3b\sqrt{5}$. On helppoa varmistaa, että tämä on isomorfismi - tarkistetaan vaikein ehto eli multiplikatiivisuus $f(xy) = f(x)f(y)$:
 
 $$f\Big((a+b\sqrt{3})(c + d\sqrt{3})\Big) = f\Big((ac + 3bd) + (ad + bc)\sqrt{3} \Big) =  ac + 3bd + 3(ad + bc)\sqrt{5}$$
 
@@ -292,13 +292,13 @@ $$a = -\frac{1}{16b^3},$$
 
 $$c = -\frac{1}{8b^2}.$$
 
-Ei siis rationaaliratkaisuja. Tämä ei kuitenkaan ole ongelma: todellisuudessa haluamme ratkoa tämän yhtälöryhmän modulo $p$, koska haluamme kirjoittaa $P$:n kahden neliön summana mod $p$. Valitaan siis jokin $p$, joka on polynomin $64x^6 - 64x^4 + 1$ alkutekijä. Tällöin $p \neq 2$, eli $a, b, c$ ovat hyvin määriteltyjä kokonaislukuja mod $p$ (eli siis kunnan $\mathbb{F}_p$ alkioita).
+Ei siis rationaaliratkaisuja. Tämä ei kuitenkaan ole ongelma: todellisuudessa haluamme ratkoa tämän yhtälöryhmän modulo $p$, koska haluamme kirjoittaa $P$:n kahden neliön summana mod $p$. Valitaan siis jokin $p$, joka on polynomin $64x^6 - 64x^4 + 1$ alkutekijä. Tällöin $p \neq 2$, eli $a, b, c$ ovat hyvin määriteltyjä kokonaislukuja mod $p$ (eli siis kunnan $\mathbb{F_p}$ alkioita).
 
 Näillä $p$ pätee $p \in S(P) \implies x^2 - \frac{x}{2} + c \equiv ax + b \equiv 0 \pmod{p}$ jollain kokonaisluvulla $x$, olettaen $p \equiv 3 \pmod{4}$. Ei ole vaikeaa muodostaa tästä ehto $T(b) \equiv 0 \pmod{p}$ polynomille $T$, voimmehan kirjoittaa muuttujat $x, a, c$ muuttujan $b$ avulla.
 
 Polynomien $T$ ja $64x^6 - 64x^4 + 1$ suurin yhteinen tekijä on 1 (tämä saadaan määrittämällä $T$ ja sytin laskemisella), joten Bezout'n lemman nojalla argumentti menee läpi suurilla $p$.
 
-Ainoa ongelma on sen takaaminen, että on olemassa äärettömän monta $p$, joilla $p \equiv 3 \pmod{4}$ ja $p$ on polynomin $64x^6 - 64x^4 + 1$ alkutekijä. En näe mitään helppoa tapaa tämän todistamiseksi (tosin tämä väite vaikuttaa pätevän, ainakin tietokoneen mukaan), minkä vuoksi ratkaisu on puutteellinen. Ratkaisu kuitenkin demonstroi keinon hyödyntää vastaavuutta äärettömien ja äärellisten kuntien välillä - ratkaistaan yhtälöryhmä rationaalilukujen laajennuksessa, josta se voidaan tuoda äärettömän moneen eri äärelliseen kuntaan $\mathbb{F}_p$.
+Ainoa ongelma on sen takaaminen, että on olemassa äärettömän monta $p$, joilla $p \equiv 3 \pmod{4}$ ja $p$ on polynomin $64x^6 - 64x^4 + 1$ alkutekijä. En näe mitään helppoa tapaa tämän todistamiseksi (tosin tämä väite vaikuttaa pätevän, ainakin tietokoneen mukaan), minkä vuoksi ratkaisu on puutteellinen. Ratkaisu kuitenkin demonstroi keinon hyödyntää vastaavuutta äärettömien ja äärellisten kuntien välillä - ratkaistaan yhtälöryhmä rationaalilukujen laajennuksessa, josta se voidaan tuoda äärettömän moneen eri äärelliseen kuntaan $\mathbb{F_p}$.
 
 Siirrytään sitten muihin aiheisiin.
 
