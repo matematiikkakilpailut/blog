@@ -52,7 +52,7 @@ Ehdoille on annettu omat "nimensä". Ehtoa 1 kutsutaan kommutatiivisuudeksi, eht
 
 **Huomautus**
 
-On olemassa muitakin mielenkiintoisia algebrallisia rakenteita kuin kunnat. Esimerkiksi unohtamalla ehdon 4 operaatiolle $\cdot$ (mutta säilyttämällä sen opreaatiolle $+$) saadaan ns. renkaat. Kokonaisluvut ovat rengas. Joissain lähteissä jätetään pois ehto 1 operaatiolle $\cdot$, mikä myös yleistää kunnan määritelmää (esimerkiksi kääntyvät matriisit ovat tällä laajennetulla määritelmällä kunta). Tässä postauksessa emme kuitenkaan tee näin.
+On olemassa muitakin mielenkiintoisia algebrallisia rakenteita kuin kunnat. Esimerkiksi unohtamalla ehdon 4 operaatiolle $\cdot$ (mutta säilyttämällä sen opreaatiolle $+$) saadaan ns. renkaat. Esimerkiksi kokonaislukujen joukko on rengas.
 
 **Huomautus**
 
