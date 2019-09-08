@@ -53,7 +53,7 @@ asentamalla Rubyn ja Bundlerin ja komentamalla
 
 ```
 bundle install
-bundle exec jekyll serve
+bundle exec jekyll serve --config _local.yml
 ```
 
 ### Julkaiseminen

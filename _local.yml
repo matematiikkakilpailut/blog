@@ -1,0 +1,14 @@
+show_drafts: true
+exclude: [vendor]
+theme: jekyll-theme-cayman
+title: Matematiikkakilpailijat
+description: Matematiikan olympiavalmennuksen osallistujien kokemuksia
+baseurl: "/"
+lang: fi
+paginate: 20
+paginate_path: "/posts/:num/"
+plugins:
+- jekyll-feed
+- jekyll-seo-tag
+- jekyll-sitemap
+- jemoji
